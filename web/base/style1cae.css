@@ -1,0 +1,1371 @@
+@charset "utf-8";
+
+/*
+Yahoo! CSS Reset (YUI 3)
+http://developer.yahoo.com/yui/3/cssreset/
+CSSresetr.com
+*/
+@font-face {
+	font-family: 'SpoqaHanSansNeo-Bold';
+	src: url(http://golfwith.golfzon.com/web/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff);
+}
+@font-face {
+	font-family: 'SpoqaHanSansNeo-Medium';
+	src: url(http://golfwith.golfzon.com/web/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff);
+}
+@font-face {
+	font-family: 'SpoqaHanSansNeo-Regular';
+	src: url(http://golfwith.golfzon.com/web/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff);
+}
+@font-face {
+	font-family: 'SpoqaHanSansNeo-Light';
+	src: url(http://golfwith.golfzon.com/web/font/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff);
+}
+
+html{background:#FFF;color:#000}
+html[lang=ko]{letter-spacing: -0.02em;}
+body{width:100%;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;box-sizing:border-box}
+table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+body,html,input,textarea,select{font-family:Verdana,Arial,Geneva,sans-serif}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+a{
+	text-decoration:none;
+	box-sizing:border-box;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	user-select: none;          /* Likely future */
+}
+/* bace */
+.rc{overflow:hidden;max-width:100%;white-space:nowrap;text-overflow:ellipsis}
+.hidden{display:none !important;visibility:hidden}
+.vh{overflow:hidden;position:absolute;width:1px;height:1px;margin:-1px;padding:0;border:0;clip:rect(0 0 0 0)}
+.clearfix:before,.clearfix:after{display:table;/* 1 */content:' '/* 2 */}
+.clearfix:after{clear:both}
+.ir{overflow:hidden;border:0;background-color:transparent;/* IE 6/7 fallback */*text-indent:-9999px}
+.ir:before{display:block;width:0;height:150%;content:'';}
+.vm{display:table;width:100%;height:100%}
+.vm_inner{display:table-cell;vertical-align:middle}
+input.placeholder{color:#828282}
+
+/* common */
+html,body,#wrap{min-height: 100vh;}
+html,body,button,input,select,textarea,th,td,a{font-family: 'SpoqaHanSansNeo-Regular',arial,sans-serif;}
+#wrap{min-width:1200px;margin:0 auto;background-color: #282828;color: #fff;}
+#wrap.faq,
+#wrap.terms,
+#wrap.privacy,
+#wrap.agreement{color: #fff;}
+input.placeholder{color:#808080 !important}
+.header_inner,.container_inner,.footer_inner{position:relative;max-width: 1200px;margin:0 auto;padding: 0 36px;box-sizing:border-box;}
+.header_inner,.container_inner{max-width: 1200px;}
+
+.btn{display:inline-block;padding:0 10px;border:none;background:none;line-height:2em;text-align:center;box-sizing:border-box}
+.btn.type1{border:1px solid #fff;color: #fff;font-size:16px}
+.main .btn{border: 2px solid #fff; color: #fff; border-radius: 16px;}
+.btn.type2{border:1px solid #ccc;border:1px solid rgba(255,255,255,0.2);font-size:16px}
+.btn.type3{border:2px solid #f65409;border-radius:999px;font-size:16px;color:#f65409}
+.btn.type4{border:2px solid #ccc;border-radius:999px;font-weight:bold;color:#eee}
+.btn.type5{border-radius:999px;background-color:#343434;color:#fff}
+.btn.type6{border-radius:999px;background-color:#24d74a;color:#fff}
+.btn.type7{border:1px solid #d2d2d2;border-radius:999px;color:#808080}
+.btn_appstore,.btn_googleplay{display:inline-block;width:158px;height:48px;background-repeat:no-repeat;background-position:0 0;background-size:158px 48px;-webkit-background-size:158px 48px}
+.btn_appstore{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_appstore.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_appstore.png', sizingMethod='scale')}
+.btn_googleplay{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_googleplay.png);filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_googleplay.png', sizingMethod='scale')}
+.dim{display: none;position: fixed;z-index: 3;top: 0;left: 0;right: 0;bottom: 0;background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg_menu_dim.png)repeat 0 0;}
+
+/* bootstrap-select */
+.btn-group,.btn-group-vertical{display:inline-block;position:relative;vertical-align:middle;z-index: 2;}
+select.bs-select-hidden,select.selectpicker{display:none !important}
+.caret{display:inline-block;width:0;height:0;margin-left:2px;border-top:4px dashed;border-right:4px solid transparent;border-left:4px solid transparent;vertical-align:middle}
+.dropup .caret,.navbar-fixed-bottom .dropdown .caret{border-top:0;border-bottom:4px solid;content:''}
+.bootstrap-select.btn-group .dropdown-toggle .caret{position:absolute;top:50%;right:12px;margin-top:-2px;vertical-align:middle}
+.dropdown-menu{display:none;float:left;position:absolute;top:100%;left:0;z-index:1000;text-align:left;list-style:none}
+.open>.dropdown-menu{display:block}
+.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:2px}
+.bootstrap-select.btn-group .dropdown-menu{min-width:100%;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+.bootstrap-select.btn-group .dropdown-menu.inner{float:none;position:static;margin:0;padding:0;border:0;border-radius:0;-webkit-box-shadow:none;box-shadow:none}
+.bootstrap-select > select{display:block !important;position:absolute !important;left:-9999px;bottom:0;width:.5px !important;height:100% !important;padding:0 !important;border:none;opacity:0 !important}
+.bootstrap-select.btn-group .dropdown-menu li a{cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+
+/* header 161115 */
+#header{z-index:4;line-height:80px;padding-bottom: 20px;background: rgba(0,0,0,0.5);position: fixed;top: 0;left: 0;width: 100%;}
+/*
+#header .logo{float:left;width:139px;margin-right:40px;height: 56px;}
+#header .logo a{vertical-align: middle;display:inline-block;background-repeat:no-repeat;width:139px;height:28px;margin-top: 0px;background-size: contain;background-image:url('http://golfwith.golfzon.com/web/images/new/logo-smartcaddie.png');}
+#header .logo.type2 a{background-image:url('http://golfwith.golfzon.com/web/images/logo-smartcaddie.png');}
+#wrap #header #menu.on .logo.type2 a {width:120px; height:29px; background-image: url('http://golfwith.golfzon.com/web/images/new/logo-smartcaddie-black.png');}
+ */
+/* #wrap.golfcourse #header .logo.type2 a{background-image:url('/web/images/new/logo-smartcaddie-black.png'); height:34px; background-size: contain; background-repeat: no-repeat;}
+#wrap.faq #header .logo.type2 a{background-image:url('/web/images/new/logo-smartcaddie-black.png'); height:34px; background-size: contain; background-repeat: no-repeat;}
+#wrap.terms #header .logo.type2 a{background-image:url('/web/images/new/logo-smartcaddie-black.png'); height:34px; background-size: contain; background-repeat: no-repeat;}
+#wrap.privacy #header .logo.type2 a{background-image:url('/web/images/new/logo-smartcaddie-black.png'); height:34px; background-size: contain; background-repeat: no-repeat;}
+#wrap.agreement #header .logo.type2 a{background-image:url('/web/images/new/logo-smartcaddie-black.png');height:34px;background-size: contain;background-repeat: no-repeat;} */
+
+.popup_window{display: none;position: fixed;z-index: 697;font-family: 'NotoSansKR';left: 0;top: 0;width: 100%;height: 100%;background: rgba(0,0,0,0.2);}
+.popup_window>.overlay{width: 100%;height: 100%;background: rgba(0, 0, 0, 0.5);font-size: 12px;}
+.popup_window>.content{min-height: 100px;max-width: calc(100vw - 20px);position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);color: #000;background: #fff;font-size: 16px;text-align: center;display: flex;flex-direction: column;}
+.popup_window>.content>.image{flex: auto;width: 100%;}
+.popup_window>.content>.image>img{width: 100%;height: 100%;}
+.popup_window>.content>.buttons{display: flex;}
+.popup_window>.content>.buttons>button{border: none;background: none;padding: 0.5em 1em;}
+.popup_window>.content>.buttons>.close{text-decoration: underline;cursor: pointer;}
+.popup_window>.content>.buttons>.close.snooze{text-decoration: none;}
+.popup_window>.content>.buttons>button:nth-child(2){flex: auto;text-align: right;}
+.popup_window>.content>.close{position:absolute;right:5px;bottom:10px;border: none;background:none;cursor: pointer;text-decoration: underline;font-size: 12px;}
+
+.popup_window#popup_terms>.content>.header{background: url(http://golfwith.golfzon.com/web/images/pupup_terms.png) no-repeat;background-size: cover;color: #fff;padding: 1.3em 0;font-family: 'SpoqaHanSansNeo-Regular';}
+.popup_window#popup_terms>.content>.body{border-bottom: 1px solid #ccc;padding: 1.5em;text-align: left;font-family: 'SpoqaHanSansNeo-Regular';font-size: 0.8em;}
+.popup_window#popup_terms>.content>.body>section{}
+.popup_window#popup_terms>.content>.body>section:not(:last-child){margin-bottom: 1em;}
+.popup_window#popup_terms>.content>.body>section>h4{font-family: 'SpoqaHanSansNeo-Bold';}
+.popup_window#popup_terms>.content>.body>section>p>strong{font-family: 'SpoqaHanSansNeo-Medium';}
+.popup_window#popup_terms>.content>.body>section>.dot,
+.popup_window#popup_terms>.content>.body>section>.warn{padding-left: 1.2em;margin: 0.2em 0;}
+.popup_window#popup_terms>.content>.body>section>.dot:before,
+.popup_window#popup_terms>.content>.body>section>.warn:before{position:absolute;left: 1.5em;}
+.popup_window#popup_terms>.content>.body>section>.dot:before{content:'•';padding-left: 0.3em;}
+.popup_window#popup_terms>.content>.body>section>.warn:before{content:'※';}
+.popup_window#popup_terms>.content>.body>section ol{padding-left: 2em;margin: 0.4em 0;}
+.popup_window#popup_terms>.content>.body>section ol>li{list-style: inherit;}
+.popup_window#popup_terms>.content>.body>section a{text-decoration: none;color: #000;}
+@media (max-width:760px){
+	.popup_window>.content{width: 100%;}
+}
+
+/*스마트캐디 결제*/
+#wrap.approval{background-color: #222328; height:auto;}
+#wrap.approval img{width:100%; height:auto;}
+#wrap.approval #header .menu li a{color:#fff;}
+#wrap.approval #header .login .btn.type1{border: 2px solid #fff; color: #fff; border-radius: 20px;}
+#wrap.approval #footer{background-color: #616160;}
+#wrap.approval #header #menu.on .logo.type2{display: block;}
+#wrap.approval .Smart_Caddie_visual{ min-height:270px; margin-top:-60px; margin-bottom:20px; padding-bottom:20px;  height:auto; background-size: cover; background-position: 100% 50%; background-image: url('http://golfwith.golfzon.com/web/images/new/payment/img-golfer.png')}
+#wrap.approval .Smart_Caddie_visual .container_inner{padding-top: 20px;}
+#wrap.approval .Smart_Caddie_visual .container_inner h2.title{width:115px; margin:0px auto; font-size: 18px;  padding-left: 27px; background: url(http://golfwith.golfzon.com/web/images/new/logo-smartcaddie.png);  background-repeat: no-repeat; color: #ffffff; background-position-y: 50%; background-size: contain; }
+#wrap.approval .Smart_Caddie_visual .container_inner h3.title{margin-top:100px;}
+#wrap.approval .Smart_Caddie_visual .container_inner h3.title img.en{width:80%; height:auto;}
+#wrap.approval .Smart_Caddie_visual .container_inner h3.title img.ja{width:95%; height:auto;}
+#wrap.approval .Smart_Caddie_visual .container_inner h3.title img.ko{width:60%; height:auto;}
+#wrap.approval .box{width:80%; margin:0px auto; margin-bottom:15px; border:1px solid #cfd0d1; border-radius: 4px;}
+#wrap.approval .box .wrap{margin:18px; color:#ffffff; position: relative;}
+#wrap.approval .box .wrap em{display: block; position: absolute; top:0px; right:0px; width:-120px; text-align: right; }
+#wrap.approval .box .wrap em img{width:60px; }
+#wrap.approval .box .wrap em img.ja{width:-120px; }
+#wrap.approval .box .wrap em img.ko{width:-120px; }
+#wrap.approval .box .wrap p.product{font-size:16px; font-weight: bold;}
+#wrap.approval .box .wrap p.product span{font-size:12px; font-weight:100; margin-left:5px;}
+#wrap.approval .box .wrap p.price{font-size:26px; padding-left:25px; margin:13px 0px; color:#15e732; font-weight:bold;  background: url(http://golfwith.golfzon.com/web/images/new/payment/ic_en.png);  background-repeat: no-repeat; background-position-y: 50%; background-size: 20px; }
+#wrap.approval.ja .box .wrap p.price{ background: url(http://golfwith.golfzon.com/web/images/new/payment/ic_en.png);  background-repeat: no-repeat; background-position-y: 50%; background-size: 20px;}
+#wrap.approval.ko .box .wrap p.price{ background: url(http://golfwith.golfzon.com/web/images/new/payment/ic_ko.png);  background-repeat: no-repeat; background-position-y: 50%; background-size: 20px;}
+#wrap.approval .box .wrap p.txt{font-size:12px; font-weight:300; letter-spacing: -0.5px;}
+#wrap.approval .btn.type{position:relative; display: block; width:209px; height:35px; margin:0px auto; margin-top:17px; padding:0px; background: url(http://golfwith.golfzon.com/web/images/new/payment/btn-bg-galaxy-watch.png);  background-repeat: no-repeat; background-size: contain;}
+#wrap.approval .btn.type a{display: block; font-size:12px; line-height:28px; font-weight:500; }
+#wrap.approval .notice{font-size:12px; color:#ffffff; margin:30px; padding-top:12px; font-weight:300; border-top: 1px solid rgba(252, 252, 252, .2); -webkit-background-clip: padding-box; /* for Safari */ background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */}
+#wrap.approval .notice p{font-weight: bold; margin-bottom:5px;}
+#wrap.approval .notice li{margin:2px 0px;}
+#wrap.approval .box.type2 ul{margin:20px 0px;}
+#wrap.approval .box.type2 li{overflow: hidden; position: relative; padding:3px 0px; margin-top:20px;}
+#wrap.approval .box.type2 li span{display: block; float:left; }
+#wrap.approval .box.type2 li span em{width:8px; height:1px; position: absolute; top:0px; left:0px; background-color: #d7d7d7; }
+#wrap.approval .box.type2 li p{float:right;}
+#wrap.approval .box.type2 .wrap p.price{margin:0px; margin-top:-8px;}
+#wrap.approval .btn.type2{width:259px; height:43px; border:none;}
+#wrap.approval .btn.type2 a{font-size:14px; line-height:37px;}
+#wrap.approval .howtopay{width:80%; margin:0px auto; color:#ffffff; }
+#wrap.approval .howtopay h4{font-size:14px;}
+#wrap.approval .agree{font-size:12px;}
+#wrap.approval .agree li{position: relative; padding:5px 0px; padding-left:25px; }
+#wrap.approval .agree input[type="checkbox"]{display:none; }
+#wrap.approval .agree input[type="checkbox"] + em {position:absolute; display: block; top:6px; left:0px; width:20px; height:20px; background-image: url(http://golfwith.golfzon.com/web/images/new/payment/check.jpg); background-size: cover; cursor:pointer;}
+#wrap.approval .agree input[type="checkbox"]:checked + em {background-image: url(http://golfwith.golfzon.com/web/images/new/payment/checkH.jpg); }
+#wrap.approval #footer .company{margin-top:10px; padding-top:10px; font-size:10px; border-top: 1px solid rgba(255, 255, 255, .2); -webkit-background-clip: padding-box; /* for Safari */ background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */}
+#wrap.approval #footer .company li{padding:0px; margin:2px 0px; display: block;}
+#wrap.approval #footer .company li:first-child{padding:0px;}
+#wrap.approval .paymentType{font-size:16px; overflow: hidden; margin:10px 0px;}
+#wrap.approval .paymentType li{position: relative; padding:15px 0px; margin-bottom:3px; float:left; width:50%; height:37px;}
+#wrap.approval .paymentType li label{position: absolute; width:95%; height:90%; top:0px; left:2%;}
+#wrap.approval .paymentType input[type="radio"]{display:none;}
+#wrap.approval .paymentType input[type="radio"] + em {width:65%; padding-left:35%; background-image: url(http://golfwith.golfzon.com/web/images/new/payment/ico1.jpg); background-size: 23px 14px; background-position-x:15%; font-size:13px; line-height:32px;  height:100%; cursor:pointer; background-repeat: no-repeat; background-position-y: center; position:absolute; display: block; border:1px solid #cfd0d1; top:0px; left:0px; border-radius:2px; }
+#wrap.approval .paymentType.ja .credit input[type="radio"] + em {width:70%; padding-left:30%; background-position-x:9%; font-size:12px; letter-spacing: -1.5px;}
+#wrap.approval .paymentType input[type="radio"]:checked + em {background-image: url(http://golfwith.golfzon.com/web/images/new/payment/ico1h.jpg);color:#15e732; border:1px solid #15e732;  }
+#wrap.approval .paymentType .paypal input[type="radio"] + em {width:100%; padding-left:0%; background-image: url(http://golfwith.golfzon.com/web/images/new/payment/ico2.jpg); background-size: 65px 18px; background-position-x:45%; font-size:0px; }
+#wrap.approval .paymentType .paypal input[type="radio"]:checked + em {background-image: url(http://golfwith.golfzon.com/web/images/new/payment/ico2h.jpg);}
+#wrap.approval .paymentType.ko li.paypal{clear:both; width:100%}
+#wrap.approval .paymentType.ko li.paypal label{width:97.5%; height:90%; top:0px; left:1%;}
+
+#header .menu,#header .menu li{float:left}
+#header .menu li{position:relative;height:60px;}
+#header .menu>li:not(:last-child){margin-right: 40px;}
+#header .menu>li:not(:last-child)::after{content:'';position:absolute;height:20px;width:1px;background:#fff;right: -20px;bottom: 10px;}
+#header .menu li,
+#header .menu li a{font-weight:bold;font-size:14px;color: #fff;opacity:1;cursor: pointer;}
+#header .menu li>a,
+#header .menu li>span{position: relative;}
+#wrap.golfcourse.type2 #header .menu li,
+#wrap.golfcourse.type2 #header .menu li a{font-weight:bold;font-size:14px;color:#343434;opacity:1;}
+#header .menu li[aria-now-menu]>a,
+#header .menu>li[aria-now-menu] .sub_menu>li[aria-now-menu] span{color: #15e732 !important;}
+#header .menu .sub_menu{opacity: 0;transform: translate(-50%, -200%);transition: 0.3s ease;transition-property: opacity;position: absolute;overflow: visible;white-space: nowrap;left: 50%;padding-top: 20px;}
+#header .menu>li:focus>.sub_menu,
+#header .menu>li:hover>.sub_menu,
+#header .menu>li>.sub_menu:hover{opacity: 1;transform: translate(-50%, -20px);}
+#header .menu .sub_menu{cursor: pointer;}
+#header .menu .sub_menu li{height: 40px;line-height: 36px;font-weight: normal;cursor: pointer;display: block;margin: 0;width: 100%;text-align: center;font-size: 13px;background: rgba(12, 12, 12,0.6);padding: 0 1em;}
+#header .login{position:absolute;top:0;right:36px;height:90px}
+#header .login .btn.type1{width:96px;line-height:28px;font-size: 14px;font-weight: bold;border-radius: 20px;}
+#header .btn_menu{position: absolute; top:10px; left:5px;}
+#header .btn_menu a{display:inline-block;width:45px;height:45px; background-size: contain;}
+#header .btn_menu.type2 a{background-image:url('http://golfwith.golfzon.com/web/images/new/button-gnb.png')}
+#header .login .btn.app_down{border: 2px solid #15e732;color: #15e732; border-radius: 20px;font-size: 14px;position: relative;font-family: 'SpoqaHanSansNeo-Regular';margin-right: 5px;background: #191919;}
+#header .login .btn.app_down::before{content:'';display:inline-block;background: url(http://golfwith.golfzon.com/web/images/icn_google_sysmbol.png) no-repeat;width: 16px;height: 16px;background-size: contain;position: relative;top: 4px;}
+
+/* type2 */
+#wrap.type2 #container{background-repeat:no-repeat;background-position:50% 0;background-size:100%;background-size:cover;-webkit-background-size:100%;-webkit-background-size:cover;}
+/*#wrap.type2 .header_inner > .logo.type2 a{background-image: url('http://golfwith.golfzon.com/web/images/logo-smartcaddie.png');}*/
+#wrap.type2 #header .menu li,
+#wrap.type2 #header .menu li a{color: #ddd;font-family: 'SpoqaHanSansNeo-Medium';}
+/* #wrap.type2 #header .menu li[aria-now-menu] a{color: #15e732 !important;} */
+#wrap.type2 #header .menu>li:not(:last-child)::after{background: #fff;}
+#wrap.type2 #header .login .btn.type1{border:2px solid #fff;color:#fff; border-radius: 20px;font-family: 'SpoqaHanSansNeo-Regular';}
+#wrap.type2 #header #menu.on .login .btn.type1{border:2px solid #fff;color:#fff; border-radius: 20px;}
+#wrap.golfcourse.type2 #header .login .btn.type1{border:1px solid rgba(0,0,0,0.2); color:#343434; border-radius: 0px;}
+#wrap.type2 #header .btn_menu.type2 a{background-image: url('http://golfwith.golfzon.com/web/images/new/button-gnb.png');}
+
+#wrap.golfcourse.type2 #header .menu li[aria-now-menu] a{color: #343434;}
+/* menu */
+#menu .btn_close{float:right}
+#menu .btn_close a{display:inline-block;width:28px;height:28px;background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_close.png) no-repeat 50% 50%;background-size:26px 26px;-webkit-background-size:26px 26px}
+#menu{float:left;}
+#header .btn_menu,#menu .logo,#menu .btn_close{display:none}
+
+/* container 161115 */
+#container{min-height:100vh;margin-bottom:-210px;padding-bottom:210px;}
+
+/* footer 161116 */
+#footer{background-color:#616160;color:#fff;}
+#footer .footer_inner{padding:35px 36px 30px; text-align: center;}
+#footer a{color:#fff;vertical-align:middle;white-space:nowrap;}
+#wrap.SmartCaddieV1 #footer a{}
+#footer .left_section{padding:3px 0}
+#footer .right_section{margin-top:30px;}
+#footer .left_section li{box-sizing:border-box; display: inline-block; vertical-align: top;}
+#footer .left_section li:first-child{padding-left:0;border-left:0}
+#footer .communication{display: inline-block; vertical-align: top; padding:0px 35px; padding-bottom:10px; margin-bottom:10px;  border-bottom: 2px solid rgba(255, 255, 255, .2);}
+#footer .communication li{height:12px;margin:8px 0;padding:0 10px; line-height:8px}
+#footer .communication li:first-child{border-left:0}
+#footer .communication a{font-size:14px;font-weight:bold;color:#fff}
+#footer .ico_facebook{display:inline-block;width:16px;height:16px;margin-right:7px;margin-top:-4px;background:url('http://golfwith.golfzon.com/web/images/new/facebook.png') no-repeat 0 0;background-size:contain;vertical-align:middle;}
+#footer .terms li{margin:9px 0;padding:0 15px}
+#footer .terms a{display:inline-block;padding-bottom:1px; font-size:12px;line-height:1;color:#fff}
+#footer address{margin-top:11px;font-size:11px;line-height:1;color:#fff}
+#footer .gzlogo{display:inline-block;width:165px;height:34px;background:url('http://golfwith.golfzon.com/web/images/new/footer-logo-copy.png') no-repeat 0 0; background-size: contain; }
+#footer.main{background-color: #292929;}
+#footer.main .gzlogo{}
+.top_nav{position:fixed;left:50%;bottom:-70px;z-index:2;width:64px;height:64px;margin-left:500px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_top.png) no-repeat 0 0;font-size:16px;font-weight:bold;color:#fff;text-align:center;transition:.3s all ease-in-out;font-size: 0;text-indent: -9999px;}
+.top_nav.scrollActive{bottom:20px;opacity:1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';filter:alpha(opacity=100)}
+
+/* main */
+.main_section h2{width:425px;height:129px;margin-top:165px;background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/tit_golf_with.png) no-repeat 0 0;background-size:425px 129px;-webkit-background-size:425px 129px}
+.ico_plus{display:inline-block;width:16px;height:16px;background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_plus.png) no-repeat 0 0;background-size:16px 16px;-webkit-background-size:16px 16px}
+.main_section .decoration{margin-left: 5px;background-color: #fff;height: 2px;width: 50px;opacity:0.6;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=60)';filter:alpha(opacity=60)}
+#wrap.main #container{min-height: 0;}
+#wrap.main #mainSlider{position: relative;height: 970px;margin-top: -80px;}
+#wrap.main #header .menu li,
+#wrap.main #header .menu li a,
+#wrap.main #header .menu.type2 li a{color: #fff;opacity: 1;}
+#wrap.main #header .menu>li:not(:last-child)::after{background: #fff;}
+#wrap.main .main_section,
+#wrap.main .marker_section{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;background-position: 50% 50%;background-repeat: no-repeat;-webkit-background-size: cover;z-index: 0;word-break: keep-all;}
+#wrap.main .main_section .container_inner,
+#wrap.main .marker_section .container_inner{display: flex;align-items: center;height: 100%;padding-top:30px;}
+#wrap.main .main_section{background-image:url('http://golfwith.golfzon.com/web/images/new/main_slide1.png');background-position: 50% 50%;background-repeat: no-repeat;-webkit-background-size: cover;}
+#wrap.main .marker_section{background-image:url('http://golfwith.golfzon.com/web/images/new/main_slide2-ko.jpg');background-position: 50% 50%;background-repeat: no-repeat;-webkit-background-size: cover;}
+#wrap.main .marker_section[lang="en"]{background-image:url('http://golfwith.golfzon.com/web/images/new/main_slide2-en.jpg')}
+#wrap.main .ui-animation{
+	max-width: 470px;
+}
+
+#wrap.main .slider_section {color:#ffffff;}
+#wrap.main .slider_section .sub_title{font-size:32px; margin-bottom:20px;}
+#wrap.main .slider_section .title{background-repeat: no-repeat;background-size: contain;width: auto;height: 3em;}
+#wrap.main .slider_section.main_section .title{background-image: url(http://golfwith.golfzon.com/web/images/icn_golfbuddyu_smartcaddie.png);height: 3em;}
+#wrap.main .slider_section.marker_section .title{background-image: url(http://golfwith.golfzon.com/web//images/icn_golfbuddyu_golfgps.png);}
+#wrap.main .slider_section .txt1{font-size:18px; margin:20px 0px; line-height: 1.8em;}
+#wrap.main .slider_section .txt2{font-size:18px; margin:20px 0px; line-height: 2em;}
+#wrap.main .slider_section ul.info li{padding: 6px 0 0;}
+#wrap.main .more .btn{font-size:18px; border: 2px solid rgba(255, 255, 255, .7); color: #fff; border-radius: 3px; padding:0px 20px;}
+
+
+
+
+#wrap.main .slider_section.active{z-index: 1;}
+#wrap.main .slider_section li{position: relative;}
+#wrap.main #mainSlider{background-color: #fff;}
+#wrap.main #mainSlider .navigator .container_inner{eight: 0;overflow: visible;z-index: 2;}
+#wrap.main #mainSlider .pc{display:block;}
+#wrap.main #mainSlider .mobile{display:none;}
+#wrap.main #mainSlider .navigator{font-size: 0;line-height: 0;}
+#wrap.main .navigator .naviPages{z-index: 2;position: absolute;top: 810px;left: 40px;right: 0;}
+#wrap.main .navigator .naviPage{display: inline-block;width: 48px;height: 6px;margin: 0 2px;background-color: #ffffff;font-size: 0;line-height: 0;letter-spacing: 0; opacity: 0.7}
+#wrap.main .navigator .naviPage.active{background-color: #15e732;}
+#wrap.main .navigator .navibtns{display: none !important;}
+#wrap.main .navigator .leftBtn,
+#wrap.main .navigator .rightBtn{z-index: 2;display: block;position: absolute;top: 50%;margin-top: -26px;width: 39px;height: 53px;background-repeat: no-repeat;background-position: 0 0;-webkit-background-size: 39px 53px;background-size: 39px 53px;}
+#wrap.main .navigator .leftBtn{left: 0;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_left.png);}
+#wrap.main .navigator .rightBtn{right: 0;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_right.png);}
+
+
+
+/* scorecard */
+#wrap.scorecard #container .inner_bg{background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg_scorecard.png) no-repeat 50% 0;background-size:100% 100%;-webkit-background-size:100% 100%;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg_scorecard.png', sizingMethod='scale')}
+.scorecard_section .myscorecard_btns{position:absolute;top:8px;right:36px}
+.scorecard_section .myscorecard_btns .mybtn{line-height:30px;border-bottom: 2px solid #0fb257;padding: 0 5px;font-size: 16px;color: #f65409;font-weight: bold;color: #0dc860;}
+.scorecard_section .scorecard_section_cards{padding-top:116px;text-align:center}
+.scorecard_section_cards span{display:inline-block;max-width:100%;width:292px;height:500px;background-repeat:no-repeat;background-position:50% 0;background-size:292px 500px;-webkit-background-size:292px 500px}
+.scorecard_section_cards span.img_scorecard1{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard1.png)}
+.scorecard_section_cards span.img_scorecard2{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard2.png)}
+.scorecard_section_cards span.img_scorecard3{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard3.png)}
+.scorecard_section_cards span.img_yardage1{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage1.png)}
+.scorecard_section_cards span.img_yardage2{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage2.png)}
+.scorecard_section_cards span.img_yardage3{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage3.png)}
+.scorecard_section .app_btns{padding-bottom: 30px;text-align:center}
+.scorecard_section .app_btns a{margin:8px}
+
+/* GearS2 */
+#wrap.GearS2 #container{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg_GearS2.png)}
+.ico_cross{display:inline-block;width:20px;height:20px;background:#000 url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_cross.png) no-repeat 0 0;background-size:20px 20px;-webkit-background-size:20px 20px}
+.GearS2_section{padding-top:350px;padding-bottom:-120px;text-align:center}
+.GearS2_section h2{font-weight: bold;line-height:95px;font-size:75px;color:#fff}
+.GearS2_section .txt1{line-height:56px;opacity:0.3;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=30)';filter:alpha(opacity=30)}
+.GearS2_section .txt1 span{font-size:29px;color:#fff;vertical-align:middle}
+.GearS2_section .txt1 .ico_cross{margin-top:4px}
+.GearS2_section .txt2{padding-top:25px;line-height:24px;font-size:16px;color:#fff;opacity:0.4;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=40)';filter:alpha(opacity=40)}
+.GearS2_section .txt2 span{display: block;}/*160808 수정*/
+.GearS2_section .ico_cross{margin:0 15px}
+
+/* golf_course */
+.golf_course{background-color: #282828;}
+.golf_course_header{color: #fff;padding-top: 190px;padding-bottom: 25px;border-bottom:1px solid #d2d2d2;line-height:54px;box-sizing:border-box}/*170912*/
+.golf_course_header .title{float:left}
+.golf_course_header .title h2{font-size:54px;font-weight:bold;padding-bottom: 20px;}/*170912*/
+.golf_course_header .info{float:right}
+.golf_course_header .info > p{float:left;margin-left:30px;font-size:16px;font-weight:bold;color:#808080}
+.golf_course_header .info > p strong{display:inline-block;margin-right:7px;font-weight:bold;line-height:1;color:#16ad59}
+.golf_course_sub_header{padding-top:30px;line-height:24px}
+.golf_course_sub_header .left_section{float:left;margin-top:8px}
+.golf_course_sub_header .left_section a,.golf_course_sub_header .left_section span{display:inline-block;line-height:1;font-size:24px;font-weight:bold;color:#16ad59;vertical-align:middle}
+.golf_course_sub_header .left_section a{display:inline-block;border-bottom:1px solid #16ad59}
+.golf_course_sub_header .right_section{float:right;margin-top:10px}
+.golf_course_sub_header .right_section span,.golf_course_sub_header .right_section strong{font-weight:bold;vertical-align:middle}
+.golf_course_sub_header .right_section span{font-size:16px;color:#808080}
+.golf_course_sub_header .mark{float:left;margin-left:30px}
+.golf_course_sub_header .mark strong{margin-right:9px}
+.golf_course_section .scorecard_mark,.golf_course_section .yardage_mark,.golf_course_section .gear_mark,.golf_course_section .course_mark,.golf_course_section .green_mark{display:inline-block;width: 14px;line-height:14px;border-radius:999px;font-size:16px;color:#fff;text-align:center;}
+.golf_course_section .scorecard_mark{color:#09c45c}
+.golf_course_section .yardage_mark{color:#f1863f}
+.golf_course_section .gear_mark{color:#519ff8}
+.golf_course_section .course_mark{color: #519ff8;}
+.golf_course_section .green_mark{color: #09c45c;}
+.golf_course_section .elevation_mark{color: #e21818;}
+.golf_course_list{padding:40px 0}
+.golf_course_list .scorecard_mark,.golf_course_list .yardage_mark,.golf_course_list .gear_mark,.golf_course_list .course_mark,.golf_course_list .elevation_mark,.golf_course_list .green_mark{position:relative;font-size: 14px;font-weight: bold;width: auto !important;height: 12px;}
+.golf_course_list .scorecard_mark_group{display: inline-block;}
+.golf_course_list_section{float:left;width:33.33%;padding-right:10px;box-sizing:border-box}
+.golf_course_list_item{margin-top:33px;line-height:1}
+.golf_course_list_item:first-child{margin-top:0 !important}
+.golf_course_list_item a{margin-right:8px;font-size:18px;color:#fff}
+.golf_course_list_item.alphabet{margin-top:40px;font-size:24px;font-weight:bold;color:#16ad59}
+
+/*170912*/
+.golf_course_header .golf_course_info{padding-left: 2px;line-height: 1.7;clear: both;font-size: 18px;color: #808080;}
+.golf_course_header .golf_course_info a{color: #3c74a9;text-decoration: underline;}
+
+/* faq */
+.faq_title{padding-top:120px;padding-bottom: 20px;background: #282828;}
+.faq_title>p{font-size: 30px;font-weight: 600;color: #fff;}
+.faq_section{padding-bottom:60px;}
+.faq_section.hide_header{padding-top:20px;min-height: calc(100vh - 80px);}
+.faq_header{box-sizing:border-box;}
+.faq_header .title h2{font-size:54px;font-weight:bold;line-height:54px}
+.faq_header .tab{margin-left:-6px;padding-top:25px;padding-bottom:32px}
+.faq_header .tab .btn{margin:4px 6px;padding:0 20px;line-height:36px;font-size:18px;vertical-align:middle}
+.faq_header .tab .btn.on{border:2px solid #16ad59;color:#16ad59}
+.acodian dl{padding-left: 4px;border-bottom:1px solid #e8e8e8;}
+.acodian dl:first-child{border-top:1px solid #e8e8e8;}
+.acodian dt{padding:30px 0;font-size:24px;font-weight:normal;line-height:30px;color:#eaeaea;cursor: pointer;}
+.acodian dd{display:none;padding:7px 0 39px;font-size:20px;line-height:28px;color:#cfcfcf}
+.acodian dd table{width: auto !important;}
+.acodian dd table th,.acodian dd table td{color: #808080 !important;}
+.acodian dd img{width: auto !important;max-width: 100% !important;height: auto !important;}
+.acodian dl.open dt{font-weight:bold;color:#16ad59}
+.acodian dl.open dd{display:block}
+.acodian dl.open dd *{color:#fff !important;}
+.faq_section .sub_section{padding-bottom:33px}
+.faq_section .sub_section:last-child{padding-bottom:0}
+.faq_section .sub_section .acodian{margin:-1px 20px 0;border-top:1px solid #d2d2d2}
+.faq_section .sub_title{position:relative;z-index:1;padding-top:21px;padding-bottom:21px;border-bottom:2px solid #c6c6c6;margin-bottom: -2px;}
+.faq_section .sub_title h3{font-size:32px;font-weight:bold;line-height:1.4}
+.faq_section .acodian a{color: #16ad59;text-decoration: underline;}
+.faq_section .exception{padding-left: 30px;padding-top: 74px;padding-bottom: 79px;border-top: 1px solid #d2d2d2;border-bottom: 1px solid #d2d2d2;}
+.faq_section .exception h3{font-size: 24px;color: #eee;font-weight: bold;line-height: 48px;}
+.faq_section .exception p,.faq_section .exception a{font-size: 20px;color: #30c750;line-height: 45px;}
+.faq_section .exception a{text-decoration: underline;}
+
+/* Account */
+.account_section{padding-bottom:95px}
+.account_header{padding-top:60px;padding-bottom:45px;box-sizing:border-box}
+.account_header .title h2{font-size:54px;font-weight:bold;line-height:54px}
+.account_contents_info{order-bottom:1px solid #d2d2d2}
+.account_contents h3{font-size:24px;line-height:1.4;font-weight:bold;color:#16ad59;padding-bottom: 10px;}/*160808 수정*/
+.account_contents .txt1,.account_contents .txt2{font-size:20px;line-height:1.4;color:#808080}
+.account_contents .txt1{padding-bottom:28px}
+.account_contents .txt2{padding-bottom:20px}
+.account_email{padding-top:22px}
+.account_email h4{padding-bottom:30px;font-size:20px;font-weight:bold}
+.account_email input{width:100%;max-width:356px;border:none;border-bottom:2px solid #d2d2d2;line-height:1;font-size:20px;padding: 5px 0;}
+.account_email .inputbox1{padding-bottom:39px}
+.account_btns{margin-left:-6px;padding-top:37px}
+.account_btns .btn{width:172px;margin:3px 6px;font-size:16px;line-height:44px;font-weight:bold}
+.account_btns .btn.back{width:235px}
+.account_btns .btn.type5{width: 200px;}
+
+/* terms_section */
+.terms_section{padding-bottom:60px}
+.terms_section.hide_header{padding-top: 120px;}
+@media (max-width: 1200px){
+	.terms_section.hide_header{padding-top: 60px;}
+}
+.terms_section_header{padding-bottom: 20px;color: #fff;background-color: #282828;padding-top: 190px;border-bottom:1px solid #d2d2d2;line-height:54px;box-sizing:border-box;}
+.terms_section_header .title{float:left}
+.terms_section_header .title h2{font-size:54px;font-weight:bold}
+.terms_section_header .title p{font-size: 16px;line-height: 1.4;padding-top: 15px;padding-left: 7px;}
+.terms_section_header>.warp{max-width: 1200px;margin: auto;}
+.terms_section_header .terms_date_select{float:right}
+.terms_section .terms_info{white-space: break-spaces;word-break: keep-all;}
+.terms_section .terms_info>h2{font-weight: 600;font-size: 1.4em;}
+.terms_section .terms_info>h3{font-weight: 600;font-size: 1.2em;}
+.terms_section .terms_info>i{padding-left: 2em;font-style:normal;display: block;}
+.terms_section .terms_info a{color: #15e732;}
+.terms_section .terms_info table{font-size: 1em;margin:10px;text-align:center;}
+.terms_section .terms_info table td{border:1px solid #fff;padding: 0.3em;}
+.terms_section .termsArea{}
+.terms_section .termsArea .terms_title{font-size: 20px;font-weight: 600;margin: 15px 0 5px 0;}
+.terms_section .termsArea .terms_info{overflow: auto;height: calc(50vh - 200px);border: 1px solid #444;font-size:14px;line-height:1.5;color: #e9e9e9;white-space:pre-line;padding: 1em;}
+.terms_section .termsArea .terms_info strong{font-weight:bold;color:#343434;display: inline-block;margin-top: 20px;margin-bottom: 10px;}
+.terms_section .termsArea .terms_info strong:first-child{margin-top: 0;}
+.terms_section .termsArea .terms_info a{color: #2196f3;}
+.terms_section .termsArea .terms_info h2{font-size: 1.2em;font-weight: 600;color: #fff;margin-block: -1em;}
+.terms_section .termsArea .terms_info h3{font-size: 1.1em;font-weight: 600;color: #fff;margin-block: -0.6em;}
+.terms_section .termsArea .terms_info h4{color: #fff;margin-block: -1em;}
+.terms_section.hide_header .termsArea .terms_info{height: calc(50vh - 60px);}
+.terms_date_select .bootstrap-select{line-height:36px}
+.terms_date_select .dropdown-toggle{width:160px;height:36px;border:1px solid #16ad59;font-weight:bold;font-size:16px;font-weight:bold;color:#16ad59;text-align:center;outline:none}
+.terms_date_select .bootstrap-select.btn-group .dropdown-menu.inner{margin-top:4px;background-color:#50df6e;background-color:rgba(36,215,74,0.8)}
+.terms_date_select .bootstrap-select.btn-group .dropdown-menu li{border-top:1px solid #96eca8}
+.terms_date_select .bootstrap-select.btn-group .dropdown-menu li:first-child{border-top:none}
+.terms_date_select .bootstrap-select.btn-group .dropdown-menu li a{display:block;height:36px;line-height:36px;font-size:16px;font-weight:bold;color:#fff;text-align:center;outline:none}
+
+/* layer_popup */
+.layer_wrap{overflow:hidden;overflow-y:auto;position:fixed;top:0;right:0;left:0;bottom:0;z-index:5;padding:0;box-sizing:border-box;background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg_menu_dim.png) repeat 0 0;}
+.layer_wrap.on{display: block;}
+.layer_wrap .popup{position:relative;width:480px;height:620px;margin:0 auto;padding:44px 62px;background-color:#fff;box-sizing:border-box}
+.layer_wrap .vm_inner.browser-alert .mask{width:100%;height:100%;left:0;top:0;background: rgba(0, 0, 0, 0.5);position: absolute;}
+.layer_wrap .vm_inner.browser-alert .popup{position:absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);width: 100%;min-height: 270px;max-height: 350px;max-width: 370px;padding: 30px;word-break: keep-all;}
+.layer_wrap .vm_inner.browser-alert .popup_contents>p{margin-bottom:10px;}
+.layer_wrap .vm_inner.browser-alert .popup_contents>p>a{color:#3c62c0;text-decoration:underline;}
+.layer_wrap .vm_inner.browser-alert .popup .popup_footer{text-align:center;}
+.layer_wrap .vm_inner.browser-alert .popup .popup_footer>.btn{width:10em;cursor: pointer;}
+.layer_wrap .popup .inputbox input{width:100%;height:39px;border:none;border-bottom:2px solid #d2d2d2;line-height:39px;font-size:20px;box-sizing:border-box;position: relative;transition: 0.3s ease;transition-property: border-color;}
+.layer_wrap .popup .inputbox input + label{position: absolute;width: 100%;color: #999;left: 0;top: 50%;transform: translateY(-50%);transition: 0.3s ease;transition-property: font-size;}
+.layer_wrap .popup .inputbox input:focus{border-color: #24d74a;}
+.layer_wrap .popup .inputbox input.not_emtpy + label,
+.layer_wrap .popup .inputbox input:focus + label{top: -4px;font-size: 0.8em;}
+.layer_wrap .popup .btn{width:100%;height: 42px;font-size:15px;font-weight:bold;line-height: 42px;}
+.layer_wrap .popup_header{position:relative}
+.layer_wrap .popup_header h2{line-height:41px;font-size:24px;font-weight:bold}
+.layer_wrap .popup_header .btn_pop_close{display:inline-block;position:absolute;top:50%;right:0;width:16px;height:16px;margin-top:-8px;background:url(http://golfwith.golfzon.com/web/images/icon_close.png) no-repeat 0 0;background-size:16px 16px;-webkit-background-size:16px 16px;filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_pop_close.png', sizingMethod='scale')}
+.layer_wrap .popup_footer{position:absolute;left:0;bottom: 30px;width:100%;padding:0 62px}
+.layer_wrap .popup_footer .btns{margin-left:-12px;text-align:center}
+.layer_wrap .popup_footer .btns .btn{width:172px;margin-left:12px;line-height:44px;font-size:16px;font-weight:bold}
+.layer_wrap .popup_contents{padding-top:30px;}
+.layer_wrap .popup_contents .txt1{font-size:20px;line-height:32px;color:#808080;word-break: keep-all;}
+.layer_wrap .inputbox{position: relative;}
+/* .layer_wrap .inputbox .error {position: relative;top: 100%;left:0;width: 100%;margin-top: -2px;padding-top: 2px;color: #f45d13;font-size: 15px;} */
+/* deleted_popup */
+.layer_wrap .deleted_popup{padding-bottom:120px}
+
+/* login_popup */
+.layer_wrap .login_popup{height: 706px;padding-bottom: 145px;}
+.layer_wrap .signup_popup {padding-bottom: 145px;}
+.layer_wrap .login_popup .popup_footer,.layer_wrap .signup_popup .popup_footer{padding: 0;bottom: 38px;text-align: center;color: #808080;font-size: 16px;line-height: 23px;}
+.login_popup .inputbox>input{outline: none;}
+.login_popup .rememberId{padding-bottom: 10px;}
+.login_popup .rememberId>input{display: none;}
+.login_popup .rememberId>input + label{position: relative;line-height: 25px;}
+.login_popup .rememberId>input + label::before{content: '';display: inline-block;width: 20px;height: 20px;border-radius: 50%;margin-right: 10px;position: relative;top: 5px;background-image: url(http://golfwith.golfzon.com/web/images/icon_checkbox_nor.png);background-size: contain;}
+.login_popup .rememberId>input:checked + label::before{background-image: url(http://golfwith.golfzon.com/web/images/icon_checkbox_pre.png);}
+.login_popup .login_btns{padding-bottom:30px}
+.login_popup .login_btns .btn{margin:6px 0;height: 44px;}
+.login_popup .login_btns .btn.type7{line-height:42px;}
+.login_popup .login_btns .btn span{margin:0 4px;vertical-align:middle}
+.login_popup .login_btns .btn.facebook{color:#3c62c0}
+.login_popup .etcarea .btn{margin-bottom:14px;height: 44px;}
+.login_popup .etcarea .forgotpass{line-height:34px}
+.login_popup .etcarea .forgotpass span{margin-right:27px;font-size:20px;color:#808080}
+.login_popup .etcarea .forgotpass a{border-bottom:1px solid #16ad59;font-weight:bold;font-size:20px;color:#16ad59}
+.login_popup #passwordErr,
+.login_popup #usrIdErr{padding-top: 3px;}
+.login_popup .inputbox span.error {position: relative;top: 2px;left:0;width: 100%;margin-top: 0px;padding-top: 0px;color: #f45d13;font-size: 15px;}
+.login_popup .inputbox input.error {border-bottom: 2px solid #f45d13;}
+
+.login_popup #passwordErr.error:before,
+.login_popup #usrIdErr.error:before{content: '';display: inline-block;width: 17px;height: 17px;margin-right: 5px;background: url(http://golfwith.golfzon.com/web/images/icon_error.png);background-size: contain;position: relative;top: 2px;}
+.ico_facebook2{display:inline-block;width:24px;height:24px;margin-right: 5px;background:url(http://golfwith.golfzon.com/web/images/icon_facebook_login.png) no-repeat 50% 50%;background-size:contain;vertical-align:middle;position: relative;top: -3%;}
+.ico_google{display:inline-block;width:24px;height:24px;margin-right: 5px;background:url(http://golfwith.golfzon.com/web/images/icon_google_login.png) no-repeat 50% 50%;background-size:contain;vertical-align:middle;}
+.ico_naver{display:inline-block;width: 24px;height: 24px;margin-right: 5px;background: url(http://golfwith.golfzon.com/web/images/icn_naver_login.png) no-repeat;background-size:contain;vertical-align:middle;top: -3%;position: relative;}
+.ico_email{font-weight: bold;font-size: 18px;line-height: 12px;margin-right: 2px;}
+
+.layer_wrap .popup.login_form #naver_id_login{display:none;}
+.layer_wrap .popup.login_form .btn{font-size: 14px;}
+.layer_wrap .popup.login_form .btn.email{margin-bottom: 0.5em;}
+.layer_wrap .popup.login_form .google_login .btn{font-size: 17px;font-weight: bold;}
+.layer_wrap .login_form .inputbox input{outline: none;}
+.layer_wrap .login_form .popup_header h2{font-size: 32px;}
+.layer_wrap .login_form .btn_pop_close{background-image: url(http://golfwith.golfzon.com/web/images/icon_close.png);}
+.layer_wrap .login_form{height: 706px;padding-bottom: 145px;font-family: 'NotoSansKR', sans-serif;text-align: left;}
+.layer_wrap .login_form .inputarea{padding-top:6px;padding-bottom:15px}
+.layer_wrap .login_form .inputbox{margin-bottom: 36px;}
+.layer_wrap .login_form .inputbox:last-child{margin-bottom: 20px;}
+.layer_wrap .login_form .desc,
+.layer_wrap .login_form .desc2{margin: 15px 0;word-break: keep-all;font-size: 14px;color: #575757;font-size: 16px;}
+.layer_wrap .login_form.ja .desc,
+.layer_wrap .login_form.ja .desc2{word-break: normal;}
+.layer_wrap .login_form .other_options{margin-bottom:10px;}
+.layer_wrap .login_form .other_options .naver_faq{color:#03cf5d;}
+.layer_wrap .login_form .division{border-bottom: 1px solid #ccc;margin: 20px 0;position: relative;}
+.layer_wrap .login_form .division>span{position: absolute;display: inline-block;background: #fff;left: 50%;top: 50%;transform: translate(-50%, -50%);padding: 0 10px;color: #999;}
+.layer_wrap .login_form .login_btns-flat.google>a{background-color: #3c62c0;border: none;color: #fff;}
+.layer_wrap .login_form .login_btns-split>a{width: calc(50% - 3px);}
+.layer_wrap .login_form .login_btns-flat,
+.layer_wrap .login_form .login_btns-split{margin-bottom: 5px;}
+.layer_wrap .login_form .btn{font-weight: normal;}
+.layer_wrap .login_form .other_options>div{display: inline-block;}
+.layer_wrap .login_form .other_options>div>a{text-decoration: underline;font-size: 14px;color: #343434;}
+.layer_wrap .login_form #agreePrivacyPolicy{text-align: center;}
+.layer_wrap .login_form #agreePrivacyPolicy>a{text-decoration: underline;color: #aaa;}
+.layer_wrap .login_form #agreePrivacyPolicy>a:not(:last-of-type){margin-right: 30px;}
+.layer_wrap .login_popup .login_btns>a,
+.layer_wrap .signup_popup .login_btns>a{width: 100%;}
+.layer_wrap .login_popup .other_options,
+.layer_wrap .signup_popup .other_options{text-align: center;}
+.layer_wrap .login_popup .other_options>div>a:not(:last-child),
+.layer_wrap .signup_popup .other_options>div>a:not(:last-child){margin-right: 20px;}
+.layer_wrap .signup_popup #agreeOlder{display: none;}
+.layer_wrap .signup_popup #agreeOlder + label{padding-left: 25px;position: relative;color: #343434;display: block;width: calc(100% - 40px);word-break: keep-all;transform: none;top: 0;}
+.layer_wrap .signup_popup #agreeOlder + label::before{background-image: url(http://golfwith.golfzon.com/web/images/icon_checkbox_nor.png);background-size: contain;background-repeat: no-repeat;width: 20px;height: 20px;position: absolute;left: 0;top: 0;content:'';}
+.layer_wrap .signup_popup #agreeOlder:checked + label::before{background-image: url(http://golfwith.golfzon.com/web/images/icon_checkbox_pre.png);}
+.layer_wrap .signup_popup #agreeOlder + label>.agree_title{
+	display: block;
+}
+.layer_wrap .signup_popup #agreeOlder + label>.agree_desc{
+	display: block;
+	font-size: 0.8em;
+}
+
+.login_form .other_options .find_password_desc{display: none;}
+.login_form.en .login_btns-split>a{width: 100%;margin: 0;}
+.login_form.en .login_btns-split>a:not(:last-child){margin-bottom:5px;}
+.login_form.en .desc2.ko,
+.login_form.en .other_options.ko{display:none;}
+.login_form.en .other_options{margin-top: 10px;}
+.login_form.en .other_options>div{display: block;	text-align: left;}
+.login_form.en .other_options>div:not(:last-of-type){margin-bottom: 5px;}
+.login_form.en .other_options .find_password_desc{display: inline-block;}
+.login_form.en .other_options>div>a{color: #24d74a;}
+
+.vm>.alert_mask{position: fixed; width: 100%; height: 100%;background-color: rgba(0, 0, 0, 0.5);left: 0;top: 0;display: none;}
+.vm>.alert{position: fixed;background: #fff;left: 50%;top: 50%;transform: translate(-50%, -50%);padding: 1em;max-width: 300px;width: 100%;word-break: keep-all;display: none;}
+.vm>.alert>.text{font-size: 1em;}
+.vm>.alert>.tip{font-size: 0.9em;}
+.vm>.alert>div{text-align: center;}
+.vm>.alert>div>.close{border: 1px solid #ddd;border-radius: 2em;width: 8em;padding: 0.5em 0;background-color: #fff;cursor: pointer;}
+
+/* forgotpass_popup */
+.layer_wrap .deleted_popup{padding-bottom:120px}
+.forgotpass_popup .inputarea{padding-top:30px}
+
+/* signup_popup */
+.layer_wrap .signup_popup{padding-bottom:120px}
+.signup_popup .etcarea{padding-top: 16px;}
+.signup_popup .etcarea>.btn{background-color: #d2d2d2;}
+.signup_popup .etcarea>.btn.enable{background-color: #343434;}
+.signup_popup .inputarea{padding-top:6px;padding-bottom:34px}
+.signup_popup .inputbox{margin-top:39px}
+.signup_popup .inputbox:first-child{margin-top:0}
+.signup_popup .inputbox .error{font-size: 14px;}
+
+.signup_popup .inputbox span.error {position: relative;top: 100%;left:0;width: 100%;margin-top: -2px;padding-top: 2px;color: #f45d13;font-size: 15px;}
+.signup_popup .inputbox input.error {border-bottom: 2px solid #f45d13;}
+
+
+/* My_Scorecard_section */
+#wrap.type3 #header{background-color: #0cbc5a;}
+#wrap.type3 #header .header_inner{position: relative;}
+#wrap.type3 #header .profile{position: relative;vertical-align: middle;padding-left: 54px;padding-right: 100px;}
+#wrap.type3 #header .profile .profileimg{position: absolute;top: 50%;left: 0;margin-top: -20px;display: block;width: 40px;height: 40px;border-radius: 999px;background-repeat: no-repeat;background-position: 50% 50%;-webkit-background-size: cover;background-size: cover;font-size: 0;text-indent: -99999px;}
+#wrap.type3 #header .profile .profilename{display: inline-block;color: #fff;font-size: 18px;vertical-align: middle;line-height: 1.4;}
+#wrap.type3 #header .login_area{position: absolute;top: 0;right: 35px;}
+#wrap.type3 #header .login_area .btn{border-color: #6dd79c;color: #def3e4;width: 96px;height: 36px;font-weight: bold;}
+.My_Scorecard_section {padding-bottom: 60px;}
+.My_Scorecard_header{background-color: #0dc860;height:160px;padding-top:60px;line-height:54px;box-sizing:border-box}
+.My_Scorecard_header .title{float:left}
+.My_Scorecard_header .title h2{font-size:54px;font-weight:bold;color: #fff;}
+.My_Scorecard_header .info{float:right;line-height: 1;padding-top: 30px;}
+.My_Scorecard_header .info > p{float:left;font-size:18px;color:#fff}
+.My_Scorecard_header .info > p strong{color: #fff947;margin-left: 10px;}
+.My_Scorecard_section table.type1 .score{text-align: right;padding-right: 15px;font-size: 44px;color: #0dc860;width: 150px;table-layout: fixed;}
+.My_Scorecard_section table.type1 .name1{font-size: 24px;color: #191919;}
+.My_Scorecard_section table.type1 .name2{font-size: 23px;color: #747474;}
+.My_Scorecard_section table.type1 .My_Scorecard_info {position: relative;padding-left: 246px;}
+.My_Scorecard_section table.type1 .date{font-size: 18px;color: #959595;position: absolute;top: 0;left: 0;}
+.My_Scorecard_list .btn_more{display: block;text-align: center;line-height: 2;background-color: #343434;font-weight: bold;font-size: 16px;color: #fff;}
+.my_scorecard_view{padding-bottom: 60px;}
+.my_scorecard_view .m_table{display: none;}
+table.type1{width: 100%;}
+table.type1 th,table.type1 td{padding: 32px 0;line-height: 31px;border-bottom: 2px solid #eeeeee;}
+table.type2{width: 100%;}
+/* my_scorecard_view */
+.my_scorecard_view .course_wrap{margin-bottom: 20px;}
+.my_scorecard_view .m_table h4{font-size: 16px;font-weight: bold;line-height: 1.4;margin-top: 15px;margin-bottom: 5px;}
+.my_scorecard_view .m_table .table_wrap{margin-bottom: 15px;}
+table.type2 th,table.type2 td{text-align: center;border: 2px solid #ececec;font-size: 17px;height: 50px;}
+table.type2 th{color: #545454;background-color: #f8f8f8;}
+table.type2 td{color: #545454;background-color: #ffffff;font-weight: bold;}
+table.type2 th:first-child{width: 90px;font-size: 16px;}
+table.type2 .out,table.type2 .in,table.type2 .total{width: 90px;}
+table.type2 tbody .out,table.type2 tbody .in,table.type2 tbody .total,
+table.type2 tbody .out,table.type2 tbody .in,table.type2 tbody .total{font-weight: bold;}
+table.type2 tbody .total{color: #0dc860;}
+table.type2 .course th{font-size: 16px;}
+table.type2 .course .valley,table.type2 .course .pampas,table.type2 .course .out,table.type2 .course .in,table.type2 .course .total{font-weight: bold;}
+table.type3 {table-layout:auto;}
+table.type3 th,table.type3 td{border: 1px solid #eee;font-size: 14px;padding: 5px;line-height: 1.7;}
+table.type3 th{font-weight: bold;text-align: center;}
+.my_scorecard_sub_header{margin-top: 40px;margin-bottom: 17px;padding-right: 160px;line-height: 1.4;}
+.my_scorecard_sub_header h3{font-size: 30px;color: #191919;}
+.my_scorecard_sub_header .name{font-size: 20px;color: #191919;padding-bottom: 10px;}
+.my_scorecard_sub_header .date{font-size: 18px;color: #8a8a8a;}
+.my_scorecard_sub_header .score{position: absolute;top: 0;right: 36px;padding-right: 10px;font-size: 80px;line-height: 108px;color: #0dc860;}
+
+/*160808 수정*/
+#wrap.type3 #header .login_area .btn{border-color: #6dd79c;color: #def3e4;width: 96px;height: 36px;font-weight: bold;}
+#wrap.type3 #header .btn_close{position: absolute;top: 0;right: 35px;}
+#wrap.type3 #header .btn_close a{display:inline-block;width:28px;height:28px;background:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_close2.png) no-repeat 50% 50%;background-size:26px 26px;-webkit-background-size:26px 26px;vertical-align: middle;margin-top: -6px;}
+
+/*160902 수정*/
+table.type1 td.data_none{border: none;text-align: center;font-size: 26px;color: #808080;height: 320px;}
+
+/* Smart_Caddie */
+#wrap.Smart_Caddie {min-width: 1330px;}
+#wrap.Smart_Caddie img{vertical-align: top;}
+#wrap.Smart_Caddie #header{background-color: #000;}
+#wrap.Smart_Caddie .contBox{background-color: #fff;text-align: center;padding-bottom: 60px;}
+#wrap.Smart_Caddie .contBox.black{background-color: #000;}
+#wrap.Smart_Caddie .contBox .container_inner{padding: 0;padding-top: 100px;max-width: 1330px;}
+#wrap.Smart_Caddie .contBox .tit{height: 90px;margin-bottom: 13px;}
+#wrap.Smart_Caddie .contBox .sub_txt2{color: #888888;font-size: 30px;line-height: 1.5;font-family: arial,sans-serif;}
+#wrap.Smart_Caddie .contBox .sub_txt3{padding-top: 60px;margin: 0 100px;border-top: 1px solid #333333;color: #888888;font-size: 30px;line-height: 1.5;font-family: arial,sans-serif;}
+#wrap.Smart_Caddie .contBox .visual_cont{display: inline-block;padding-top: 80px;padding-bottom: 40px;}
+#wrap.Smart_Caddie .contBox .visual_cont li{float: left;width: 426px;margin-left: 24px;}
+#wrap.Smart_Caddie .contBox .visual_cont li:first-child{margin: 0;}
+#wrap.Smart_Caddie .contBox .visual_ani {display: none;padding: 0 16.72%;}
+#wrap.Smart_Caddie .contBox .visual_ani img{width: 100%;}
+#wrap.Smart_Caddie .contBox .btns{margin-top: 67px;padding-bottom: 164px;}
+#wrap.Smart_Caddie .contBox .btn{display: inline-block;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{position: relative;height: 520px;padding-top: 148px;text-align: left;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_watch2.png) no-repeat 945px 98px;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_tit{padding-left: 123px;margin-bottom: 30px;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .tit{padding-left: 121px;margin-bottom: 34px;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_txt{padding-left: 123px;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_wrap{position: absolute;top: 41px;right: 225px;z-index: 1;width: 379px;height: 560px;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch{position: relative;z-index: 1;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch img{width: 100%;}
+#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_inner{position: absolute;top: 130px;left: 61px;}
+#wrap.Smart_Caddie .contBox.Golf_Courses_cont{padding-top: 44px;margin-top: -80px;}
+#wrap.Smart_Caddie .contBox.Golf_Courses_cont .tit img:first-child{margin-right: 11px;}
+#wrap.Smart_Caddie .jslider{display: none;}
+.jslider{margin: 0 auto;}
+.jslider .jssorb05{position: absolute;}
+.jslider .jssorb05 > div{background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_navigator.png) no-repeat 0 100%;background-size: 9px 18px;}
+.jslider .jssorb05 > div.av{background-position: 0 0;}
+.jslider .jssora22l{position: absolute;left: 9px;top: 83px !important;padding: 10px;}
+.jslider .jssora22r{position: absolute;right: 9px;top: 83px !important;padding: 10px;}
+.jslider .jssora22l img,
+.jslider .jssora22r img{width: 12px;}
+
+/*SmartCaddieV1 170303*/
+/*#wrap.SmartCaddieV1 {min-width: 1330px;}*/
+#wrap.SmartCaddieV1 img{vertical-align: top;}
+#wrap.SmartCaddieV1 .sep{height:10px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group{margin: 0 auto;padding:20px 36px 0 36px;max-width:1200px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .logo_title img{height:28px;object-fit: contain;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .title img{height:101px;object-fit: contain;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .txt {line-height: 2.34;color: #615149;font-style: italic;font-size: 18px;opacity: 0.8;filter: alpha(opacity=80);}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .txt {line-height: 2.14;color: #000000;font-style: italic;font-size: 20px;}
+
+
+#wrap.SmartCaddieV1 .ServiceFeatures .Smart_Caddie_section{height: 929px;padding-top: 118px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .title_group{text-align: center;padding:50px;background-size:cover;background-position:right;}
+#wrap.SmartCaddieV1 .ServiceFeatures .title_group .txt{font-size: 26px;line-height: 1.5;color: #ffffff;margin: 0 auto;font-family: 'SpoqaHanSansNeo-Medium';}
+#wrap.SmartCaddieV1 .ServiceFeatures .title_group .attention{font-size: 16px;color: #ffffff;margin: 10px auto;font-family: 'SpoqaHanSansNeo-Regular';line-height: 1.6;}
+#wrap.SmartCaddieV1 .ServiceFeatures .title_group>i{display: inline-block;padding: 20px 0 0 0;width: 50vw;max-width:500px;height: 80px;margin-top:10px;background-image: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/img-smartcaddie-info-title.png);background-size: contain;background-repeat: no-repeat;background-position: center;}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .title_group>i{background-image: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/img-smartcaddie-info-title_ko.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li{min-height: 155px;margin-bottom: 53px;position: relative;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .ib{display: block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .ib a{color: #3c74a9;font-style: italic;text-decoration: underline;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .ico_marker{position: absolute;top: 0;left: 0;width: 148px;height: 148px;background-position: 0 0;background-repeat: no-repeat;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list a{color: #888888;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list a .unbar{color: #3c74a9;text-decoration: underline;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .ico-mail{width: 28px;height: 18px;display: inline-block;font-size: 0;line-height: 0;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-mail.png) no-repeat 0 0;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .title{margin-bottom: 10px;font-size: 27px; font-weight: bold; line-height: 1.2;color: #fff;position: relative;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item.new .title::before{content: '';position: absolute;left: -39px;top: -22px;background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icon_new.png) no-repeat;background-size: contain;width: 45px;height: 30px;}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list .title{letter-spacing: -1.7px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt,
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link a{font-size: 15px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt .attention{font-size:15px;color: #ccc;text-indent:-1em;padding-left:1em;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt .attention::before{content:'※ ';}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list .txt,
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list .link a{letter-spacing: -1px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service_wrap{background: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-new.png');}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service{max-width: 940px;margin: auto;padding: 50px 0;}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list{display: grid;margin-top:30px;align-items: center;grid-template-columns: repeat(2, 1fr);}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div{display: flex;justify-content: center;flex-direction: column;margin-bottom: 20px;padding-left: 190px;height: 180px;background-size:contain;background-repeat:no-repeat;background-position:left;}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div:nth-child(1){background-image:url(http://golfwith.golfzon.com/web/images/new/smartcaddie/new-service-01.png)}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .new_service .service_list>div:nth-child(1){background-image:url(http://golfwith.golfzon.com/web/images/new/smartcaddie/new-service-01_ko.png)}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div:nth-child(2){background-image:url(http://golfwith.golfzon.com/web/images/new/smartcaddie/new-service-02.png)}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div:nth-child(3){background-image:url(http://golfwith.golfzon.com/web/images/new/smartcaddie/new-service-03.png);grid-column: 1 / 3;}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .new_service .service_list>div:nth-child(3){background-image:url(http://golfwith.golfzon.com/web/images/new/smartcaddie/new-service-03_ko.png);grid-column: 1 / 3;}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .number{color: #000;font-size: 22px;font-family: 'SpoqaHanSansNeo-Bold';margin-bottom: 10px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .title,
+#wrap.SmartCaddieV1 .ServiceFeatures .new_service .txt{color: #000;}
+
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt .jp,#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link a .jp{font-size: 16px;}
+
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link{padding-top: 6px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link a{text-decoration: underline;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt.type2{padding-top: 20px;line-height: 1.2;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item:nth-child(1) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartCaddie-img-courses.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item:nth-child(2) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartCaddie-img-teebox.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item:nth-child(3) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartCaddie-img-elevation.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item:nth-child(4) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartCaddie-img-scorecard.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item:nth-child(5) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartCaddie-img-courseview_170906.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item:nth-child(6) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img-tracking.png);}
+#wrap.SmartCaddieV1 .PlayRound {background-color: #2d2d30;}
+#wrap.SmartCaddieV1 .EasyToUse {padding-top: 113px;padding-bottom: 80px; background-color:#ebefe9;}
+#wrap.SmartCaddieV1 .EasyToUse .title_group{padding-bottom: 44px;text-align: left;}
+#wrap.SmartCaddieV1 .EasyToUse .title_group .tit{margin-bottom: 26px;color: #000000;font-size: 40px;font-weight: bold;}
+#wrap.SmartCaddieV1 .EasyToUse .title_group .sub_tit{color: #000000;line-height: 1.5;font-size: 26px;}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont{display: inline-block;padding: 0 1px;margin: 0 auto;}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .title{margin-top: 20px;margin-bottom: 10px;color: #18bd2f;font-size: 25px; letter-spacing: -0.6px;}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item{height: 567px; float: left;width: 350px; margin-right:38px;text-align: center; background-color: #f0f4ee;  box-shadow: 1.1px 2.8px 10px 0 rgba(0, 0, 0, 0.15);}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item3{margin-right:0px;}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item .img{margin: 0 auto;width: 260px;height: 255px;background-repeat: no-repeat;background-position: 0 0; background-size: contain;}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item1 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/01_index_180308.gif);}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item2 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/02_hole_change_180404.gif);}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item3 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/03_setting_180404.gif);}
+#wrap.SmartCaddieV1.jp .EasyToUse .visual_cont .item.item1 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/01_index_jp_180404.gif);}
+#wrap.SmartCaddieV1.jp .EasyToUse .visual_cont .item.item2 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/02_hole_change_jp_180404.gif);}
+#wrap.SmartCaddieV1.jp .EasyToUse .visual_cont .item.item3 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/03_setting_jp_180404.gif);}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .txt{color: #000000;font-size: 14px;line-height: 28px;letter-spacing: -0.5px; padding:0px 20px;}
+#wrap.SmartCaddieV1 .EasyToUse .visual_cont .ib{display: inline;}
+#wrap.SmartCaddieV1 .EasyToUse .slider {display: none;}
+.slick-dots{position: relative;text-align: center;font-size: 0;line-height: 0;z-index: 2;}
+.slick-dots li{display: inline-block;}
+.slick-dots li button{outline: none;font-size: 0;list-style: none;background: none;border: none;display: inline-block;width: 18px;height: 18px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/rolling-off.png) no-repeat 50% 50%;margin: 0 7px;padding: 0;}
+.slick-dots .slick-active button{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/rolling-on.png);}
+.slick-arrow{outline: none;background: none;border: none;z-index: 2;position: absolute;top: 132px;width: 25px;height: 55px;background-repeat: no-repeat;background-position: 50% 50%;font-size: 0;text-indent: -9999px;cursor:pointer;}
+.slick-prev{left: 38px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-prev.png);}
+.slick-next{right: 38px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-next.png);}
+#wrap.SmartCaddieV1 .HelpWatch{padding-top: 100px;padding-bottom: 90px; text-align: center; background-color: #383838;}
+#wrap.SmartCaddieV1 .HelpWatch .tit{font-size: 25px;color: #ffffff;line-height: 40px; font-weight: 400;}
+#wrap.SmartCaddieV1 .HelpWatch .btns{text-align: center;}
+#wrap.SmartCaddieV1:not([lang="ko"]) .HelpWatch .btns.call_center{display:none;}
+
+#wrap.SmartCaddieV1 .HelpWatch .btn{font-size: 27px;color: #18bd2f; font-weight: 400;top:4px;}
+#wrap.SmartCaddieV1 .HelpWatch .btn .ico-email2{width: 28px;height: 18px;display: inline-block;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img-mail-2.png) no-repeat 0 0;}
+#wrap.SmartCaddieV1 .HelpWatch .btn span{vertical-align: middle;}
+#wrap.SmartCaddieV1 .HelpWatch .btn.img{background: url(http://golfwith.golfzon.com/web/images/new/ic-letter.png) no-repeat;background-size: 33px 21px;;background-position-y: center;padding: 0 0 0 40px;position: relative;box-sizing: content-box;}
+
+/*1809 LTH*/
+#wrap.SmartCaddieV1{font-weight: 500; word-break:keep-all;
+	white-space:-moz-pre-wrap;
+	/*white-space:pre-wrap;*/
+	white-space:-o-pre-wrap;
+	word-wrap:break-word;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual{padding: 230px 0 80px;margin-top: -102px;background:url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/img-main-bg.jpg') no-repeat 50%;background-size:cover;margin: auto;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .title>span{font-size: 38px;color: #fff;font-weight: bold;position: relative;display: inline-block;left: 10px;bottom: -25px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .desc{font-size: 20px;color: #fff;position: relative;display: inline-block;margin-top: 10px;line-height: 1.8;letter-spacing: -1px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download{margin-top: 10px;display: flex;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download>div{display:inline-block;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download>.store{margin-right:10px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .google_store{display: inline-block;width: 210px;height: 80px;background: url(http://golfwith.golfzon.com/web/images/btn_main_googleplay.png)  no-repeat;background-size: contain;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download_guide{width: 23em;text-align: left;cursor: pointer;;background-color: #15e732;position: relative;border-radius: 2em;border: none;color: #000;padding: 0.8em 2.4em 0.8em 1.2em;font-size: 15px;font-weight: bold;display: block;margin-bottom: 10px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download_guide.black{border: 1px solid #15e732;background-color: #000;color: #15e732;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download_guide::after{content: '';width: 1em;height: 1em;display: inline-block;position: absolute;right: 1em;top:50%;transform: translateY(-50%);background: url(http://golfwith.golfzon.com/web/images/ico_guide_arrow.png) no-repeat;background-size: contain;background-position: center center;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download_guide.black::after{content: '';width: 1em;height: 1em;display: inline-block;position: absolute;right: 1em;top:50%;transform: translateY(-50%);background: url(http://golfwith.golfzon.com/web/images/icn_arrow_green22.png) no-repeat;background-size: contain;background-position: center center;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .txt{font-size:30px; font-weight: 400; color:#ffffff;line-height: 1.2em;letter-spacing: -1px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .txt .point{color:#15e732;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a {margin-right:8px; display: inline-block; vertical-align: top;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a span{display:block; width:243px; height:58px; background-repeat: no-repeat; background-size: contain; font-size:0px;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a span.eng{background-image: url('http://golfwith.golfzon.com/web/images/new/btn-user-guide-eng.png'); }
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a span.kor{background-image: url('http://golfwith.golfzon.com/web/images/new/btn-user-guide-kor.png'); }
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a:nth-child(2) span.kor{position: relative;left:-120px; }
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a span.jpn{background-image: url('http://golfwith.golfzon.com/web/images/new/btn-user-guide-jpn.png'); }
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a.premium span{width:335px; height:67px; background-image: url('http://golfwith.golfzon.com/web/images/new/btn-premium-membership.png');left: -5px;position: relative;}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a.premium span.eng{background-image: url('http://golfwith.golfzon.com/web/images/new/btn-premium-membership_en.png');}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a.premium span.kor{background-image: url('http://golfwith.golfzon.com/web/images/new/btn-premium-membership_ko.png');}
+#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a.premium span.jpn{background-image: url('http://golfwith.golfzon.com/web/images/new/btn-premium-membership_jp.png');}
+
+#wrap.SmartCaddieV1 .ServiceFeatures .container_inner{position:relative;margin:0 auto;padding:0px;box-sizing:border-box}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li{display: flex; flex-direction: column; justify-content: center; min-height: 400px; margin:0px; background-repeat: no-repeat;background-position-x: center; }
+#wrap.SmartCaddieV1 .ServiceFeatures .title_group{background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0)) no-repeat, url(http://golfwith.golfzon.com/web/images/new/bg-00.jpg) no-repeat;background-size: cover;background-position: 100% 80%;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide{background-color: #282828;color: #fff;font-size: 14px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide>.wrap{max-width: 1000px;margin:auto;text-align: center;padding: 30px 0 60px 0;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide>.wrap>.txt{font-size: 24px;font-weight: bold;text-align: left;margin-bottom: 20px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .row{	display: flex;align-items: flex-start;justify-content: center;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .row:nth-child(2){margin-bottom: 20px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .row:nth-child(2) .step>.guide_image{height: 200px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step{display: inline-block;width: 393px;max-width: 100%;;text-align: center;word-break: keep-all;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.next_step{margin-left: 100px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.guide_image{height: 270px;position: relative;max-width: 190px;margin: 0 auto 20px auto;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.guide_image.position>img{position: relative;left: -13px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.watch_face>.guide_image>img{height: 200px;margin-top: 40px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.guide_image>img{height: 100%;width: 100%;object-fit: contain;position: relative;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.guide_image>i{height: 100%;width: 100%;object-fit: contain;position: relative;display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.step3>.guide_image>i{background-image: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/guide-step-03.png);max-height: 200px;background-size: contain;background-repeat: no-repeat;background-position: center;}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .setting_guide .step.step3>.guide_image>i{background-image: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/guide-step-03_ko.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.step4>.guide_image>i{background-image: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/guide-step-04.png);max-height: 270px;background-size: contain;background-repeat: no-repeat;background-position: center;}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .setting_guide .step.step4>.guide_image>i{background-image: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/guide-step-04_ko.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.next_step>.guide_image::before{width: 46px;height: 22px;left: -110px;top: calc(50% - 5px);background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icn_setting_arrow.png) no-repeat;background-size: contain;content: '';position: absolute;display: block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .row:nth-child(3) .step.next_step>.guide_image::before{left: -100px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.singup{padding: 12px 45px 12px 25px;background: #15e732;font-weight: bold;display: inline-block;margin-top: 20px;border-radius: 26px;position: relative;color: #000;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.singup::before,
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.singup::after{content: '';position: absolute;display: block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.singup::before{width: 12px;height: 2px;background-color: #000;right: 20px;top: calc(50% - 1px);}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step>.singup::after{width: 6px;height: 6px;border-top: 2px solid #000;border-right: 2px solid #000;transform: rotateZ(45deg);right: 20px;top: calc(50% - 4px);}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .icon_smartcaddie{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icn_appicon.png) no-repeat;display: inline-block;width: 20px;height: 20px;	background-size: contain;	background-position: center bottom;top: 5px;position: relative;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .icon_phone_setting{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icn_setting_more.png) no-repeat;display: inline-block;width: 8px;height: 15px;	background-size: contain;	background-position: center bottom;top: 3px;position: relative;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .icon_redirect{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icn_login.png) no-repeat;display: inline-block;width: 18px;height: 17px;	background-size: contain;	background-position: center bottom;top: 4px;position: relative;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .attention{font-size:15px;opacity: 80%;text-indent:-1em;padding-left:1em;font-size: 0.9em;color: #eee;}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .attention::before{content:'※ ';}
+#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .color_point{color: #15e732;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item{background-position-y: center;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .icon_course_menu{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icon_course_menu.png) no-repeat; width: 103px;height: 30px;background-size: contain;background-position: center;vertical-align: middle;display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .icon_left_right{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icon_left_right.png) no-repeat; width: 40px;height: 19px;background-size: contain;background-position: center;vertical-align: middle;display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .icon_map{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icon_map.png) no-repeat; width: 32px;height: 24px;background-size: contain;background-position: center;vertical-align: middle;display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .icon_flag{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/icon_flag.png) no-repeat; width: 22px;height: 20px;background-size: contain;background-position: center;vertical-align: middle;display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item{background-size: contain;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n-1){background-color: #282828;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n){background-color: #383838;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(1){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-01.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(1){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-01-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-02.png');}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(2){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-02-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(3){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-03.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(3){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-03-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(3) #info_img{background: url(http://golfwith.golfzon.com/web/images/new/smartcaddie/img-smartcaddie-info-01.png) no-repeat; width: 15px;height: 15px;background-size: contain;background-position: center;vertical-align: middle;display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(4){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-04.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(4){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-04-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(5){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-05.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(5){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-05-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(6){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-06.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(6){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-06-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(7){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-07.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(7){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-07-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(8){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-08.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(8){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-08-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(9){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-09.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(9){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-09-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(10){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-10.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(10){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-10-ko.png'); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(14){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/web/bg-14.png');}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n-1) .wrap{position: relative; width: 470px;left: calc(50% - 470px);}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n) .wrap{position: relative; width: 480px;max-width: 45vw;left: calc(50% + 40px);}
+
+
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .item_wrap{left:auto;width:100%;display:flex;align-items: center;flex-direction: row;max-width: 1000px;margin: auto;padding: 0 20px;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .item_wrap>.desc{flex: auto;padding: 0 40px;width: 50%;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .item_wrap>.watch_img{width: 50%;height: 250px;background-repeat: no-repeat;background-size: contain;background-position: center;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(11) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/web/img_11_circle.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(11) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/web/img_11_circle-ko.png); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(12) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/web/img_12_circle.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(12) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/web/img_12_circle-ko.png); }
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(13) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/web/img_13_circle.png);}
+#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(13) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/web/img_13_circle-ko.png); }
+
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .num{font-size:22px; color:#fff; margin-bottom: 30px;font-weight: bold;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .num span{width:41px; height: 3px; margin-left:15px; vertical-align:middle; background-color:#15e732;  display: inline-block;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .wrap.inversion .num,
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .wrap.inversion .title,
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .wrap.inversion .txt{color: #ffffff;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .wrap .attention{font-size:15px;opacity: 80%;text-indent:-1em;padding-left:1em;}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .wrap .attention::before{content:'※ ';}
+#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .txt p.first{margin-bottom:20px;}
+
+#wrap.SmartCaddieV1 .slick-dots li button{outline: none;font-size: 0;list-style: none; margin:0px 3px; background: none;border: none;display: inline-block;width: 32px;height: 3px;padding: 0; background-color: #ffffff;  opacity: 0.32;}
+#wrap.SmartCaddieV1 .slick-dots .slick-active button{background-color:#15e732; opacity: 1;}
+#wrap.SmartCaddieV1 .EasyToUse .slick-dots li button{background-color:#000000; opacity: 0.1;}
+#wrap.SmartCaddieV1 .EasyToUse .slick-dots .slick-active button{background-color:#15e732; opacity: 1;}
+
+
+
+/*170109 GolfGps*/
+.GolfGps {background-color: #fff;}
+.GolfGps .golfgps_section{position: relative;padding:0 43px;}
+.GolfGps .golfgps_section .num{margin-bottom: 43px;background-repeat: no-repeat;background-position: 0 0;}
+.GolfGps .golfgps_section .txt1{font-size: 36px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.39;color: #252525;}
+.GolfGps .golfgps_section .txt2{font-size: 26px;font-weight: 100;font-style: normal;font-stretch: normal;line-height: 1.54;color: #252525;}
+.GolfGps .golfgps_section .txt2 .italic{font-style: italic;}
+.GolfGps .golfgps_visual{background: url(http://golfwith.golfzon.com/web/images/golfgps/golfgps_title_background.png) no-repeat 50% 100%;background-position: center;background-color: #2f2f2f;}
+.GolfGps .golfgps_visual[data-lang="en"]{background-image: url(http://golfwith.golfzon.com/web/images/golfgps/web_bg_en.png);}
+.GolfGps .golfgps_visual .golfgps_section{height: 670px;}
+.GolfGps .golfgps_visual .cont{position: absolute;top: 285px;right: 67px;}
+.GolfGps .golfgps_visual .visual{position: absolute;bottom: 0;left: -190px;width: 706px;height: 511px;background: url(http://golfwith.golfzon.com/web/images/golfgps/golfgps-img.png) no-repeat 0 0;display: none;}
+.GolfGps .golfgps_visual .logo_title{font-weight:600;font-size:24px;color: #fff;margin-bottom: 5px;}
+.GolfGps .golfgps_visual h2{width: 480px;height: 70px;margin-bottom: 0;background: url(http://golfwith.golfzon.com/web/images/icn_golfbuddyu_golfgps.png) no-repeat 0 0;background-size: contain;}
+.GolfGps .golfgps_visual .GoogleBtn{display: inline-block;width: 200px;height: 60px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-google2.png) no-repeat 0 0;vertical-align: top;background-size: contain;margin-right: 10px;}
+.GolfGps .golfgps_visual .AppleBtn{display: inline-block;width: 200px;height: 60px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-apple2.png) no-repeat 0 0;vertical-align: top;background-size: contain;}
+.GolfGps .golfgps_visual .download{position: absolute;top: 185px;left: 0;-webkit-touch-callout: none;-webkit-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.GolfGps .golfgps_visual .download .text{box-sizing:border-box;display: inline-block;vertical-align: bottom;font-size: 24px;color: #b1b59e;height: 25px;text-decoration: underline;}
+.GolfGps .golfgps_visual .download .ico{margin-right: 8px;vertical-align: bottom;display: inline-block;width: 23px;height: 24px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-gps-download.png);}
+.GolfGps .golfgps_visual .download:hover .text{border-bottom: 1px solid #b1b59e;}
+.GolfGps .golfgps_visual .download:active .text{border-bottom: 1px solid #898d76;color: #898d76;}
+.GolfGps .golfgps_visual .download:active .ico{background-position: 0 100%;}
+.GolfGps .golfgps_section1{background-color: #f0f0f0;}
+.GolfGps .golfgps_section1 .golfgps_section{height: 694px;padding-top: 147px;padding-right: 400px;}
+.GolfGps .golfgps_section1 .num{width: 87px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num01.png);}
+.GolfGps .golfgps_section1 .visual{position: absolute;bottom: 0;right: 33px;width: 424px;height: 581px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-1-screen.png) no-repeat 0 0;}
+.GolfGps .golfgps_section1 .txt1{margin-bottom: 9px;}
+.GolfGps .golfgps_section2{background-color: #3e3e43;overflow: hidden;}
+.GolfGps .golfgps_section2 .golfgps_section{height: 960px;padding-top: 91px;}
+.GolfGps .golfgps_section2 .num{margin-bottom: 43px;width: 98px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num02.png);}
+.GolfGps .golfgps_section2 .txt1,
+.GolfGps .golfgps_section2 .txt2{color: #ffffff;}
+.GolfGps .golfgps_section2 .txt1{margin-bottom: 43px;}
+.GolfGps .golfgps_section2 .visual1{position: absolute;left: 264px;top: 605px;width: 583px;height: 785px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-2-screen-2.png) no-repeat 0 0;}
+.GolfGps .golfgps_section2 .visual2{position: absolute;left: 482px;top: 335px;width: 560px;height: 745px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-2-screen-1.png) no-repeat 0 0;z-index: 1;}
+.GolfGps .golfgps_section3{background-color: #fff;}
+.GolfGps .golfgps_section3 .golfgps_section{height: 720px;padding-top: 211px;}
+.GolfGps .golfgps_section3 .num{width: 100px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num03.png);}
+.GolfGps .golfgps_section3 .visual{position: absolute;bottom: 0;left: 669px;width: 426px;height: 608px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-3-screen.png) no-repeat 0 0;}
+.GolfGps .golfgps_section3 .txt1{margin-bottom: 9px;}.GolfGps .golfgps_section3{background-color: #fff;}
+.GolfGps .golfgps_section4 {height: 1600px;background-color: #ebebeb;}
+.GolfGps .golfgps_section4 .txt1{margin-bottom: 43px;}
+.GolfGps .golfgps_section4 .golfgps_section4_1{height: 795px;padding-top: 137px;padding-right: 60px;text-align: right;}
+.GolfGps .golfgps_section4 .golfgps_section4_1 .num{float: right;width: 100px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num04.png);}
+.GolfGps .golfgps_section4 .golfgps_section4_1 .txt1{clear: both;}
+.GolfGps .golfgps_section4 .golfgps_section4_1 .visual{position: absolute;top:122px;left: 18px;width: 392px;height: 657px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-4-screen.png) no-repeat 0 0;}
+.GolfGps .golfgps_section4 .golfgps_section4_2{margin-top: -151px;margin-bottom: 100px;height: 657px;padding-top: 275px;}
+.GolfGps .golfgps_section4 .golfgps_section4_2 .num{width: 100px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num05.png);}
+.GolfGps .golfgps_section4 .golfgps_section4_2 .visual{position: absolute;top:0;left: 702px;width: 392px;height: 657px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-5-screen.png) no-repeat 0 0;}
+.GolfGps .golfgps_section4 .golfgps_section4_1 .txt2{position: relative;left: 4px;}
+.GolfGps .golfgps_section4 .btns {position: relative;text-align: center;z-index: 1;}
+.GolfGps .golfgps_section4 .btns a{font-size: 0;letter-spacing: 0;word-spacing: 0;}
+.GolfGps .golfgps_section4 .GoogleBtn{display: inline-block;width: 228px;height: 70px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-google2.png) no-repeat 0 0;}
+.GolfGps .golfgps_section4 .AppleBtn{display: inline-block;width: 228px;height: 70px;margin-right: 12px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-apple2.png) no-repeat 0 0;}
+
+.golfgps_section_mobile{display: none;}
+@media (max-width: 1200px){
+	.GolfGps .golfgps_visual{background: none;}
+	.golfgps_section{display: none;}
+	.golfgps_section_mobile{display: block;background: url('http://golfwith.golfzon.com/web/images/golfgps/mweb_bg_ko.png') no-repeat;background-size: contain;background-position: top;text-align: center;padding-bottom: 90%;}
+	.golfgps_section_mobile[data-lang="en"]{background-image: url('http://golfwith.golfzon.com/web/images/golfgps/mweb_bg_en.png');}
+	.golfgps_section_mobile .title{
+		padding-top: 30%;
+	}
+	.golfgps_section_mobile .title p{color:#fff;font-weight:600;margin-bottom: 10px;font-size: 20px;}
+	.golfgps_section_mobile .title img{position: relative;width: 80%;max-width: 400px;padding-bottom: 10px;}
+	.golfgps_section_mobile .guide{text-align:center;padding-bottom: 10px;}
+	.golfgps_section_mobile .guide .download{position: relative;top: 0;}
+	.golfgps_section_mobile .btns{text-align: center;}
+}
+
+/*170125 scorecardV1*/
+.scorecardV1 {background-color: #0dc760;}
+.scorecardV1 .scorecardV1_section{position: relative;}
+.scorecardV1 .scorecardV1_section .num{margin-bottom: 43px;background-repeat: no-repeat;background-position: 0 0;}
+.scorecardV1 .scorecardV1_section .txt1{font-size: 36px;font-weight: bold;font-style: normal;font-stretch: normal;line-height: 1.39;color: #252525;}
+.scorecardV1 .scorecardV1_section .txt2{font-size: 26px;font-weight: 100;font-style: normal;font-stretch: normal;line-height: 1.54;color: #252525;}
+.scorecardV1 .scorecardV1_visual{overflow: hidden;}
+.scorecardV1 .scorecardV1_visual .scorecardV1_section{padding-left: 22px;padding-top: 130px;height: 590px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-bg.png) no-repeat 20px 100%;}
+.scorecardV1 .scorecardV1_visual .visual{position: absolute;bottom: 0;right: -97px;width: 662px;height: 495px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-keyvisual.170810.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_visual h2{width: 415px;height: 202px;margin-bottom: 92px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-tit.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_visual .GoogleBtn{display: inline-block;width: 228px;height: 70px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-google2.png) no-repeat 0 0;vertical-align: top;}
+.scorecardV1 .scorecardV1_visual .AppleBtn{display: inline-block;width: 228px;height: 70px;margin-right: 12px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-apple2.png) no-repeat 0 0;vertical-align: top;}
+.scorecardV1 .scorecardV1_section1{background-color: #fff;}
+.scorecardV1 .scorecardV1_section1 .scorecardV1_section{height: 710px;padding-top: 241px;padding-left: 595px;}
+.scorecardV1 .scorecardV1_section1 .num{width: 87px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard01.png);}
+.scorecardV1 .scorecardV1_section1 .visual{position: absolute;bottom: 0;left: -11px;width: 424px;height: 581px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-0-1-screen.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_section1 .txt1{margin-bottom: 3px;}
+.scorecardV1 .scorecardV1_section2{background-color: #0dc760;}
+.scorecardV1 .scorecardV1_section2 .scorecardV1_section{height: 798px;padding-top: 129px;padding-left: 1px;}
+.scorecardV1 .scorecardV1_section2 .num{width: 101px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard02.png);}
+.scorecardV1 .scorecardV1_section2 .visual{position: absolute;bottom: 0;right:0;width: 600px;height: 724px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-0-2-screen.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_section2 .txt1{color: #fff;margin-bottom: 38px;}
+.scorecardV1 .scorecardV1_section2 .txt2{color: #fff;}
+.scorecardV1 .scorecardV1_section3{position: relative;background-color: #fff;z-index: 1;}
+.scorecardV1 .scorecardV1_section3 .scorecardV1_section{height: 710px;padding-top: 244px;padding-left: 573px;}
+.scorecardV1 .scorecardV1_section3 .num{width: 100px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard03.png);}
+.scorecardV1 .scorecardV1_section3 .visual{position: absolute;top: 99px;left: -11px;width: 424px;height: 715px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-0-3-screen.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_section3 .txt1{margin-bottom: 3px;}
+.scorecardV1 .scorecardV1_section4{overflow: hidden;background-color: #ebebeb;}
+.scorecardV1 .scorecardV1_section4 .scorecardV1_section{height: 1182px;padding-top: 283px;padding-left: 1px;}
+.scorecardV1 .scorecardV1_section4 .num{width: 103px;height: 99px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard04.png);}
+.scorecardV1 .scorecardV1_section4 .visual{position: absolute;top: 144px;right:-291px;width: 1088px;height: 1244px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-0-4-screen.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_section4 .txt1{margin-bottom: 38px;}
+.scorecardV1 .scorecardV1_section4 .txt2{margin-bottom: 373px;}
+.scorecardV1 .scorecardV1_section4 .btns {position: relative;text-align: center;z-index: 1;}
+.scorecardV1 .scorecardV1_section4 .btns a{font-size: 0;word-spacing: 0;}
+.scorecardV1 .scorecardV1_section4 .GoogleBtn{display: inline-block;width: 228px;height: 70px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-google2.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_section4 .AppleBtn{display: inline-block;width: 228px;height: 70px;margin-right: 12px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-apple2.png) no-repeat 0 0;}
+.scorecardV1 .scorecardV1_visual .scorecardBtn{position: absolute;top: 10px;right: 0;display: block;width: 218px;height: 54px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_scorecard.png) no-repeat 0 0;z-index: 1;}
+.scorecardV1 .scorecardV1_visual .scorecardBtn:active{background-position: 0 100%;-webkit-touch-callout: none;-webkit-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+/* 170123 SmartMarker */
+.SmartMarker{background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-field-bg.png) repeat-x 50% 0;}
+.SmartMarker .ib{display: inline-block;}
+.SmartMarker h3{line-height: 1.14;}
+.SmartMarker .SmartMarker_section{position: relative;}
+.SmartMarker .SmartMarker_visual{overflow: hidden;}
+.SmartMarker .SmartMarker_visual .SmartMarker_section{height: 590px;padding-top: 147px;position: relative;}
+.SmartMarker .SmartMarker_visual .title_group .title{width: 546px;height: 114px;margin-left: 2px;margin-bottom: 37px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-title_170907.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_visual .title_group .txt{width: 481px;height: 69px;margin-left: 6px;margin-bottom: 35px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-sub-txt.png) no-repeat 0 0;}/* 170907 */
+.SmartMarker .SmartMarker_visual .btns{margin-bottom: 14px;font-size: 0;}
+.SmartMarker .SmartMarker_visual .btns a{font-size: 0;letter-spacing: 0;word-spacing: 0;}
+.SmartMarker .SmartMarker_visual .GoogleBtn{display: inline-block;width: 228px;height: 70px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-google2.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_visual .AppleBtn{display: inline-block;width: 228px;height: 70px;margin-right: 12px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-apple2.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_visual .visual{position: absolute;bottom: 0;right: -244px;width: 900px;height: 521px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-img-handvisual.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_visual .download{position: absolute;top: 485px;left: 0;-webkit-touch-callout: none;-webkit-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.SmartMarker .SmartMarker_visual .download .text{box-sizing:border-box;display: inline-block;font-style: italic;vertical-align: bottom;font-size: 24px;color: #443732;height: 26px;}
+.SmartMarker .SmartMarker_visual .download .ico{margin-right: 8px;vertical-align: bottom;display: inline-block;width: 24px;height: 24px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-marker-download.png);}
+.SmartMarker .SmartMarker_visual .download:hover .text{border-bottom: 1px solid #443732;}
+.SmartMarker .SmartMarker_visual .download:active .text{border-bottom: 1px solid #9d968f;color: #9d968f;}
+.SmartMarker .SmartMarker_visual .download:active .ico{background-position: 0 100%;}
+.SmartMarker .SmartMarker_section1{background-color: #fff;}
+.SmartMarker .SmartMarker_section1 .SmartMarker_section{height: 959px;padding-top: 123px;}/* 170907 */
+.SmartMarker .SmartMarker_section1 .title_group{margin-bottom: 80px;}
+.SmartMarker .SmartMarker_section1 .title_group .title{margin-bottom: 47px;font-size: 40px;font-weight: bold;text-align: center;color: #000000;}
+.SmartMarker .SmartMarker_section1 .title_group .txt{font-size: 26px;line-height: 1.69;text-align: center;color: #252525;}
+.SmartMarker .SmartMarker_section1 .info_list li{float: left;height: 249px;position: relative;padding-left: 181px;}
+.SmartMarker .SmartMarker_section1 .info_list .ib{display: block;}
+.SmartMarker .SmartMarker_section1 .info_list .item:nth-child(1),
+.SmartMarker .SmartMarker_section1 .info_list .item:nth-child(3){width: 623px;}
+.SmartMarker .SmartMarker_section1 .info_list .ico_marker{position: absolute;top: 0;left: 0;width: 148px;height: 148px;background-position: 0 0;background-repeat: no-repeat;}
+.SmartMarker .SmartMarker_section1 .info_list .title{margin-top: 10px;margin-bottom: 28px;font-size: 28px;line-height: 1.57;color: #2fac66;}
+.SmartMarker .SmartMarker_section1 .info_list .txt{font-size: 20px;line-height: 1.5;color: #888888;}
+.SmartMarker .SmartMarker_section1 .info_list .item:nth-child(1) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-img-voice.png);}
+.SmartMarker .SmartMarker_section1 .info_list .item:nth-child(2) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-img-shot.png);}
+.SmartMarker .SmartMarker_section1 .info_list .item:nth-child(3) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-img-ballmarker.png);}
+.SmartMarker .SmartMarker_section1 .info_list .item:nth-child(4) .ico_marker{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-img-water.png);}
+.SmartMarker .SmartMarker_section2 {display: none !important;background-color: #23cd6e;}
+.SmartMarker .SmartMarker_section2 .SmartMarker_section{height: 160px;padding: 0 20px;}
+.SmartMarker .SmartMarker_section2 .guide{float: left;height: 61px;line-height: 61px;padding-top: 53px;}
+.SmartMarker .SmartMarker_section2 .icoguide{float: left;width: 54px;height: 61px;margin-right: 34px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-ico-pdf.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_section2 .guide p{font-size: 30px;font-weight: bold;color: #ffffff;white-space:nowrap;}
+.SmartMarker .SmartMarker_section2 .btns{float: right;padding-top: 43px;}
+.SmartMarker .SmartMarker_section2 .btns .btn{width: 243px;height: 82px;line-height: 78px;border-radius: 41px;border: 2px solid #7ce1a9;font-size: 26px;color: #fff;font-weight: bold;}
+.SmartMarker .SmartMarker_section3{background-color: #3e3e43;overflow: hidden;}
+.SmartMarker .SmartMarker_section3 .SmartMarker_section{height: 2171px;padding-top: 123px;}
+.SmartMarker .SmartMarker_section3 .title{margin-bottom: 175px;text-align: center;font-size: 40px;color: #fff;font-weight: bold;}
+.SmartMarker .SmartMarker_section3 .info_list{margin-bottom: 113px;}
+.SmartMarker .SmartMarker_section3 .img_line {width: 85px;height: 4px;background-color: #6c6c70;}
+.SmartMarker .SmartMarker_section3 .list_title{padding-top: 43px;padding-bottom: 38px;font-size: 36px;font-weight: bold;color: #1edb86;line-height: 1.39;}
+.SmartMarker .SmartMarker_section3 .list_txt{font-size: 26px;color: #fff;line-height: 1.54;}
+.SmartMarker .SmartMarker_section3 .list_txt strong{font-weight: bold;}
+.SmartMarker .SmartMarker_section3 .info_list .item1{width: 450px;height: 449px;}
+.SmartMarker .SmartMarker_section3 .info_list .item2{width: 450px;height: 452px;}
+.SmartMarker .SmartMarker_section3 .visual1{position: absolute;top: 354px;right: -91px;width: 620px;height: 920px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-phone-visua_170907.png) no-repeat 0 0;}/* 170907 */
+.SmartMarker .SmartMarker_section3 .visual2{width: 947px;height: 472px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker--worldmap.png) no-repeat 0 0;margin: 0 auto;}
+.SmartMarker .SmartMarker_section4 {background-color: #fff;}
+.SmartMarker .SmartMarker_section4 .SmartMarker_section{height: 1280px;padding-top: 123px;}
+.SmartMarker .SmartMarker_section4 .title{margin-bottom: 80px;text-align: center;font-size: 40px;font-weight: bold;color: #000;}
+.SmartMarker .SmartMarker_section4 .visual{width: 628px;height: 321px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-img-product.png) no-repeat 50% 0;margin: 0 auto;}
+.SmartMarker .SmartMarker_section4 .list_group{margin-top: 44px;margin-bottom: 140px;line-height: 1.4;font-size: 26px;color: #252525;letter-spacing: -0.5px;}
+.SmartMarker .SmartMarker_section4 .list_group dl{padding: 8px 0;}
+.SmartMarker .SmartMarker_section4 .list_group strong{font-weight: bold;}
+.SmartMarker .SmartMarker_section4 .list_group dt,
+.SmartMarker .SmartMarker_section4 .list_group dd{display: inline-block;}
+.SmartMarker .SmartMarker_section4 .list_group dd{color: #666666;}
+.SmartMarker .SmartMarker_section4 .info1{float: left;width: 452px;}
+.SmartMarker .SmartMarker_section4 .info2{float: right;width: 535px;}
+.SmartMarker .SmartMarker_section4 .applink_group{text-align: center;}
+.SmartMarker .SmartMarker_section4 .btns{margin-bottom: 32px;font-size: 0;}
+.SmartMarker .SmartMarker_section4 .btns a{font-size: 0;letter-spacing: 0;word-spacing: 0;}
+.SmartMarker .SmartMarker_section4 .GoogleBtn{display: inline-block;width: 228px;height: 70px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-google2.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_section4 .AppleBtn{display: inline-block;width: 228px;height: 70px;margin-right: 12px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn-apple2.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_visual .shopBtn{position: absolute;top: 6px;right: 0;width: 168px;height: 54px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_buynow.png) no-repeat 0 0;}
+.SmartMarker .SmartMarker_visual .shopBtn:active{background-position: 0 100%;-webkit-touch-callout: none;-webkit-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+.SmartMarker .SmartMarker_visual .applink_group .txt {line-height: 2.34;color: #615149;font-style: italic;font-size: 18px;opacity: 0.8;filter: alpha(opacity=80);}
+.SmartMarker .SmartMarker_section4 .applink_group .txt {line-height: 2.14;color: #000000;font-style: italic;font-size: 20px;}
+.SmartMarker .SmartMarker_section5 {border-top: 1px solid #e1e1e1;}
+.SmartMarker .SmartMarker_section5 .SmartMarker_section{padding-right: 270px;padding-top: 44px;padding-bottom: 53px;padding-left: 190px;}
+.SmartMarker .SmartMarker_section5 .tittle{position: absolute;top: 55px;left: 3px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_tittle.png) no-repeat 0 0;width: 121px;height: 36px;}
+.SmartMarker .SmartMarker_section5 .txt1{margin-bottom: 7px;font-size: 26px;color: #343434;font-weight: bold;line-height: 33px;}
+.SmartMarker .SmartMarker_section5 .txt2{font-size: 22px;color: #66e6e;line-height: 23px;}
+.SmartMarker .SmartMarker_section5 .btn.download{position: absolute;right: 40px;top: 43px;width: 202px;height: 70px;border: 2px solid #68cd60;text-align: center;color: #53BB4B;font-size: 24px;font-weight: bold;border-radius: 999px;line-height: 66px;}
+.SmartMarker .SmartMarker_section5 .btn.download:active{background: #68cd60;color: #ffffff;-webkit-touch-callout: none;-webkit-user-select: none;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+/*1709007*/
+.SmartMarker .EasyToUse {padding-top: 113px;padding-bottom: 80px;}
+.SmartMarker .EasyToUse .title_group{padding-bottom: 44px;text-align: center;}
+.SmartMarker .EasyToUse .title_group .tit{margin-bottom: 26px;color: #000000;font-size: 40px;font-weight: bold;}
+.SmartMarker .EasyToUse .title_group .sub_tit{color: #000000;line-height: 1.5;font-family: arial,sans-serif;font-size: 26px;}
+.SmartMarker .EasyToUse .visual_cont{display: inline-block;padding: 0 1px;margin: 0 auto;}
+.SmartMarker .EasyToUse .visual_cont .title{margin-top: 20px;margin-bottom: 10px;color: #2fac66;font-size: 26px;font-weight: bold;line-height: 1.69;letter-spacing: -0.6px;}
+.SmartMarker .EasyToUse .visual_cont .item{height: 567px;outline: none;float: left;width: 324px;margin:0 25px;text-align: center;}
+.SmartMarker .EasyToUse .visual_cont .item .img{margin: 0 auto;width: 280px;height: 270px;background-repeat: no-repeat;background-position: 0 0;}
+.SmartMarker .EasyToUse .visual_cont .item.item1 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/01_index_180308.gif);}
+.SmartMarker .EasyToUse .visual_cont .item.item2 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/02_hole_change_180308.gif);}
+.SmartMarker .EasyToUse .visual_cont .item.item3 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/03_setting_180308.gif);}
+.SmartMarker .EasyToUse .visual_cont .txt{color: #888888;font-size: 20px;line-height: 28px;letter-spacing: -0.5px;}
+.SmartMarker .EasyToUse .visual_cont .txt .ib{display: block;}
+.SmartMarker .EasyToUse .slider {display: none;}
+.SmartMarker .EasyToUse .visual_cont .item.item1_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_01_resister.png);}
+.SmartMarker .EasyToUse .visual_cont .item.item2_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_02_use.png);}
+.SmartMarker .EasyToUse .visual_cont .item.item3_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_03_battery.png);}
+
+/* PlayRound-Style 170317 */
+
+#wrap.SmartCaddieV1 .PlayRound{padding:-120px 0;text-align:center;color:#ffffff;}
+#wrap.SmartCaddieV1 .PlayRound .title_group .tit{margin-bottom:50px;font-size: 40px;font-weight: bold;}
+#wrap.SmartCaddieV1 .PlayRound .tab{padding-bottom:30px;margin:0 auto;max-width:756px;}
+#wrap.SmartCaddieV1 .PlayRound .tab ul{width:100%;}
+#wrap.SmartCaddieV1 .PlayRound .tab ul li{display:inline-block;width:32%;}
+#wrap.SmartCaddieV1 .PlayRound .tab ul li a{width:174px;height:32px;color:#ffffff;opacity:0.5;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=50)';filter:alpha(opacity=50)font-size:14px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/btn_playround.png) no-repeat center top;text-indent:-9999px;display:inline-block;-webkit-transition: all 0.4s;transition: all 0.4s;}
+#wrap.SmartCaddieV1 .PlayRound .tab ul li+li a{width:145px;background-position:center -38px;}
+#wrap.SmartCaddieV1 .PlayRound .tab ul li+li+li a{width:176px;background-position:center bottom;}
+#wrap.SmartCaddieV1 .PlayRound .tab ul li.on a{opacity:1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';filter:alpha(opacity=100)}
+#wrap.SmartCaddieV1 .PlayRound .barBox{margin:0 auto;max-width:756px;}
+#wrap.SmartCaddieV1 .PlayRound .bar{position:relative;margin:0 0 40px 92px;height:16px;}
+#wrap.SmartCaddieV1 .PlayRound .bar .bg{position:absolute;top:0;left:-94px;padding-left:92px;padding-right:58px;width:756px;height:16px;border:2px solid #3c3c40;border-radius: 10px;background-color:#252528;}
+.ui-slider-handle{position:absolute;top:3px;z-index:1;margin-left:-91px;width:90px;height:10px;display:inline-block;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_bar.gif) no-repeat left top;}
+#wrap.SmartCaddieV1 .PlayRound .bar p{position:absolute;top:1px;left:1px;height:6px;text-align:left;}
+#wrap.SmartCaddieV1 .PlayRound .bar p img{height:100%;}
+#wrap.SmartCaddieV1 .PlayRound .playBox{position:relative;margin:0 auto;height:500px;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1;opacity:0;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';filter:alpha(opacity=0);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box ul{position:relative;z-index:4;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box ul li{position:absolute;top:0;left:0;z-index:5;width:100%;height:500px;background-size:auto auto;background:no-repeat center 0;opacity:0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box.on{display:inline-block;opacity:1;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';filter:alpha(opacity=100)}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box.on ul li{opacity:1;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .wacthBg{position:absolute;top:0;left:0;width:100%;height:500px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/bg_wacth.png) no-repeat center -18px;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen{position:absolute;top:80px;left:50%;margin-left:-170px;width:340px;height:340px;border-radius:50%;background:#000;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p{width:340px;height:340px;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p span{display:block;width:340px;height:340px;border-radius:50%;overflow:hidden;background:no-repeat left 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box .screen p span{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_select.jpg);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box .screen p span{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_play.jpg);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box .screen p span{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/bg_round.jpg);}
+/*170721*/
+#wrap.SmartCaddieV1 .ico_golfwith{display: none;}
+.ico_golfwith{width: 55px;height: 55px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/icon_smartcaddie.png) no-repeat 0 0;-webkit-background-size: 55px 55px;background-size: 55px 55px;}
+
+
+/* PlayRound-Style */
+
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_00_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step0 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_01_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_10_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step1 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_11_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_20_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step3 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_30_web.png);}
+
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_00_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_10_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_20_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step3 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_30_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step4 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_40_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step5 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_50_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step6 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_60_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step7 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_70_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step7 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_71_web.png);}
+
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_00_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_10_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_20_web.png);}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step2 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_21_web.png);}
+
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step0 .screen p span{background-position:0 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step1 .screen p span{background-position:-340px 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step2 .screen p span{background-position:-680px 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step3 .screen p span{background-position:-1020px 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step4 .screen p span{background-position:-1360px 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step5 .screen p span{background-position:-1700px 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step6 .screen p span{background-position:-2040px 0;}
+#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step7 .screen p span{background-position:-2380px 0;}
+
+#wrap.SmartCaddieV1 .PlayRoundBox .title_group .tit{margin-bottom: 20px;font-size:24px;font-weight: bold;letter-spacing:1px;}
+#wrap.SmartCaddieV1 .PlayRoundBox{padding:113px 0 80px 0;text-align:center;color:#ffffff;background:#202125;}
+#wrap.SmartCaddieV1 .PlayRoundBox .item{padding:0 10px;outline:none;}
+#wrap.SmartCaddieV1 .PlayRoundBox .item img.m{margin:0 auto;width:100%;max-width:300px;}
+#wrap.SmartCaddieV1 .PlayRoundBox .item .text{padding-bottom:15px;font-size:26px;color:#ffffff;}
+
+#wrap.SmartCaddieV1 .PlayRoundBox .slick-prev,
+#wrap.SmartCaddieV1 .PlayRoundBox .slick-next{top:50%;margin-top:-28px;}
+
+#wrap.SmartCaddieV1 .PlayRoundBox .slick-prev{left:10%;}
+#wrap.SmartCaddieV1 .PlayRoundBox .slick-next{right:10%;}
+
+.slider_tutorial{opacity:0;}
+.slider_tutorial .imageBox{position:relative;padding-bottom:50px;}
+.slider_tutorial .imageBox span{opacity:0;-webkit-transition:all 0.8s;}
+.slider_tutorial .imageBox span+span{position:absolute;top:0;left:0;width:100%;display:inline-block;}
+.slider_tutorial .imageBox span.on{opacity:1;}
+
+#wrap.SmartCaddieV1 .PlayRoundBox .m{display:none;}
+#wrap.SmartCaddieV1 .PlayRoundBox .w{display:inline-block;}
+
+#wrap.SmartCaddieV1 .PlayRoundBox .title_group .tit{margin-bottom: 26px;font-size: 40px;font-weight: bold;}
+
+/* smartcaddie tutorial */
+#container.smartCaddieTutorial{margin: 0 !important;padding: 0;background: linear-gradient(#0e0e0e 80%, #eee 80%, #8e8a8a 100%);font-family: 'NotoSansKR', sans-serif;}
+#container.smartCaddieTutorial .smartcaddie_logo{padding: 15px 0 0 15px;display: inline-block;}
+#container.smartCaddieTutorial .smartcaddie_logo::before{background: url(http://golfwith.golfzon.com/web/images/new/logo-smartcaddie.png) no-repeat;background-size: contain;display: inline-block;width: 17px;height: 25px;content: '';}
+#container.smartCaddieTutorial .smartcaddie_logo::after{background: url(http://golfwith.golfzon.com/web/images/new/tutorial/img-smartcaddie-header-title.png) no-repeat;background-size: contain;display: inline-block;width: 90px;height: 25px;content: '';}
+#container.smartCaddieTutorial .guide_area .title{color: #fff;text-align: center;margin:20px 0 10px 0;font-size: 16px;}
+#container.smartCaddieTutorial .guide_area .title.ko{}
+#container.smartCaddieTutorial .guide_area .title b{font-size: 1.5em;margin-bottom: 0.3em;display: block;}
+#container.smartCaddieTutorial .guide_area .title p{font-size: 1em;font-weight: lighter;}
+#container.smartCaddieTutorial .guide_area .watch_face{background: no-repeat center;background-size: contain;height: calc(60vh + 20px);max-width: calc(100vw - 100px);margin: auto;}
+#container.smartCaddieTutorial .guide_area .watch_face.android{background-image: url(http://golfwith.golfzon.com/web/images/new/tutorial/watch-back-android.png);background-image: linear-gradient(#0e0e0e 5%, transparent 15%), url(http://golfwith.golfzon.com/web/images/new/tutorial/watch-back-android.png);}
+#container.smartCaddieTutorial .guide_area .watch_face.ios{background-image: url(http://golfwith.golfzon.com/web/images/new/tutorial/watch-back-ios.png);background-image: linear-gradient(#0e0e0e 5%, transparent 15%), url(http://golfwith.golfzon.com/web/images/new/tutorial/watch-back-ios.png);}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example{margin: auto;top: 50%;transform: translateY(-50%);}
+#container.smartCaddieTutorial .guide_area .watch_face.android .display_example{width: 90%;}
+#container.smartCaddieTutorial .guide_area .watch_face.ios .display_example{width: 29vh;height: 31vh;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .example_item{height: 34vh;position: relative;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .example_item img{height: 100%;width: 100%;object-fit: contain;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-list{overflow: hidden;}
+#container.smartCaddieTutorial .guide_area .watch_face.android .display_example .slick-list{border-radius: 50%;}
+#container.smartCaddieTutorial .guide_area .watch_face.ios .display_example .slick-list{border-radius: 5vh;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow{font-size:8px;display: inline-block !important;top: 50%;border: 1px solid #fff;border-radius: 50%;height: 3.2em;width: 3.2em;background: none;color: transparent;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow::before{height: 1em;width: 1em;content: '';display: block;position: relative;top: 6px;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow:hover{display: inline-block !important;top: 50%;border-color: #32e299;}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow.slick-prev{left: calc(50% - 19vh - 26px);transform: translateY(-50%);}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow.slick-prev::before{border-top: 1px solid #fff;border-left: 1px solid #fff;transform: rotate(-45deg);left: calc(50% - 0.25em);}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow.slick-next{left: calc(50% + 19vh + 3px);transform: translateY(-50%);}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow.slick-next::before{border-top: 1px solid #fff;border-right: 1px solid #fff;transform: rotate(45deg);left: calc(50% - 0.8em);}
+#container.smartCaddieTutorial .guide_area .watch_face .display_example .slick-arrow:hover::before{border-color: #32e299;}
+#container.smartCaddieTutorial .guide_area .page_number{color:#434343; text-align: center;font-weight: bold;}
+/* //smartcaddie tutorial */
+
+/*170704*/
+.youtube_video .youtube{padding-right: 60px;}
+.youtube_video{background-color: #fff;}
+.youtube_video .title{float: left;font-size: 38px;line-height: 54px;font-weight: bold;}
+.youtube_video .youtubeWrap{position: relative;width: 100%;padding-bottom:56.25%;}
+.youtube_video .youtubeWrap iframe{position: absolute;width: 100% !important;height: 100% !important;}
+.youtube_video .youtube_header{padding-bottom: 21px;}
+.youtube_video .youtube_select{float: right;}
+.youtube_select .dropdown-toggle{width:335px;height:54px;border:2px solid #16ad59;font-size:21px;color:#16ad59;text-align:left;outline:none;padding: 0 22px;}
+.youtube_select .bootstrap-select.btn-group .dropdown-menu.inner{margin-top:8px;background-color:#16c463;}
+.youtube_select .bootstrap-select.btn-group .dropdown-menu li{border-top:1px solid #52d18a;}
+.youtube_select .bootstrap-select.btn-group .dropdown-menu li:first-child{border-top:none}
+.youtube_select .bootstrap-select.btn-group .dropdown-menu li a{display:block;padding: 0 22px;height:50px;line-height: 50px;font-size:21px;color:#fff;text-align:left;outline:none}
+.youtube_select .bootstrap-select.btn-group .dropdown-menu li a:active{background-color: #16ad59;}
+.youtube_select .bootstrap-select.btn-group .dropdown-toggle .caret{margin-top: -5px;border-top: 11px dashed;border-right: 9px solid transparent;border-left: 9px solid transparent;border-bottom: 0 dashed;right: 15px;}
+.youtube_select .bootstrap-select.open .dropdown-toggle{color: #fff;background-color: #16ad59;}
+.youtube_select .bootstrap-select.btn-group.open .dropdown-toggle .caret{margin-top: -5px;border-top: 0 dashed;border-right: 9px solid transparent;border-left: 9px solid transparent;border-bottom: 11px dashed;}
+.youtube_video .container_inner{padding: 80px 80px 100px;}
+
+
+
+/*구매내역*/
+#fade{background-image: url('http://golfwith.golfzon.com/web/images/new/fade.png'); position: fixed; top:0px; left:0px; width:100%; height:100%; z-index: 9000; display: none;}
+#orders {width:640px;display: none; position: absolute; z-index: 9999;text-align: center; font-weight: normal;}
+#orders .orders_box{border-radius:5px; color:#ffffff; overflow:hidden; background-color:#191a1d; }
+#orders .top{padding:25px 0px; font-size:21px; object-fit: contain; background-color:#222328; box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 0.1); }
+#orders .top .close{width:21px; display: block; position: absolute; top:30px; right:36px; }
+#orders .top .close img{width:100%; height:auto;}
+#orders .bottom{overflow: hidden; padding:35px 0px; padding-right: 36px;}
+#orders .bottom span.btn{float:right; position:relative; display: block; object-fit: contain;  border-radius: 21px;  box-shadow: 0px 5px 8px 0 rgba(0, 0, 0, 0.4), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);  background-color: #818183;}
+#orders .bottom span.btn a{font-size: 14px; padding:5px 8px; color: #333333; font-weight: 600;display: block;}
+#orders .list li{ padding:50px; padding-right:160px; margin:10px 0px; background-color: #141518;text-align: left; position: relative; }
+#orders .list li p.date{font-size:22px;}
+#orders .list li p.limit{font-size:14px; color:#999999;}
+#orders .list li p.limit em{display: inline-block; line-height:14px; padding-right:5px; margin-right:5px; border-right:1px solid #999999;}
+#orders .list li span.right{font-size:32px; width:150px; top:20px; right:30px; color:#15e732; position: absolute; text-align: center;}
+#orders .list li span.right em{font-size:14px; display: block; color: rgba(21, 231, 50, 0.6)}
+#orders .list li span.right span.status{font-size:20px;}
+#orders .list li span.right span.status.C{color:#FF0000}
+#orders .list li span.right span.status.S{color:#15e732}
+#orders .list li span.right span.status.W{color:#ffffff}
+#orders div.none{color:#999999; padding-top:100px; padding-bottom:70px; font-size:16px;}
+#orders p.orders_notice{margin-top:15px; color:#ffffff; font-size:16px;}
+@media all and (max-width:640px){
+	#orders {width:98%;}
+	#orders .top{padding:15px 0px; font-size:18px;}
+	#orders .top .close{width:18px;top:20px; right:20px; }
+	#orders .bottom{padding:20px 0px; padding-right: 20px;}
+	#orders .bottom span.btn a{font-size: 12px; padding:2px 5px;}
+	#orders .list li{ padding:35px 10px; padding-right:100px; margin:5px 0px;}
+	#orders .list li p.date{font-size:14px;}
+	#orders .list li p.limit{font-size:11px;}
+	#orders .list li p.limit em{line-height:11px; padding-right:2px; margin-right:2px;}
+	#orders .list li span.right{font-size:16px; width:100px; top:15px; right:5px;}
+	#orders .list li span.right em{font-size:11px;}
+	#orders .list li span.right span.status{font-size:13px;}
+	#orders div.none{padding-top:80px; padding-bottom:50px;  font-size:13px;}
+	#orders p.orders_notice{margin-top:10px; font-size:11px;}
+
+}
+
+/* 230327 header, footer 변경 */
+
+/* header */
+#header{padding-bottom: 0;background: #333;box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); line-height: 0;}
+#header .logo{margin-right:40px; width:202px; height: 43px;}
+#header .logo a{display: inline-block; margin-top: 0; width: 100%; height: 100%; }
+#header .menu li[aria-now-menu]>a,#header .menu>li span[aria-now-menu],
+#header .menu>li[aria-now-menu] .sub_menu>li[aria-now-menu] span{color: #FFC03E !important;}
+#header .menu, #header .menu li{display: flex; align-items: center;}
+#header .menu>li:focus>.sub_menu, #header .menu>li:hover>.sub_menu, #header .menu>li>.sub_menu:hover{transform: translate(-50%, 73px);}
+
+#header .login{display: flex; align-items: center; top: 50%; right: 0; transform: translateY(-50%); height: auto;}
+#header .login a{display: inline-block; margin: 0; padding: 0; width: 94px; height: 33px; font-weight: 700; line-height: 33px;}
+#header .login .btn.app_down{margin-right: 18px; font-size: 12px; color: #000; line-height: 30px; border-color: #0B77D6; background: #FFC03E;}
+#header .login .btn.app_down::before{display: none;}
+#header .login .btn.type1{font-size: 12px;}
+#header .menu{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: max-content;}
+#menu{position: absolute; width: 100%;}
+
+.header_inner{display: flex; align-items: center; padding: 0; height: 87px;}
+
+
+#wrap.type2 #header .menu li,
+#wrap.type2 #header .menu li a{color: #C7C7C7;}
+#wrap.type2 #header .menu li:hover,
+#wrap.type2 #header .menu li:hover > a{color: #FFC03E;}
+#wrap.type2 #header .menu li[aria-now-menu] > a{color: #FFC03E !important;}
+#wrap.type2 #header .menu li[aria-now-menu] > span{color: #FFC03E !important;}
+#wrap.type2 #header .menu>li:not(:last-child)::after{display: none;}
+#wrap.type2 .header_inner > .logo.type2 a{background: url('../images/renewal/logo-smartcaddie.svg') no-repeat center/100% auto;}
+#wrap.type2 #header .login .btn.type1{border-color: #FFC03E; background: #0B77D6;}
+#wrap.type2 #container{padding-top: 87px;}
+
+
+/* footer */
+#footer .footer_inner{padding-top: 30px; padding-bottom: 46px;}
+#footer .communication{width: 100%; margin-bottom: 0; border-bottom: none;}
+#footer .communication::after{content: ''; display: block; margin: 10px auto 0; width: 55.6%; height: 1px; background: rgba(255, 255, 255, 0.5);}
+#footer .communication a{display: inline-block; height: 100%; font-family: 'Roboto';}
+#footer .terms a{font-size: 12px; font-family: 'Roboto';}
+#footer address{font-family: 'Roboto';}

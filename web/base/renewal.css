@@ -1,0 +1,703 @@
+/* reset style */
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: url('../font/SpoqaHanSansNeo-Thin.otf') format('opentype'),
+         url('../font/SpoqaHanSansNeo-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: url('../font/SpoqaHanSansNeo-Light.otf') format('opentype'),
+         url('../font/SpoqaHanSansNeo-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: url('../font/SpoqaHanSansNeo-Regular.otf') format('opentype'),
+         url('../font/SpoqaHanSansNeo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: url('../font/SpoqaHanSansNeo-Medium.otf') format('opentype'),
+         url('../font/SpoqaHanSansNeo-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SpoqaHanSansNeo';
+    src: url('../font/SpoqaHanSansNeo-Bold.otf') format('opentype'),
+         url('../font/SpoqaHanSansNeo-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+#wrap{min-width: auto;}
+
+.pc_only{display: block;}
+.mo_only{display: none;}
+
+/* common style */
+.renewal{font-family: 'SpoqaHanSansNeo', Arial, sans-serif;}
+.renewal img{width: 100%;}
+
+.renewal .inner{margin: 0 auto; padding: 0 35px; max-width: 1270px; width: 100%;}
+
+.renewal .btn_s{display: block; position: relative; padding: 12px 12px 12px 0; text-align: center; font-size: 18px; font-weight: 700; border-radius: 26px; box-shadow: 0 5px 8px rgba(0,0,0,0.15);}
+.renewal .btn_s::after{content:""; position: absolute; right: 16px; top: 50%; transform: translateY(-50%); width: 12px; height: 22px; background-position: center center; background-repeat: no-repeat; background-size: 100% auto;}
+.renewal .btn_s.blue{background-color: #0077D6; color: #fff;}
+.renewal .btn_s.blue::after{background-image: url("../images/renewal/ico_arrow_right_white.png");}
+.renewal .btn_s.yellow{background-color: #FFC03E; color: #000;}
+.renewal .btn_s.yellow::after{background-image: url("../images/renewal/ico_arrow_right_black.png");}
+
+.renewal .top_nav{display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; font-size: 12px; font-weight: 700; color: #fff; background: #0B77D6; border-radius: 50%; text-indent: 0; border-radius: 50%;}
+.renewal .top_nav::before{content:""; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 44px; height: 44px; border: 4px solid #FFC03E; border-radius: 50%;}
+.renewal .top_nav span::before{content:""; display: block; margin: 0 auto 2px; width: 12.5px; height: 10.5px; background: url("../images/renewal/ico_top.png") no-repeat center center; background-size: 100% auto;}
+
+/* smart style */
+.renewal .smart_main{overflow: hidden; padding: 93px 0; background-color: #eee;}
+.renewal .smart_main .inner{display: flex; flex-direction: row-reverse; align-items: center;}
+.renewal .smart_main .img_con{display: flex; align-items: center; margin-left: 26px; width: 58%;}
+.renewal .smart_main .img_con .img{opacity: 0; transform: translateX(-60px); width: 220px; transition: all 0.5s;}
+.renewal .smart_main .img_con .img:nth-of-type(1){width: 247px;}
+.renewal .smart_main .img_con .img:nth-of-type(2){transition-delay: 0.3s;}
+.renewal .smart_main .img_con .img:nth-of-type(3){margin-left: 5px; transition-delay: 0.6s;}
+.renewal .smart_main .img_con.active .img{opacity: 1; transform: translateX(0);}
+.renewal .smart_main .txt_con{padding-left: 61px; width: calc(42% - 26px);}
+.renewal .smart_main .txt_con p{margin-bottom: 43px; font-size: 40px; font-weight: 700; color: #000;}
+.renewal .smart_main .txt_con p span{color: #0B77D6;}
+.renewal .smart_main .txt_con .btn_s{width: 221px;}
+.renewal .smart_main .txt_con .btn_s + .btn_s{margin-top: 20px;}
+
+.renewal .smart_banner{padding: 45px 0 35px; background-color: #1592E6;}
+.renewal .smart_banner .inner{display: flex; align-items: center;}
+.renewal .smart_banner .logo_con{margin-left: 45px; width: 22%;}
+.renewal .smart_banner .txt_con{padding-left: 102px; width: calc(78% - 45px);}
+.renewal .smart_banner .txt_con h3{margin-bottom: 15px; font-size: 20px; font-weight: 700;}
+.renewal .smart_banner .txt_con p{font-size: 20px; color: #ECECEC;}
+
+.renewal .smart_guide{padding: 45px 0 27px; background-color: #fff;}
+.renewal .smart_guide .inner{display: flex; align-items: center;}
+.renewal .smart_guide .img_con{width: 60.66%;}
+.renewal .smart_guide .txt_con{padding: 0 20px 0 71px; width: 39.34%;}
+.renewal .smart_guide .txt_con p{font-size: 40px; font-weight: 700; color: #000;}
+
+.renewal .flex-item .inner{display: flex; align-items: center;}
+.renewal .flex-item.rev .inner{flex-direction: row-reverse;}
+.renewal .flex-item .tit_con{padding-left: 115px; width: 55.25%;}
+.renewal .flex-item .tit_con h4{margin-bottom: 19px; font-size: 35px; font-weight: 700;}
+.renewal .flex-item .tit_con h4::before{content:""; display: block; margin-bottom: 20px; background-repeat: no-repeat; background-position: center center; background-size: 100% auto;}
+.renewal .flex-item .tit_con p{font-size: 20px; line-height: 1.6;}
+.renewal .flex-item .img_con{width: 44.75%;}
+.renewal .flex-item.rev .img_con{margin-left: 63px;}
+.renewal .flex-item.rev .tit_con{width: calc(55.25% - 63px);}
+
+.renewal .smart_score{padding: 70px 0; background-color: #383838;}
+.renewal .smart_score .tit_con h4::before{width: 55.6px; height: 42px; background-image: url("../images/renewal/ico_score.png");}
+
+.renewal .smart_course{padding: 95px 0; background-color: #545454;}
+.renewal .smart_course .tit_con h4::before{width: 55px; height: 70px; background-image: url("../images/renewal/ico_course.png");}
+
+.renewal .smart_statistics{padding: 95px 0; background-color: #383838;}
+.renewal .smart_statistics .tit_con h4::before{width: 44px; height: 78px; background-image: url("../images/renewal/ico_statistics.png");}
+
+.renewal .smart_map{padding: 86px 0; background-color: #545454;}
+.renewal .smart_map .tit_con h4::before{width: 57.3px; height: 50px; background-image: url("../images/renewal/ico_map.png");}
+
+/* membership style */
+.renewal .membership_main{padding: 65px 0 55px; background-color: #eee;}
+.renewal .membership_main .inner{display: flex; align-items: center;}
+.renewal .membership_main .img_con{width: 44.83%;}
+.renewal .membership_main .txt_con{padding:0 71px 0 67px; width: 55.16%;}
+.renewal .membership_main .txt_con p{color: #000; font-size: 20px;}
+.renewal .membership_main .txt_con p span{color: #0B77D6;}
+.renewal .membership_main .txt_con p.title{margin-bottom: 9px; font-size: 40px; font-weight: 700;}
+.renewal .membership_main .txt_con p.sub{margin: 46px 0 18px;}
+.renewal .membership_main .txt_con .btn_s{width: 339px;}
+
+.renewal .membership_change{padding: 69px 0; background: url("../images/renewal/membership_background_01.jpg") no-repeat center center; background-size: cover;}
+.renewal .membership_change .inner{display: flex; align-items: center;}
+.renewal .membership_change h2{padding-left: 71px; width: 50%; font-size: 40px; font-weight: 700;}
+.renewal .membership_change .txt_con{padding-left: 51px; width: 50%;}
+.renewal .membership_change .txt_con .tag{display: inline-block; margin-bottom: 24px; padding: 9px 24px; font-size: 18px; font-weight: 700; color: #fff; border-radius: 26px; background-color: #0077D6;}
+.renewal .membership_change .txt_con h3{margin-bottom: 15px; font-size: 30px;}
+.renewal .membership_change .txt_con h3 p{font-weight: 700;}
+.renewal .membership_change .txt_con h3 span{color: #1592E6; font-weight: 700;}
+.renewal .membership_change .txt_con .sub{font-size: 20px;}
+.renewal .membership_change .txt_con .item + .item{margin-top: 60px;}
+
+.renewal .membership_free{padding: 150px; background: url("../images/renewal/membership_background_02.jpg") no-repeat center center; background-size: cover;}
+.renewal .membership_free .inner{display: flex; align-items: center;}
+.renewal .membership_free .logo{width: 239px;}
+.renewal .membership_free h3{margin: 20px 0 15px; font-size: 40px; font-weight: 700; color: #000; line-height: 1.12;}
+.renewal .membership_free h3 span{color: #0B77D6;}
+.renewal .membership_free p{font-size: 20px; color: #000;}
+.renewal .membership_free p span{font-weight: 700;}
+.renewal .membership_free .btn_s{margin-top: 23px; width: 237px;}
+
+.renewal .membership_coupon{padding: 135px 0 110px; background-color: #383838;}
+.renewal .membership_coupon .item{text-align: center;}
+.renewal .membership_coupon .item + .item{margin-top: 125px;}
+.renewal .membership_coupon .item h3{margin-bottom: 50px; font-size: 40px; font-weight: 700;}
+.renewal .membership_coupon .item h3::before{content:""; display: block; margin: 0 auto 25px; width: 125.7px; height: 81.5px; background-position: center center; background-repeat: no-repeat; background-size: 100% auto;}
+.renewal .membership_coupon .item h3.yellow::before{background-image: url("../images/renewal/ico_coupon_yellow.png");}
+.renewal .membership_coupon .item h3.blue::before{background-image: url("../images/renewal/ico_coupon_blue.png");}
+.renewal .membership_coupon .item .box{padding: 29px 0 34px; margin: 0 auto; width: 770px; background-color: #fff; border-radius: 30px;}
+.renewal .membership_coupon .item .box.yellow{border: 5px solid #FFC03E;}
+.renewal .membership_coupon .item .box.blue{border: 5px solid #0B77D6;}
+.renewal .membership_coupon .item .box.gray{margin-top: 20px; padding: 84px 0; border: 5px solid #D0D0D0;}
+.renewal .membership_coupon .item .box .tag{margin: 0 auto 29px; width: 210px; height: 45px; line-height: 45px; text-align: center; font-size: 18px; font-weight: 700; border-radius: 23px;}
+.renewal .membership_coupon .item .box.box.yellow .tag{background-color: #FFC03E; color: #000;}
+.renewal .membership_coupon .item .box.box.blue .tag{background-color: #0B77D6;}
+.renewal .membership_coupon .item .box dl{margin-bottom: 10px; color: #000;}
+.renewal .membership_coupon .item .box dl dt{font-size: 25px; font-weight: 700;}
+.renewal .membership_coupon .item .box.gray dl{margin-bottom: 32px;}
+.renewal .membership_coupon .item .box dl dd{font-size: 40px; font-weight: 700;}
+.renewal .membership_coupon .item .box dl dd span{color: #0B77D6;}
+.renewal .membership_coupon .item .box .cash{display: flex; margin: 0 auto; width: 438px; height: 119px; font-size: 60px; font-weight: 700; justify-content: center; align-items: center; border-radius: 60px;}
+.renewal .membership_coupon .item .box.yellow .cash{background-color: #0B77D6;}
+.renewal .membership_coupon .item .box.blue .cash{color: #000; background-color: #FFC03E;}
+.renewal .membership_coupon .item .box.gray .cash{color: #000; background-color: #D0D0D0;}
+.renewal .membership_coupon .item .box .cash span{display: inline-block; margin-left: 5px; margin-top: 18px; font-size: 30px; font-weight: 400;}
+.renewal .membership_coupon .item .sub{margin-top: 18px; font-size: 20px;}
+
+.renewal .membership_guide{padding: 115px 0; background-color: #FFC03E;}
+.renewal .membership_guide h3{margin-bottom: 20px; font-size: 40px; font-weight: 700; text-align: center; color: #000;}
+.renewal .membership_guide p{font-size: 20px; text-align: center; color: #000;}
+
+.renewal .membership_refund{padding: 100px 0 90px; background-color: #383838;}
+.renewal .membership_refund h3{margin-bottom: 37px; font-size: 40px; font-weight: 700; text-align: center;}
+.renewal .membership_refund .list_con{display: flex; align-items: stretch; justify-content: space-between;}
+.renewal .membership_refund .list_con .item{padding: 28px 0 20px 30px; width: calc(50% - 23px); min-height: 304px; border: 1px solid #898989; border-radius: 10px;}
+.renewal .membership_refund .list_con .item ul{}
+.renewal .membership_refund .list_con .item ul li{position: relative; margin-bottom: 30px; padding-left: 20px; font-size: 20px; font-weight: 700;}
+.renewal .membership_refund .list_con .item ul li::before{content:""; position: absolute; left: 0; top: 6px; width: 8px; height: 8px; background-color: #fff; border-radius: 50%;}
+.renewal .membership_refund .list_con .item ul li:last-of-type{margin-bottom: 0;}
+.renewal .membership_refund .list_con .item ul li span{display: block; margin-top: 2px; font-weight: 400;}
+
+.renewal .membership_etc{padding: 100px 0 113px; background-color: #545454;}
+.renewal .membership_etc h3{margin-bottom: 20px; font-size: 40px; font-weight: 700; text-align: center; color: #fff;}
+.renewal .membership_etc .sub{margin-bottom: 50px; font-size: 20px; text-align: center;}
+.renewal .membership_etc .etc_list{display: flex; justify-content: center; align-items: center;}
+.renewal .membership_etc .etc_list .item{display: flex; justify-content: center; align-items: center; max-width: 467px; width: 50%; height: 140px; background-color: #383838; border: 1px solid #898989; border-radius: 10px;}
+.renewal .membership_etc .etc_list .item + .item{margin-left: 44px;}
+.renewal .membership_etc .etc_list .item .logo{margin-right: 18px; width: 84px;}
+.renewal .membership_etc .etc_list .item dl{}
+.renewal .membership_etc .etc_list .item dl dt{margin-bottom: 4px; font-size: 20px; font-weight: 700;}
+.renewal .membership_etc .etc_list .item dl dd{font-size: 20px;}
+.renewal .membership_etc .etc_list .item dl dd.sm{font-size: 14px;}
+
+/* smartCaddie */
+.app_download{display: none;}
+
+#wrap .smartCaddie{background: #383838;}
+.smartCaddie .btn_con .yellow{color: #000 !important; background: #FFC03E !important;}
+.smartCaddie .point_yellow{color: #FFC03E;}
+.smartCaddie .point_blue{color: #0B77D6;}
+.smartCaddie h2{font-size: 40px; font-weight: 700;}
+.smartCaddie .img_con img{width: 100%;}
+
+.smartCaddie .main_slide{background-color: #fff;}
+.smartCaddie .mainSlide{position: relative; margin: 0 auto; max-width: 1920px;}
+.smartCaddie .mainSlide .txt_con{position: absolute; top: 50%; right: 20%; transform: translateY(-50%);}
+.smartCaddie .mainSlide .golfbuddy{overflow: hidden; display: inline-block; margin-bottom: 25px; width: 143px; height: 30px; background: url('../images/renewal/icn_golfbuddy_logo.svg') no-repeat center/100% auto;}
+.smartCaddie .mainSlide .smartlogo{overflow: hidden; display: inline-block; margin: 14px 0 23px; width: 280px; height: 60px; background: url('../images/renewal/logo-smartcaddie.svg') no-repeat center/100% auto;}
+.smartCaddie .mainSlide .btn_con .download{display: flex; align-items: center; justify-content: space-between; margin-top: 25px; padding: 0 16px 0 32px; width: fit-content; height: 52px; font-size: 18px; font-weight: 700; color: #fff; background: #0077D6; border-radius: 26px; box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);}
+.smartCaddie .mainSlide .btn_con .download::after{content: ''; display: inline-block; margin-left: 10px; width: 12px; height: 22px; background: url('../images/renewal/icn_arrow_right_w.svg') no-repeat center/100% auto;}
+.smartCaddie .mainSlide .txt_con .title{font-size: 40px; font-weight: 700; text-shadow: 0 3px 4px rgba(61, 62, 38, 0.7);}
+.smartCaddie .mainSlide .img_con{max-width: 1920px;}
+.smartCaddie .mainSlide img{width: 100%;}
+
+.smartCaddie .mainSlide .txt_con.top{top: 100px; transform: translateY(0);}
+.smartCaddie .mainSlide .txt_con.left{left: 27%;}
+.smartCaddie .mainSlide .btn_con .download.yellow::after{background-image: url('../images/renewal/icn_arrow_right_b.svg');}
+
+.smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin-left: 10px; width: 18px; height: 18px; background: #fff; opacity: 0.5;}
+.smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{opacity: 1;}
+.smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 32px;}
+
+.smartCaddie .detail_area .inner{margin: 0 auto; width: 1200px;}
+.smartCaddie .info_con{overflow: hidden; background: #fff; padding: 60px 0;}
+.smartCaddie .info_con .inner{display: flex; align-items: center; justify-content: space-between; }
+.smartCaddie .info_con .img_watch{margin: 0 40px; width: 26.58%;}
+.smartCaddie .info_con .sub_txt{opacity: 0; font-size: 35px; font-weight: 700; color: #000; transition: all 1s;}
+.smartCaddie .info_con .sub_txt.left{transform: translateX(-100px);}
+.smartCaddie .info_con .sub_txt.right{transform: translateX(100px);}
+.smartCaddie .info_con .sub_txt.active{opacity: 1; transform: translate(0);}
+
+.smartCaddie .renewal_con{padding: 100px 0; background: url('../images/renewal/watch_01_02.jpg') no-repeat center/cover;}
+.smartCaddie .renewal_con .title{margin: 0 auto 73px; width: fit-content; font-size: 30px; font-weight: 700;}
+.smartCaddie .renewal_con .title::after{content: ''; display: block; margin-top: 6px; width: 100%; height: 3px; background: #FFC03E;}
+.smartCaddie .renewal_con .list{display: flex; justify-content: center;}
+.smartCaddie .renewal_con .list dl{display: inline-block; padding: 28px 54px 28px 30px; width: 44.16%; min-height: 169px; background: #fff; border-radius: 10px;}
+.smartCaddie .renewal_con .list dl + dl{margin-left: 30px;}
+.smartCaddie .renewal_con .list dt{display: flex; align-items: center; font-size: 25px; font-weight: 700; color: #000;}
+.smartCaddie .renewal_con .list dt::before{content: ''; display: inline-block; margin-right: 15px; width: 32px; height: 47px; background: url('../images/renewal/icn_watch.svg') no-repeat center/100% auto;}
+.smartCaddie .renewal_con .list dd{margin-top: 17px; margin-left: 50px; font-size: 19px; font-weight: 300; color: #000;}
+.smartCaddie .renewal_con .list dd.symbol img{width: 100%;}
+
+.smartCaddie .manage_con{text-align: center;}
+.smartCaddie .manage_con h2{padding-top: 60px;}
+.smartCaddie .manage_con .btn_con a{display: flex; align-items: center; justify-content: center; margin: 30px auto 53px; padding: 0 32px; width: fit-content; height: 40px; font-size: 18px; font-weight: 700; border-radius: 44px;}
+.smartCaddie .manage_con img{width: 69%;}
+
+.smartCaddie .smart_con{background: #fff;}
+.smartCaddie .smart_con .inner{position: relative; display: flex; align-items: end;}
+.smartCaddie .smart_con .img_con{width: 61.9%;}
+.smartCaddie .smart_con .txt_con{display: flex; flex-direction: column; align-items: center; justify-content: end; width: 34%;}
+.smartCaddie .smart_con .txt_con h2{color: #000;}
+.smartCaddie .smart_con .txt_con .desc_list{margin: 150px 0 20px;}
+.smartCaddie .smart_con .txt_con .desc_list li{color: #565656; font-size: 12px; font-weight: 400;}
+.smartCaddie .smart_con .txt_con .desc_list li + li{margin-top: 6px;}
+
+.smartCaddie .feature_con{padding-bottom: 84px;}
+.smartCaddie .feature_con .inner{padding: 0 40px; max-width: 1480px; width: 100%;}
+.smartCaddie .feature_con .item{margin-top: 30px; display: flex; align-items: center; padding: 20px 64px 20px 100px; border: 1px solid #A7A7A7; border-radius: 10px;}
+.smartCaddie .feature_con .item .ico_con img{margin-right: 40px; width: 98px;}
+.smartCaddie .feature_con .item .txt_con{width: 35.5%;}
+.smartCaddie .feature_con .item .txt_con dt{margin-bottom: 16px; font-size: 28px; font-weight: 700; letter-spacing: -1px;}
+.smartCaddie .feature_con .item .txt_con dt.tag_hot::after{content: ''; display: inline-block; margin-left: 15px; width: 56px; height: 25px; background: url('../images/renewal/tag_hot.svg') no-repeat center/100% auto;}
+.smartCaddie .feature_con .item .txt_con dd{font-size: 20px; font-weight: 400; line-height: 1.6; letter-spacing: -1px;}
+.smartCaddie .feature_con .item .txt_con dd.desc{margin-top: 14px; font-size: 18px; color: rgba(255, 255, 255, 0.6);}
+.smartCaddie .feature_con .item .txt_con dd.desc .ico_up{vertical-align: middle !important; width: 23px;}
+.smartCaddie .feature_con .item .txt_con dd.desc .ico_down{vertical-align: middle !important; width: 20px;}
+.smartCaddie .feature_con .item .img_con{width: 54.86%; text-align: center;}
+.smartCaddie .feature_con .item .img_con .size1{width: 44.3%;}
+.smartCaddie .feature_con .item .img_con .size2{width: 79.76%;}
+.smartCaddie .feature_con .item .img_con .size3{padding: 20px 0;}
+
+@media (max-width: 1280px) {
+    .renewal .inner{padding: 0 60px; max-width: auto;}
+
+    .renewal .membership_free{padding-left: 50px;}
+    .renewal .membership_free .inner{margin: 0;}
+
+    .smartCaddie .mainSlide .txt_con{right: 18%;}
+    .smartCaddie .mainSlide .txt_con.left{left: 17%;}
+    .smartCaddie .mainSlide .txt_con .title{font-size: 30px;}
+    .smartCaddie .mainSlide .smartlogo{margin-bottom: 10px; width: 133px;}
+    .smartCaddie .mainSlide .smartlogo{width: 240px;}
+    .smartCaddie .mainSlide .btn_con .download{font-size: 16px;}
+
+    .smartCaddie .info_con .inner{width: 100%; padding-left: 60px; padding-right: 60px;}
+    .smartCaddie .info_con .sub_txt:nth-of-type(2){text-align: right;}
+    .smartCaddie .info_con .sub_txt br{display: none;}
+
+    .smartCaddie .detail_area .inner{padding: 0 40px; width: 100%;}
+}
+
+@media (max-width:1200px){
+	.renewal .membership_change h2{width: 40%;}
+    .renewal .membership_change .txt_con{width: 60%;}
+
+    .renewal .membership_free{padding: 150px 100px;}
+
+    .smartCaddie .feature_con .item{padding-left: 70px; padding-right: 30px;}
+    .smartCaddie .feature_con .item .txt_con{width: 40.5%;}
+    .smartCaddie .feature_con .item .img_con{width: 45.8%;}
+}
+
+@media (max-width: 1080px) {
+    .renewal .membership_free{padding-left: 20px;}
+
+    .renewal .smart_main .img_con{margin-left: 0; margin-right: auto; width: 52%;}
+    .renewal .smart_main .txt_con{padding-left: 0; width: 42%;}
+
+    .renewal .smart_guide .txt_con{padding-left: 40px; padding-right: 21px;}
+
+    .renewal .flex-item .tit_con{padding-left: 0;}
+    .renewal .flex-item.rev .img_con{margin-left: 0; margin-right: auto;}
+}
+
+@media (max-width:960px){
+    .pc_only{display: none;}
+    .mo_only{display: block;}
+
+    .app_download{z-index: 999; display: flex; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 87px; background-color: #333333; transform: translateY(-100%); transition: all .5s;}
+    .app_download a{display: block; padding: 8px 24px; font-size: 14px; font-weight: 700; color: #fff; border: 4px solid #FFC03E; background-color: #0B77D6; border-radius: 25px;}
+    .app_download.active{transform: translateY(0);}
+
+    .renewal .btn_s{margin: 0 auto;}
+    .renewal .membership_main{padding: 114px 0 45px;}
+    .renewal .membership_main .inner{display: block;}
+    .renewal .membership_main .img_con{margin: 16px auto 0; width: 451px;}
+    .renewal .membership_main .txt_con{padding:0; width: 100%; text-align: center;}
+
+    .renewal .membership_change{padding: 90px 0 75px; background-image: url("../images/renewal/mo_membership_background_01.jpg");}
+    .renewal .membership_change .inner{display: block;}
+    .renewal .membership_change h2{margin-bottom: 78px; padding-left: 0; width: 100%; text-align: center;}
+    .renewal .membership_change .txt_con{padding-left: 50px; width: 100%;}
+
+    .renewal .membership_free{padding: 75px 0 540px; background-image: url("../images/renewal/mo_membership_background_02.jpg"); background-size: contain; background-color: #fff; background-position: center bottom;}
+    .renewal .membership_free .inner{display: block; margin: 0 auto;}
+    .renewal .membership_free .logo{margin: 0 auto;}
+    .renewal .membership_free h3{text-align: center;}
+    .renewal .membership_free p{text-align: center;}
+
+    .renewal .membership_coupon{padding: 140px 0 125px;}
+    .renewal .membership_coupon .item + .item{margin-top: 140px;}
+    .renewal .membership_coupon .item h3{margin-bottom: 25px; font-size: 40px;}
+    .renewal .membership_coupon .item h3::before{margin: 0 auto 25px; width: 125.7px; height: 81.5px;}
+    .renewal .membership_coupon .item .box{padding: 22px 0 26px; width: 100%;}
+    .renewal .membership_coupon .item .box.gray{margin-top: 15px; padding: 64px 0;}
+    .renewal .membership_coupon .item .box .tag{margin: 0 auto 20px; width: 158px; height: 34px; line-height: 34px; text-align: center; font-size: 12px; border-radius: 23px;}
+    .renewal .membership_coupon .item .box dl{margin-bottom: 6px;}
+    .renewal .membership_coupon .item .box dl dt{font-size: 17px;}
+    .renewal .membership_coupon .item .box.gray dl{margin-bottom: 26px;}
+    .renewal .membership_coupon .item .box dl dd{font-size: 29px;}
+    .renewal .membership_coupon .item .box .cash{width: 338px; height: 90px; font-size: 44px;}
+    .renewal .membership_coupon .item .box .cash span{margin-left: 5px; margin-top: 18px; font-size: 22px;}
+    .renewal .membership_coupon .item .sub{margin-top: 20px; font-size: 18px; line-height: 1.5;}
+
+    .renewal .membership_guide{padding: 84px 0;}
+
+    .renewal .membership_refund{padding: 100px 0 90px;}
+    .renewal .membership_refund h3{margin-bottom: 51px;}
+    .renewal .membership_refund .list_con{display: block;}
+    .renewal .membership_refund .list_con .item{width: 100%;}
+    .renewal .membership_refund .list_con .item + .item{margin-top: 52px;}
+
+    .renewal .membership_etc{padding: 100px 0 96px;}
+    .renewal .membership_etc h3{margin-bottom: 20px;}
+    .renewal .membership_etc .sub{margin-bottom: 60px; line-height: 1.6;}
+    .renewal .membership_etc .etc_list{display: block;}
+    .renewal .membership_etc .etc_list .item{margin: 0 auto; max-width: auto; width: 467px;}
+    .renewal .membership_etc .etc_list .item + .item{margin-top: 15px; margin-left: auto;}
+
+    .renewal .smart_main .inner{flex-wrap: wrap; padding: 0 35px;}
+    .renewal .smart_main .txt_con{width: 100%; text-align: center;}
+    .renewal .smart_main .txt_con .btn_s{margin: 0 auto;}
+    .renewal .smart_main .img_con{margin: 70px auto 0; width: 535px;}
+
+    .renewal .smart_banner{padding: 105px 0;}
+    .renewal .smart_banner .inner{flex-wrap: wrap; }
+    .renewal .smart_banner .logo_con{margin: 0 auto; width: 307px;}
+    .renewal .smart_banner .txt_con{margin: 36px auto 0; padding: 0; text-align: center;}
+
+    .renewal .smart_guide{padding: 108px 0 61px;}
+    .renewal .smart_guide .inner{flex-wrap: wrap;}
+    .renewal .smart_guide .txt_con{width: 100%; text-align: center;}
+    .renewal .smart_guide .img_con{margin: 66px auto 0; width: 589px;}
+
+    .renewal .smart_score{padding: 70px 0 50px;}
+    .renewal .smart_score .tit_con h4::before{margin: 0 auto 22px;}
+    .renewal .smart_course{padding: 70px 0 50px;}
+    .renewal .smart_course .tit_con h4::before{margin: 0 auto 22px;}
+    .renewal .smart_statistics{padding: 70px 0 50px;}
+    .renewal .smart_statistics .tit_con h4::before{margin: 0 auto 22px;}
+    .renewal .smart_map{padding: 70px 0 50px;}
+    .renewal .smart_map .tit_con h4::before{margin: 0 auto 22px;}
+
+    .renewal .flex-item .inner{flex-wrap: wrap;}
+    .renewal .flex-item .tit_con{width: 100%; text-align: center;}
+    .renewal .flex-item .img_con{margin: 65px auto 0; width: 537px;}
+    .renewal .flex-item.rev .tit_con{width: 100%;}
+    .renewal .flex-item.rev .img_con{margin: 65px auto 0;}
+
+    .smartCaddie .mainSlide .txt_con{width: 100%; top: 110px; left: 50%; transform: translate(-50%, 0); text-align: center;}
+    .smartCaddie .mainSlide .golfbuddy{margin-bottom: 40px; width: 200px; height: 42px;}
+    .smartCaddie .mainSlide .smartlogo{margin: 25px 0 24px; width: 266px; height: 56px; background-image: url('../images/renewal/logo-smartcaddie-b.svg');}
+    .smartCaddie .mainSlide .btn_con .download{margin: 25px auto 0; padding: 0 20px 0 32px; font-size: 16px;}
+    .smartCaddie .mainSlide .txt_con .title{font-size: 45px; color: #000; text-shadow: none;}
+    .smartCaddie .mainSlide .txt_con .title.white{color: #fff; text-shadow: 0 3px 4px rgba(61, 62, 38, 1);}
+    .smartCaddie .mainSlide .txt_con.top{top: 110px; transform: translateX(-50%);}
+    .smartCaddie .mainSlide .txt_con.left{left: 50%;}
+    .smartCaddie .mainSlide .btn_con .download.yellow{color: #000; background: #FFC03E;}
+    .smartCaddie .mainSlide .btn_con .download.yellow::after{background-image: url('../images/renewal/icn_arrow_right_b.svg');}
+    .smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin-left: 10px; width: 18px; height: 18px;}
+    .smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{opacity: 1;}
+    .smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 40px;}
+
+    .smartCaddie .info_con{padding: 105px 0; text-align: center;}
+    .smartCaddie .info_con .inner{flex-wrap: wrap;}
+    .smartCaddie .info_con .sub_txt{width: 100%; opacity: 1 !important; transform: translate(0) !important;}
+    .smartCaddie .info_con .sub_txt br{display: block;}
+    .smartCaddie .info_con .img_watch{margin: 50px auto; width: 320px;}
+    .smartCaddie .info_con .sub_txt:nth-of-type(2){text-align: center;}
+
+    .smartCaddie .renewal_con .title{margin-bottom: 54px;}
+    .smartCaddie .renewal_con .list{flex-wrap: wrap;}
+    .smartCaddie .renewal_con .list dl{padding: 28px 60px 28px 30px; width: 530px;}
+    .smartCaddie .renewal_con .list dl + dl{margin-top: 30px; margin-left: 0;}
+
+    .smartCaddie .manage_con h2{padding-top: 90px;}
+    .smartCaddie .manage_con img{width: 534px;}
+
+    .smartCaddie .smart_con .inner{flex-wrap: wrap; flex-direction: column-reverse;}
+    .smartCaddie .smart_con .txt_con{align-items: flex-start; margin: 0 auto; padding: 93px 0 0; width: 493px;}
+    .smartCaddie .smart_con .txt_con .desc_list{margin-top: 100px; margin-bottom: 0;}
+    .smartCaddie .smart_con .img_con{margin: 0 auto; width: 565px;}
+
+    .smartCaddie .feature_con .item{flex-wrap: wrap; padding: 40px 10px; text-align: center;}
+    .smartCaddie .feature_con .item .ico_con{width: 100%;}
+    .smartCaddie .feature_con .item .txt_con{margin: 20px auto 80px; width: 80%;}
+
+    .smartCaddie .feature_con .item .img_con{margin: 0 auto; width: 565px;}
+    .smartCaddie .feature_con .item .ico_con img{margin-right: 0;}
+    .smartCaddie .feature_con .item .img_con .size1{width: 44.3%;}
+    .smartCaddie .feature_con .item .img_con .size2{width: 79.76%;}
+}
+
+@media (max-width:640px){
+    .renewal .inner{padding: 0 5.47vw;}
+
+
+    .app_download{height: 13.59vw;}
+    .app_download a{padding: 1.25vw 3.75vw; font-size: 2.19vw; border: 0.63vw solid #FFC03E; border-radius: 3.91vw;}
+
+    .renewal .btn_s{margin: 0 auto; padding: 1.88vw 1.88vw 1.88vw 0; font-size: 2.81vw; border-radius: 4.06vw; box-shadow: 0 0.78vw 1.25vw rgba(0,0,0,0.15);}
+    .renewal .btn_s::after{right: 2.50vw; width: 1.88vw; height: 3.44vw;}
+
+    .renewal .membership_main{padding: 17.81vw 0 7.03vw;}
+    .renewal .membership_main .img_con{margin: 2.50vw auto 0; width: 70.47vw;}
+    .renewal .membership_main .txt_con p{font-size: 3.13vw;}
+    .renewal .membership_main .txt_con p.title{margin-bottom: 1.41vw; font-size: 6.25vw;}
+    .renewal .membership_main .txt_con p.sub{margin: 7.19vw 0 2.81vw;}
+    .renewal .membership_main .txt_con .btn_s{width: 52.97vw;}
+
+    .renewal .membership_change{padding: 14.06vw 0 11.72vw; background-image: url("../images/renewal/mo_membership_background_01.jpg");}
+    .renewal .membership_change .inner{display: block;}
+    .renewal .membership_change h2{margin-bottom: 12.19vw; font-size: 6.25vw;}
+    /*.renewal .membership_change .txt_con{padding-left: 4.81vw;}*/
+    .renewal .membership_change .txt_con{padding-left: 0;}
+    .renewal .membership_change .txt_con .tag{margin-bottom: 3.75vw; padding: 1.41vw 3.75vw; font-size: 2.81vw; border-radius: 4.06vw;}
+    .renewal .membership_change .txt_con h3{margin-bottom: 2.34vw; font-size: 4.69vw;}
+    .renewal .membership_change .txt_con .sub{font-size: 3.13vw;}
+    .renewal .membership_change .txt_con .item + .item{margin-top: 9.38vw;}
+
+    .renewal .membership_free{padding: 11.72vw 0 84.38vw; background-image: url("../images/renewal/mo_membership_background_02.jpg");}
+    .renewal .membership_free .logo{width: 37.34vw;}
+    .renewal .membership_free h3{margin: 3.13vw 0 2.34vw; font-size: 6.25vw;}
+    .renewal .membership_free p{font-size: 3.13vw;}
+    .renewal .membership_free .btn_s{margin-top: 3.59vw; width: 37.03vw;}
+
+    .renewal .membership_coupon{padding: 21.88vw 0 19.53vw;}
+    .renewal .membership_coupon .item + .item{margin-top: 21.88vw;}
+    .renewal .membership_coupon .item h3{margin-bottom: 3.91vw; font-size: 6.25vw;}
+    .renewal .membership_coupon .item h3::before{margin: 0 auto 3.91vw; width: 19.64vw; height: 12.73vw;}
+    .renewal .membership_coupon .item .box{padding: 3.44vw 0 4.06vw; width: 100%; border-radius: 4.69vw;}
+    .renewal .membership_coupon .item .box.yellow{border: 0.78vw solid #FFC03E;}
+    .renewal .membership_coupon .item .box.blue{border: 0.78vw solid #0B77D6;}
+    .renewal .membership_coupon .item .box.gray{margin-top: 2.34vw; padding: 10.00vw 0; border: 0.78vw solid #D0D0D0;}
+    .renewal .membership_coupon .item .box .tag{margin: 0 auto 3.13vw; width: 24.69vw; height: 5.31vw; line-height: 5.31vw; font-size: 1.88vw; border-radius: 3.59vw;}
+    .renewal .membership_coupon .item .box dl{margin-bottom: 0.94vw;}
+    .renewal .membership_coupon .item .box dl dt{font-size: 2.66vw;}
+    .renewal .membership_coupon .item .box.gray dl{margin-bottom: 4.06vw;}
+    .renewal .membership_coupon .item .box dl dd{font-size: 4.53vw;}
+    .renewal .membership_coupon .item .box .cash{width: 52.81vw; height: 14.06vw; font-size: 6.88vw; border-radius: 9.38vw;}
+    .renewal .membership_coupon .item .box .cash span{margin-left: 0.78vw; margin-top: 2.81vw; font-size: 3.44vw;}
+    .renewal .membership_coupon .item .sub{margin-top: 3.13vw; font-size: 2.81vw; letter-spacing: -0.1vw;}
+
+    .renewal .membership_guide{padding: 13.13vw 0;}
+    .renewal .membership_guide h3{margin-bottom: 3.13vw; font-size: 6.25vw;}
+    .renewal .membership_guide p{font-size: 3.13vw;}
+
+    .renewal .membership_refund{padding: 15.63vw 0 14.06vw;}
+    .renewal .membership_refund h3{margin-bottom: 7.97vw; font-size: 6.25vw;}
+    .renewal .membership_refund .list_con .item{padding: 4.38vw 0 3.13vw 4.69vw; width: 100%; min-height: 47.50vw; border: 0.16vw solid #898989; border-radius: 1.56vw;}
+    .renewal .membership_refund .list_con .item + .item{margin-top: 8.13vw;}
+    .renewal .membership_refund .list_con .item ul li{margin-bottom: 4.69vw; padding-left: 3.13vw; font-size: 3.13vw;}
+    .renewal .membership_refund .list_con .item ul li::before{top: 0.94vw; width: 1.25vw; height: 1.25vw;}
+    .renewal .membership_refund .list_con .item ul li span{margin-top: 0.31vw; letter-spacing: -0.1vw;}
+
+    .renewal .membership_etc{padding: 15.63vw 0 15.00vw;}
+    .renewal .membership_etc h3{margin-bottom: 3.13vw; font-size: 6.25vw;}
+    .renewal .membership_etc .sub{margin-bottom: 9.38vw; font-size: 3.13vw; line-height: 1.6;}
+    .renewal .membership_etc .etc_list .item{width: 72.97vw; height: 21.88vw; border: 0.16vw solid #898989; border-radius: 1.56vw;}
+    .renewal .membership_etc .etc_list .item + .item{margin-top: 2.34vw;}
+    .renewal .membership_etc .etc_list .item .logo{margin-right: 2.81vw; width: 13.13vw;}
+    .renewal .membership_etc .etc_list .item dl dt{margin-bottom: 0.63vw; font-size: 3.13vw;}
+    .renewal .membership_etc .etc_list .item dl dd{font-size: 3.13vw;}
+    .renewal .membership_etc .etc_list .item dl dd.sm{font-size: 2.19vw;}
+
+    .renewal .smart_main{padding: 14.53vw 0;}
+    .renewal .smart_main .inner{padding: 0 5.47vw;}
+    .renewal .smart_main .txt_con p{margin-bottom: 6.72vw; font-size: 6.25vw;}
+    .renewal .smart_main .txt_con .btn_s{width: 34.53vw;}
+    .renewal .smart_main .txt_con .btn_s + .btn_s{margin-top: 3.13vw;}
+    .renewal .smart_main .img_con{margin: 10.94vw auto 0; width: 83.59vw;}
+
+    .renewal .smart_banner{padding: 16.41vw 0;}
+    .renewal .smart_banner .logo_con{width: 47.97vw;}
+    .renewal .smart_banner .txt_con{margin: 5.63vw auto 0; width: 70.00vw;}
+    .renewal .smart_banner .txt_con h3{margin-bottom: 2.34vw; font-size: 3.13vw;}
+    .renewal .smart_banner .txt_con p{font-size: 3.13vw;}
+
+    .renewal .smart_guide{padding: 16.88vw 0 9.53vw;}
+    .renewal .smart_guide .img_con{margin: 10.31vw auto 0; width: 92.03vw;}
+    .renewal .smart_guide .txt_con{padding-left: 6.25vw; padding-right: 3.28vw;}
+    .renewal .smart_guide .txt_con p{font-size: 6.25vw;}
+
+    .renewal .smart_score{padding: 10.94vw 0 7.81vw;}
+    .renewal .smart_score .tit_con h4::before{margin-bottom: 3.44vw;}
+    .renewal .smart_course{padding: 10.94vw 0 7.81vw;}
+    .renewal .smart_course .tit_con h4::before{margin-bottom: 3.44vw;}
+    .renewal .smart_statistics{padding: 10.94vw 0 7.81vw;}
+    .renewal .smart_statistics .tit_con h4::before{margin-bottom: 3.44vw;}
+    .renewal .smart_map{padding: 10.94vw 0 7.81vw;}
+    .renewal .smart_map .tit_con h4::before{margin-bottom: 3.44vw;}
+
+    .renewal .flex-item .tit_con h4{margin-bottom: 2.97vw; font-size: 5.47vw;}
+    .renewal .flex-item .tit_con p{font-size: 3.13vw;}
+    .renewal .flex-item .img_con{margin-top: 10.16vw; width: 83.91vw;}
+    .renewal .flex-item.rev .img_con{margin-top: 10.16vw;}
+
+    .smartCaddie h2{font-size: 6.25vw;}
+    .smartCaddie .mainSlide .txt_con{top: 17.19vw;}
+    .smartCaddie .mainSlide .golfbuddy{margin-bottom: 6.25vw; width: 31.25vw; height: 6.56vw;}
+    .smartCaddie .mainSlide .smartlogo{margin: 3.91vw 0 3.75vw; width: 41.56vw; height: 8.75vw; }
+    .smartCaddie .mainSlide .btn_con .download{margin: 3.91vw auto 0; padding: 0 3.13vw 0 5.00vw; height: 8.13vw; font-size: 2.50vw; border-radius: 4.06vw; box-shadow: 0 0.78vw 1.25vw rgba(0, 0, 0, 0.15);}
+    .smartCaddie .mainSlide .btn_con .download::after{margin-right: 1.09vw; width: 1.88vw; height: 3.44vw;}
+    .smartCaddie .mainSlide .txt_con .title{font-size: 7.03vw; color: #000;}
+    .smartCaddie .mainSlide .txt_con .title.white{text-shadow: 0 0.47vw 0.63vw rgba(61, 62, 38, 1);}
+    .smartCaddie .mainSlide .txt_con.top{top: 17.19vw;}
+    .smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{margin-left: 1.56vw; width: 2.81vw; height: 2.81vw;}
+    .smartCaddie .mainSlide.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 6.25vw;}
+
+    .smartCaddie .detail_area .inner{padding: 0 6.25vw;}
+    .smartCaddie .info_con{padding: 16.41vw 0;}
+    .smartCaddie .info_con .img_watch{margin: 7.81vw auto; width: 50.00vw;}
+    .smartCaddie .info_con .sub_txt{font-size: 5.47vw;}
+
+    .smartCaddie .renewal_con{padding: 15.63vw 0;}
+    .smartCaddie .renewal_con .title{margin: 0 auto 11.41vw; font-size: 4.69vw;}
+    .smartCaddie .renewal_con .title::after{margin-top: 0.94vw;height: 0.47vw;}
+    .smartCaddie .renewal_con .list dl{padding: 4.38vw 9.38vw 4.38vw 4.69vw; width: 82.81vw; min-height: 26.41vw; border-radius: 1.56vw;}
+    .smartCaddie .renewal_con .list dl + dl{margin-top: 4.69vw;}
+    .smartCaddie .renewal_con .list dt{font-size: 3.91vw;}
+    .smartCaddie .renewal_con .list dt::before{margin-right: 2.34vw; width: 5.00vw; height: 7.34vw;}
+    .smartCaddie .renewal_con .list dd{margin-top: 2.66vw; margin-left: 7.81vw; font-size: 2.97vw;}
+
+    .smartCaddie .manage_con h2{padding-top: 14.06vw;}
+    .smartCaddie .manage_con .btn_con a{margin: 4.69vw auto 8.28vw; padding: 0 5.00vw; height: 6.25vw; font-size: 2.81vw; border-radius: 6.88vw;}
+    .smartCaddie .manage_con img{width: 83.44vw;}
+
+    .smartCaddie .smart_con .txt_con{padding: 14.53vw 4.69vw 0; width: 77.03vw;}
+    .smartCaddie .smart_con .txt_con .desc_list{margin-top: 15.61vw;}
+    .smartCaddie .smart_con .txt_con .desc_list li{font-size: 2.50vw;}
+    .smartCaddie .smart_con .txt_con .desc_list li + li{margin-top: 1.88vw;}
+    .smartCaddie .smart_con .img_con{width: 88.28vw;}
+
+    .smartCaddie .feature_con{padding-bottom: 13.13vw;}
+    .smartCaddie .feature_con .inner{padding: 0 5.47vw;}
+    .smartCaddie .feature_con .item{margin-top: 4.69vw; padding: 6.25vw 1.56vw; border-radius: 1.56vw;}
+    .smartCaddie .feature_con .item .ico_con img{width: 15.31vw;}
+    .smartCaddie .feature_con .item .txt_con{margin: 3.13vw auto 12.50vw;}
+    .smartCaddie .feature_con .item .txt_con dt{margin-bottom: 2.50vw; font-size: 4.38vw;}
+    .smartCaddie .feature_con .item .txt_con dt.tag_hot::after{margin-left: 2.34vw; width: 8.75vw; height: 3.91vw;}
+    .smartCaddie .feature_con .item .txt_con dd{font-size: 3.13vw;}
+    .smartCaddie .feature_con .item .txt_con dd.desc{margin-top: 2.19vw; font-size: 2.81vw;}
+    .smartCaddie .feature_con .item .txt_con dd.desc .ico_up{width: 3.59vw;}
+    .smartCaddie .feature_con .item .txt_con dd.desc .ico_down{width: 3.13vw;}
+    .smartCaddie .feature_con .item .img_con{width: 88.28vw;}
+    .smartCaddie .feature_con .item .img_con .size3{padding: 3.13vw 0;}
+}
+
+/* 영문 */
+#wrap[lang="en"] .smartCaddie h2{font-size: 35px; line-height: 1.2;}
+
+#wrap[lang="en"] .smartCaddie .mainSlide .txt_con{right: 14%;}
+#wrap[lang="en"] .smartCaddie .info_con .sub_txt{font-size: 28px; line-height: 1.4;}
+#wrap[lang="en"] .smartCaddie .renewal_con .list dt{font-size: 23px;}
+#wrap[lang="en"] .smartCaddie .renewal_con .list dd.symbol{margin-top: 42px;}
+#wrap[lang="en"] .smartCaddie .feature_con .item .txt_con dt{font-size: 28px;}
+#wrap[lang="en"] .smartCaddie .feature_con .item .txt_con dt.tag_hot::before{content: ''; display: block; margin-bottom: 10px; width: 56px; height: 25px; background: url('../images/renewal/tag_hot_left.svg') no-repeat center/100% auto;}
+#wrap[lang="en"] .smartCaddie .feature_con .item .txt_con dt.tag_hot::after{display: none;}
+
+#wrap[lang="en"] .renewal .btn_s{font-size: 14px;}
+#wrap[lang="en"] .renewal .smart_main .txt_con{width: 42%;}
+#wrap[lang="en"] .renewal .smart_main .txt_con p{font-size: 35px;}
+#wrap[lang="en"] .renewal .smart_main .txt_con p br{display: none;}
+#wrap[lang="en"] .renewal .smart_banner .txt_con h3{font-size: 18px;}
+#wrap[lang="en"] .renewal .smart_banner .txt_con p{font-size: 18px;}
+#wrap[lang="en"] .renewal .smart_guide .txt_con p{font-size: 35px;}
+
+#wrap[lang="en"] .renewal .flex-item .tit_con{padding-right: 120px;}
+#wrap[lang="en"] .renewal .flex-item .tit_con h4{font-size: 20px;}
+#wrap[lang="en"] .renewal .flex-item .tit_con p br{display: none;}
+#wrap[lang="en"] .renewal .flex-item.rev .tit_con{padding-right: 20px;}
+
+#wrap[lang="en"] .renewal .membership_coupon .item .box .cash span{font-weight: 700;}
+#wrap[lang="en"] .renewal .membership_coupon .item .box dl dd small{font-size: 20px;}
+#wrap[lang="en"] .renewal .membership_refund .list_con .item{padding-right: 80px;}
+#wrap[lang="en"] .renewal .membership_refund .list_con .item ul{display: flex; flex-wrap: wrap; height: 100%;}
+#wrap[lang="en"] .renewal .membership_refund .list_con .item ul li span{font-size: 16px;}
+#wrap[lang="en"] .renewal .membership_main .txt_con p.title{font-size: 35px;}
+#wrap[lang="en"] .renewal .membership_main .txt_con p.sub br{display: none;}
+#wrap[lang="en"] .renewal .membership_change h2{font-size: 35px;}
+#wrap[lang="en"] .renewal .membership_change .txt_con h3{font-size: 28px;}
+#wrap[lang="en"] .renewal .membership_free h3{font-size: 35px;}
+
+#wrap[lang="en"] .renewal .membership_free{background-image: url("../images/renewal/membership_background_02_en.jpg");}
+
+#wrap[lang="en"] .renewal .membership_etc .etc_list .item.kakao{display: none;}
+
+@media (max-width: 1680px) {
+    #wrap[lang="en"] .smartCaddie .mainSlide .txt_con{right: 12%;}
+}
+
+@media (max-width: 1540px) {
+    #wrap[lang="en"] .smartCaddie .mainSlide .txt_con{right: 8%;}
+}
+
+@media (max-width: 1380px) {
+    #wrap[lang="en"] .smartCaddie .mainSlide .txt_con{right: 5%;}
+}
+
+@media (max-width: 1280px) {
+    #wrap[lang="en"] .smartCaddie .mainSlide .txt_con{right: 8%;}
+}
+
+@media (max-width: 960px) {
+    #wrap[lang="en"] .renewal.smartCaddie .mainSlide .txt_con{right: 5%;}
+    #wrap[lang="en"] .smartCaddie .feature_con .item .txt_con dt.tag_hot::before{display: inline-block; margin: 0 10px 0 0; vertical-align: middle;}
+
+    #wrap[lang="en"] .renewal .smart_main .txt_con{width: 100%;}
+    #wrap[lang="en"] .renewal .smart_main .txt_con p br{display: block;}
+
+    #wrap[lang="en"] .renewal .flex-item .tit_con{padding-right: 0;}
+    #wrap[lang="en"] .renewal .flex-item .tit_con h4{font-size: 28px;}
+    #wrap[lang="en"] .renewal .flex-item .tit_con p br{display: block;}
+    #wrap[lang="en"] .renewal .flex-item.rev .tit_con{padding-right: 0;}
+
+    #wrap[lang="en"] .renewal .membership_main .txt_con p.sub br{display: block;}
+    #wrap[lang="en"] .renewal .membership_change .txt_con .sub{padding-right: 110px;}
+
+    #wrap[lang="en"] .renewal .membership_free{background-image: url("../images/renewal/mo_membership_background_02_en.jpg");}
+}
+
+@media (max-width: 640px) {
+    #wrap[lang="en"] .smartCaddie .feature_con .item .txt_con dt.tag_hot::before{margin: 0 1.56vw 0 0; width: 8.75vw; height: 3.91vw;}
+
+    #wrap[lang="en"] .renewal .btn_s{font-size: 2.19vw;}
+    #wrap[lang="en"] .renewal .smart_main .txt_con{width: 100%;}
+    #wrap[lang="en"] .renewal .smart_main .txt_con p{font-size: 5.47vw;}
+    #wrap[lang="en"] .renewal .smart_banner .txt_con h3{font-size: 2.81vw;}
+    #wrap[lang="en"] .renewal .smart_banner .txt_con p{font-size: 2.81vw;}
+    #wrap[lang="en"] .renewal .smart_guide .txt_con p{font-size: 5.47vw;}
+
+    #wrap[lang="en"] .renewal .flex-item .tit_con h4{font-size: 4.38vw;}
+    #wrap[lang="en"] .renewal .flex-item .tit_con p br{display: block;}
+
+    #wrap[lang="en"] .renewal .membership_coupon .item .box .cash span{font-weight: 700;}
+    #wrap[lang="en"] .renewal .membership_coupon .item .box dl dd small{font-size: 3.13vw;}
+    #wrap[lang="en"] .renewal .membership_refund .list_con .item{padding-right: 12.50vw;}
+    #wrap[lang="en"] .renewal .membership_refund .list_con .item ul{display: flex; flex-wrap: wrap; height: 100%;}
+    #wrap[lang="en"] .renewal .membership_refund .list_con .item ul li span{font-size: 2.50vw;}
+    #wrap[lang="en"] .renewal .membership_main .txt_con p.title{font-size: 5.47vw;}
+    #wrap[lang="en"] .renewal .membership_main .txt_con p.sub br{display: block;}
+    #wrap[lang="en"] .renewal .membership_change h2{font-size: 5.47vw;}
+    #wrap[lang="en"] .renewal .membership_change .txt_con .sub{padding-right: 17.19vw;}
+    #wrap[lang="en"] .renewal .membership_change .txt_con h3{font-size: 4.38vw;}
+    #wrap[lang="en"] .renewal .membership_free h3{font-size: 5.47vw;}
+}
+
+
+
+
+
+
+

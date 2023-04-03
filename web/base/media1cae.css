@@ -1,0 +1,1634 @@
+@charset "utf-8";
+/* 반응형 */
+
+@media all and (max-width:1330px){
+
+	/* 161115*/
+	#wrap.Smart_Caddie {min-width: 0;}
+	#wrap.Smart_Caddie .contBox .container_inner{width: auto;}
+	#wrap.Smart_Caddie .contBox .visual_cont{display: block;font-size: 0;}
+	#wrap.Smart_Caddie .contBox .visual_cont li{width: 33.33%;margin: 0;font-size: 0;float:none;display: inline-block;}
+	#wrap.Smart_Caddie .contBox .visual_cont li img{width: 100%;}
+	#wrap.Smart_Caddie .contBox .tit{height: auto;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{text-align: center;height: auto;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_wrap{position: relative;margin: 0 auto;top: auto;right: auto;width: 300px;height: 256px;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch img{height: 256px;width: 173px;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_inner{left: 89px;top: 59px;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_inner img{width: 120px;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .tit,
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_tit,
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_txt{padding-left: 0;}
+	#wrap.Smart_Caddie .contBox.Golf_Courses_cont{margin-top: -100px;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{background: none;}
+
+}
+
+
+@media all and (max-width:1202px){
+	#wrap{min-width:0}
+	.top_nav{right:36px;left:auto;margin-left:0}
+	#header .menu{clear:both}
+
+	/*170110 GolfGps*/
+	/*
+    .GolfGps .golfgps_section{overflow: hidden;}
+    .GolfGps .container_inner{padding: 0;}
+    .youtube_video .container_inner{padding: 80px 60px 100px;}
+    */
+}
+
+@media (max-width: 1201px){
+
+	/* Smart_Caddie 161115 */
+	#wrap.Smart_Caddie .contBox .container_inner{padding-top: 50px;}
+	#wrap.Smart_Caddie .contBox.Golf_Courses_cont{padding-top: 0;}
+	#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{padding-top: 7px;}
+	#wrap.Smart_Caddie .contBox.Golf_Courses_cont .tit img:first-child{display: block;margin: 0 auto 9px;}
+
+	/*scorecard 160809*/
+	#wrap.scorecard #container{background-color: #343434;}
+	#wrap.scorecard #header .btn_menu.type2 a{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_menu1.png)}
+	#wrap.scorecard .header_inner > .logo.type2 a {background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/logo_golfwith1.png);}
+	#wrap.scorecard #container .inner_bg{background: none;}
+	.scorecard_section .myscorecard_btns .mybtn{font-weight: normal;border: none;border-bottom: 2px solid #0fb257;border-radius: 0;font-size: 13px;font-weight: normal;color: #0dc860;width: auto;height: auto;padding: 0 5px;line-height: 1.8;font-weight: bold;}
+	.scorecard_section .app_btns{position: fixed;padding-bottom: 0;bottom: 0;left: 0;width: 100%;background-color: rgba(0, 0, 0, 0.9);z-index: 2;}
+	.scorecard_section .app_btns a{margin: 14px 10px;vertical-align: middle;}
+	.btn_appstore{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_appstore.png);-webkit-background-size: 105px 34px;background-size: 105px 34px;width: 105px;height: 34px;}
+	.btn_googleplay{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_googleplay.png);-webkit-background-size: 105px 34px;background-size: 105px 34px;width: 105px;height: 34px;}
+
+	/* 161116 */
+	#wrap .top_nav.scrollActive{bottom: 70px !important;}
+
+	/* header */
+	/*#header .logo{float:none; margin:0px auto;}*/
+	#header .btn_menu,#menu .logo,#menu .btn_close{display:block}
+	#menu{overflow:hidden;overflow-y:auto;position:fixed;top:-100%;left:0;z-index:4;width:100%;height:100%;padding:0;text-align:center;transition:.5s all}
+	#menu .inner{background-color:#fff}
+	#menu.on{top: 0;}
+	#header .menu,#header .menu li{float:none}
+	#header .menu li{height:40px;margin:0;line-height:40px}
+	#header .menu li,
+	#header .menu li a{font-size:14px;color:#fff !important;opacity:1 !important;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)' !important;filter:alpha(opacity=100) !important}
+	#header .menu li[aria-sub]:hover,
+	#header .menu li[aria-sub]:focus{height: auto;}
+	#header .menu li:hover:after,
+	#header .menu li[aria-now-menu]:after{display: none;}
+	#header .menu li.on a{color:#16ad59 !important}
+	#header .menu li.on:after{display:none}
+	#header .menu .sub_menu{display: none;position: relative;width: 100%;transform: unset;left: 0;}
+	/*#header .menu .sub_menu>li{background-color: #f6f6f6 !important;margin-left: 0;}*/
+	#header .menu>li:focus>.sub_menu, #header .menu>li:hover>.sub_menu, #header .menu>li>.sub_menu:hover{display: block;transform: unset;padding: 0;}
+	#header .menu>li:not(:last-child){margin-right: 0;}
+	#header .login{position:static;height:auto;padding-top:14px;padding-bottom:30px;line-height:1}
+	/*#header .login .btn.type1{width:90px;border:none;border-radius:999px;background-color:#000;line-height:27px;font-size:12px;color:#fff}*/
+
+	/* container */
+	#container{margin-bottom:-140px;padding-bottom:140px}
+
+	/* footer */
+	#footer .footer_inner{height:auto;min-height: 140px;padding-bottom: 20px;padding-top:25px}
+	#footer .left_section,#footer .right_section{width:100%;text-align:center}
+	#footer .left_section{margin-bottom:10px;padding-top:0;padding-bottom:15px;}
+	/*#footer .left_section li{display:inline-block;float:none;margin:5px 0;padding:0 13px;}*/
+	/*#footer .communication li{height:8px;line-height:3px}*/
+	#footer .communication a{display:inline-block;font-size:12px}
+	#footer .terms{line-height:1}
+	#footer .terms a{font-size:10px;letter-spacing: -0.5px;}
+	#footer .ico_facebook{width:10px;height:10px; background-size: contain;}
+	/*#footer .gzlogo{width:120px; height:25px;}*/
+	#footer address{margin-top:10px;font-size:10px;}
+
+	/* GearS2 */
+	.GearS2_section h2{padding-top: 5px;font-size:31px;line-height:1.4;}
+	.GearS2_section .txt1{line-height:1.4;}
+	.GearS2_section .txt1 span{font-size:13px;}
+	.GearS2_section .txt1 .ico_cross{width:10px;height:10px;margin:0 5px;margin-top:2px;background-size:10px 10px;-webkit-background-size:10px 10px}
+	.GearS2_section .txt2{font-size:12px;line-height:1.4}
+
+	/* course */
+	.golf_course_list_item.alphabet{font-size:16px}
+	.golf_course_list_item a{font-size:14px}
+	.golf_course_section .scorecard_mark,.golf_course_section .yardage_mark,.golf_course_section .gear_mark,.golf_course_section .course_mark,.golf_course_section .elevation_mark,.golf_course_section .green_mark{width:15px;height:9px;padding: 3px 0;line-height:9px;font-size:9px}
+	.golf_course_sub_header .left_section a,.golf_course_sub_header .left_section span{font-size:16px}
+	.golf_course_sub_header .right_section span{font-size:14px}
+	/*170912*/
+	.golf_course_header .golf_course_info{font-size: 14px;}
+
+	/* terms_section */
+	.terms_section_header{padding-top: 180px;padding-bottom:10px;line-height: 34px;z-index: 10;}
+	.terms_section_header.hide_header{margin-top: 0;}
+	.terms_section_header .title h2{font-size:27px;line-height:27px;}
+	.terms_section_header .info{float:none;clear:both;text-align:left}
+	.terms_section_header .title p{font-size: 14px;}
+
+	.faq_section{margin: 0 35px;}
+
+	/*My_Scorecard*/
+	.My_Scorecard_section table.type1 .score{width: 15%;}
+	.my_scorecard_view .pc_table{display: none;}
+	.my_scorecard_view .m_table{display: block;}
+	#wrap.scorecard #footer{display: none;}
+	#wrap.scorecard #container{padding-bottom: 72px !important;}
+
+	/*160811 모바일해상도 이미지*/
+	.scorecard_section_cards span.img_scorecard1{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard1_m.png)}
+	.scorecard_section_cards span.img_scorecard2{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard2_m.png)}
+	.scorecard_section_cards span.img_scorecard3{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard3_m.png)}
+	.scorecard_section_cards span.img_yardage1{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage1_m.png)}
+	.scorecard_section_cards span.img_yardage2{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage2_m.png)}
+	.scorecard_section_cards span.img_yardage3{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage3_m.png)}
+
+	/* main 170228 */
+	#wrap.main .marker_section .visual{width: 25%;-webkit-background-size: 100% auto;background-size: 100% auto;background-position: 100% 100%;}
+
+	/* SmartCaddieV1 */
+	#wrap.SmartCaddieV1{min-width: 0;}
+	#wrap.SmartCaddieV1 .ServiceFeatures .title_group .txt .ib{display: inline-block;}
+	#wrap.SmartCaddieV1 .EasyToUse .title_group{padding-bottom: 25px; text-align: center;}
+	#wrap.SmartCaddieV1 .EasyToUse .container_inner{padding: 0;}
+	#wrap.SmartCaddieV1 .EasyToUse .visual_cont{display: none;position: relative;width: 80%; min-width:320px;}
+	#wrap.SmartCaddieV1 .EasyToUse .visual_cont .txt .ib{display: inline;}
+	#wrap.SmartCaddieV1 .EasyToUse .visual_cont.slider{display: block;}
+	#wrap.SmartCaddieV1 .EasyToUse .slider{position: relative;}
+	#wrap.SmartCaddieV1 .EasyToUse .slider .slick-track .item{position: static; margin:10px; margin-bottom:20px;}
+	#wrap.SmartCaddieV1 .EasyToUse .slider .item{position: absolute;top: 0;left: 0;margin: 0;width: 100%;height: 500px;}
+	#wrap.SmartCaddieV1 .EasyToUse .slider .item.active{z-index: 1;}
+	#wrap.SmartCaddieV1 .EasyToUse .slider .item .img{width: 100%;background-position: 50% 0;}
+	#wrap.SmartCaddieV1 .EasyToUse .slider .item .txt{max-width: 500px;margin: 0 auto;}
+	/* PLAY ROUND */
+
+	/* // PLAY ROUND // */
+
+	/*170313 GolfGps*/
+	/*
+    .GolfGps .golfgps_visual .golfgps_section{height: 520px;-webkit-background-size: contain;background-size: contain;}
+    .GolfGps .golfgps_visual .cont{right: 60px;}
+    .GolfGps .golfgps_visual .visual{twidth: 635px;height: 459px;-webkit-background-size: 635px auto;background-size: 635px 459px;background-position: 0 100%;}
+    .GolfGps .golfgps_visual h2{width: 340px;height: 143px;-webkit-background-size: 340px 143px;background-size: 340px 143px;}
+    .GolfGps .golfgps_visual .AppleBtn,
+    .GolfGps .golfgps_visual .GoogleBtn,
+    .GolfGps .golfgps_section4 .AppleBtn,
+    .GolfGps .golfgps_section4 .GoogleBtn{width: 182px;height: 55px;-webkit-background-size: 182px 55px;background-size: 182px 55px;}
+    .GolfGps .golfgps_visual .download{top: 290px;}
+    .GolfGps .golfgps_section1 .golfgps_section,
+    .GolfGps .golfgps_section3 .golfgps_section{padding-left: 60px;padding-top: 150px;height: 570px;}
+    .GolfGps .golfgps_section1 .visual{left: auto;right: 36px;width: 372px;height: 509px;-webkit-background-size: 372px 509px;background-size: 372px 509px;}
+    .GolfGps .golfgps_section2 .golfgps_section{padding-left: 60px;height: 780px;}
+    .GolfGps .golfgps_section2 .visual1{left: auto;top: 450px;right: 198px;width: 408px;height: 549px;-webkit-background-size: 408px 549px;background-size: 408px 549px;}
+    .GolfGps .golfgps_section2 .visual2{left: auto;top: 300px;right: 50px;width: 392px;height: 521px;-webkit-background-size: 392px 521px;background-size: 392px 521px;}
+    .GolfGps .golfgps_section3 .visual{left: auto;right: 36px;width: 372px;height: 496px;-webkit-background-size: 372px 496px;background-size: 372px 496px;}
+    .GolfGps .golfgps_section4{height: auto;padding-bottom: 80px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1 {min-height: 650px;height: auto;padding-bottom: 140px;padding-top: 90px;padding-left: 450px;padding-right: 130px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_2 {padding-right: 450px;padding-bottom: 40px;height: auto;padding-top: 150px;margin-top: -90px;padding-left: 130px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1 .visual{left: 110px;top: 80px;width: 333px;height: 558px;-webkit-background-size: 333px 558px;background-size: 333px 558px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_2 .visual{left: auto;right: 110px;width: 333px;height: 558px;-webkit-background-size: 333px 558px;background-size: 333px 558px;}
+    */
+	/*170313 scorecardV1*/
+	.scorecardV1 .scorecardV1_visual .scorecardV1_section{padding-left: 24px;height: 520px;-webkit-background-size: contain;background-size: contain;background-position: 50% 0;}
+	.scorecardV1 .scorecardV1_visual h2{margin-bottom: 75px;width: 373px;height: 182px;-webkit-background-size: 373px 182px;background-size: 373px 182px;}
+	.scorecardV1 .scorecardV1_visual .visual{right: -56px;width: 574px;height: 430px;-webkit-background-size: 574px 430px;background-size: 574px 430px;}
+	.scorecardV1 .scorecardV1_visual .AppleBtn,
+	.scorecardV1 .scorecardV1_visual .GoogleBtn,
+	.scorecardV1 .scorecardV1_section4 .AppleBtn,
+	.scorecardV1 .scorecardV1_section4 .GoogleBtn{width: 182px;height: 54px;-webkit-background-size: 182px 54px;background-size: 182px 54px;}
+	.scorecardV1 .scorecardV1_visual .scorecardBtn{top: 0;right: 24px;}
+	.scorecardV1 .scorecardV1_section1 .scorecardV1_section{padding-left: 420px;padding-top: 150px;height: 568px;}
+	.scorecardV1 .scorecardV1_section1 .visual{left: 4px;width: 339px;height: 465px;-webkit-background-size: 339px 465px;background-size: 339px 465px;}
+	.scorecardV1 .scorecardV1_section2 .scorecardV1_section{padding-left: 24px;padding-right: 450px;height: 590px;}
+	.scorecardV1 .scorecardV1_section2 .visual{right: 24px;width: 400px;height: 482px;-webkit-background-size: 400px 482px;background-size: 400px 482px;}
+	.scorecardV1 .scorecardV1_section3 .scorecardV1_section{padding-top: 150px;padding-left: 420px;height: 568px;}
+	.scorecardV1 .scorecardV1_section3 .visual{top: 65px;left: 4px;width: 339px;height: 572px;-webkit-background-size: 339px 572px;background-size: 339px 572px;}
+	.scorecardV1 .scorecardV1_section4 .scorecardV1_section{padding-right: 550px;padding-top: 200px;padding-left: 24px;height: 946px;}
+	.scorecardV1 .scorecardV1_section4 .visual{right: -185px;width: 816px;height: 933px;-webkit-background-size: 816px 933px;background-size: 816px 933px;}
+	.scorecardV1 .scorecardV1_section4 .btns{position: absolute;bottom: 100px;left: 0;right: 0;}
+
+	/*170313 SmartMarker*/
+	.SmartMarker{-webkit-background-size: auto 600px;background-size: auto 600px;}
+	.SmartMarker .SmartMarker_section{padding: 0 24px 70px;}
+	.SmartMarker .SmartMarker_visual .AppleBtn,
+	.SmartMarker .SmartMarker_visual .GoogleBtn,
+	.SmartMarker .SmartMarker_section4 .AppleBtn,
+	.SmartMarker .SmartMarker_section4 .GoogleBtn{width: 182px;height: 54px;-webkit-background-size: 182px 54px;background-size: 182px 54px;}
+	.SmartMarker .SmartMarker_visual .SmartMarker_section{padding-top: 110px;height: 520px;}/* 170907 */
+	.SmartMarker .SmartMarker_visual .visual{width: 720px;height: 417px;-webkit-background-size: 720px 417px;background-size: 720px 417px;}
+	.SmartMarker .SmartMarker_visual .title_group .title{width: 464px;height: 114px;-webkit-background-size: 464px 114px;background-size: 464px 114px;}/* 170907 */
+	.SmartMarker .SmartMarker_visual .title_group .txt{margin-bottom: 35px;width: 418px;height: 60px;-webkit-background-size: 418px 60px;background-size: 418px 60px;}
+	.SmartMarker .SmartMarker_visual .btns{margin-bottom: 10px;}
+	.SmartMarker .SmartMarker_visual .btns .shopBtn{top: 0;}
+	.SmartMarker .SmartMarker_visual .download{left: 24px;top: 430px;}
+	.SmartMarker .SmartMarker_section1 .SmartMarker_section{height: auto;padding-top: 60px;}
+	.SmartMarker .SmartMarker_section1 .info_list li{height: 189px;}
+	.SmartMarker .SmartMarker_section1 .info_list .itme1,
+	.SmartMarker .SmartMarker_section1 .info_list .itme2,
+	.SmartMarker .SmartMarker_section1 .info_list .itme3,
+	.SmartMarker .SmartMarker_section1 .info_list .itme4{width: 100%;}
+	.SmartMarker .SmartMarker_section1 .info_list .ib{display: inline;}
+	.SmartMarker .SmartMarker_section1 .info_list .title{margin-bottom: 8px;}
+	.SmartMarker .SmartMarker_section2 .SmartMarker_section{padding: 0 24px;}
+	.SmartMarker .SmartMarker_section3 .SmartMarker_section{height: auto;padding-top: 70px;}
+	.SmartMarker .SmartMarker_section3 .title{margin-bottom: 60px;}
+	.SmartMarker .SmartMarker_section3 .visual1{margin: 0 auto;position: static;width: 620px;height: 736px;-webkit-background-size: 496px 736px;background-size: 496px 736px;background-position: 0 0;}
+	.SmartMarker .SmartMarker_section4 .list_group{margin-bottom: 100px;}
+	.SmartMarker .SmartMarker_section3 .info_list{margin-bottom: -50px;}
+	.SmartMarker .SmartMarker_section3 .info_list li{height: auto !important;width: 100% !important;padding-bottom: 100px;}
+	.SmartMarker .SmartMarker_section3 .visual2{width: 779px;height: 388px;-webkit-background-size: 779px 388px;background-size: 779px 388px;}
+	.SmartMarker .SmartMarker_section4 .SmartMarker_section{height: auto;padding-top: 70px;}
+	.SmartMarker .SmartMarker_section4 .title{margin-bottom: 60px;}
+	.SmartMarker .SmartMarker_section3 .list_txt .ib{display: inline;}
+	.SmartMarker .SmartMarker_section4 .info1,
+	.SmartMarker .SmartMarker_section4 .info2{float:none;width: auto;text-align: center;}
+	#wrap.SmartCaddieV1 .PlayRoundBox .slick-prev{left:38px;}
+	#wrap.SmartCaddieV1 .PlayRoundBox .slick-next{right:38px;}
+
+	/*170907*/
+	.SmartMarker .EasyToUse .container_inner{padding: 0;}
+	.SmartMarker .EasyToUse .visual_cont{display: none;position: relative;width: 100%;}
+	.SmartMarker .EasyToUse .visual_cont .txt .ib{display: inline;}
+	.SmartMarker .EasyToUse .visual_cont.slider{display: block;}
+	.SmartMarker .EasyToUse .slider{position: relative;}
+	.SmartMarker .EasyToUse .slider .slick-track .item{position: static;}
+	.SmartMarker .EasyToUse .slider .item{position: absolute;top: 0;left: 0;margin: 0;width: 100%;height: 500px;background-color: #fff;}
+	.SmartMarker .EasyToUse .slider .item.active{z-index: 1;}
+	.SmartMarker .EasyToUse .slider .item .img{width: 100%;background-position: 50% 0;}
+	.SmartMarker .EasyToUse .slider .item .txt{max-width: 500px;margin: 0 auto;}
+
+	#wrap.approval #header .logo.type2 {display: none;}
+
+}
+@media all and (max-width:959px){
+
+	#wrap{min-width: 320px;}
+	/*170313 SmartMarker*/
+	.SmartMarker{-webkit-background-size: auto 354px;background-size: auto 354px;}
+	.SmartMarker .SmartMarker_section{padding: 0;}
+	.SmartMarker .SmartMarker_visual{overflow: visible;}
+	.SmartMarker .SmartMarker_visual .container_inner{padding: 0;}
+	.SmartMarker .SmartMarker_visual .SmartMarker_section{height: 294px;padding-top: 72px;}
+	.SmartMarker .SmartMarker_visual .title_group .title{margin: 0 auto;width: 100%;height: 32px;-webkit-background-size: auto 32px;background-size: auto 32px;margin-bottom: 16px;background-position: 50% 0;}
+	.SmartMarker .SmartMarker_visual .title_group .txt{margin: 0 auto 5px;width: 300px;height: 35px;-webkit-background-size: auto 35px;background-size: auto 35px;background-position: 50% 0;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-sub-txt-m.png);}
+	.SmartMarker .SmartMarker_visual .visual{position: static;margin: 0 auto;width: 317px;height: 174px;-webkit-background-size: 301px 174px;background-size: 301px 174px;background-position: 100% 0;}
+	.SmartMarker .SmartMarker_visual .applink_group{position: absolute;top: 100%;left: 0;z-index: 1;width: 100%;text-align: center;padding-top: 21px;}
+	.SmartMarker .SmartMarker_visual .btns{margin-bottom: 0;}
+	.SmartMarker .SmartMarker_visual .download{position: static;display: block;margin-bottom: 22px;height: 15px;}
+	.SmartMarker .SmartMarker_visual .download .ico{margin-right: 5px;width: 11px;height: 11px;-webkit-background-size: 11px 22px;background-size: 11px 22px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-marker-download-m.png);}
+	.SmartMarker .SmartMarker_visual .download .text{color: #463a36;font-size: 14px;height: 15px;border-bottom: 1px solid #463a36;}
+	.SmartMarker .SmartMarker_visual .download:hover .text{border-bottom: 1px solid #463a36;}
+	.SmartMarker .SmartMarker_visual .download:active .text{color: #908986;border-bottom: 1px solid #908986;}
+	.SmartMarker .SmartMarker_visual .AppleBtn,
+	.SmartMarker .SmartMarker_visual .GoogleBtn,
+	.SmartMarker .SmartMarker_section4 .AppleBtn,
+	.SmartMarker .SmartMarker_section4 .GoogleBtn{width: 130px;height: 40px;-webkit-background-size: 130px 40px;background-size: 130px 40px;}
+	.SmartMarker .SmartMarker_visual .AppleBtn,
+	.SmartMarker .SmartMarker_section4 .AppleBtn{margin-right: 7px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_apple2_m.png);}
+	.SmartMarker .SmartMarker_visual .GoogleBtn,
+	.SmartMarker .SmartMarker_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_google2_m.png);}
+	.SmartMarker .SmartMarker_section1 .SmartMarker_section{height: auto;padding-top: 243px;padding-bottom: 30px;}
+	.SmartMarker .SmartMarker_section1 .title_group{margin-bottom: 30px;}
+	.SmartMarker .SmartMarker_section1 .title_group .title{font-size: 20px;margin-bottom: 18px;}
+	.SmartMarker .SmartMarker_section1 .title_group .txt{font-size: 14px;letter-spacing: -0.5px;}
+	.SmartMarker .SmartMarker_section1 .info_list .ico_marker{width: 74px;height: 74px;-webkit-background-size: 74px 74px;background-size: 74px 74px;}
+	.SmartMarker .SmartMarker_section1 .info_list li{width: auto !important;height: auto;min-height: 74px;float:none;margin-bottom: 30px;padding-left: 90px;}
+	.SmartMarker .SmartMarker_section1 .info_list .ib{display: inline;}
+	.SmartMarker .SmartMarker_section1 .info_list .title{margin-top: 6px;margin-bottom: 3px;font-size: 16px;}
+	.SmartMarker .SmartMarker_section1 .info_list .txt{font-size: 13px;letter-spacing: -0.5px;}
+	.SmartMarker .SmartMarker_section2 .SmartMarker_section{padding: 0;height: 80px;}
+	.SmartMarker .SmartMarker_section2 .guide{width: 50%;padding-top: 26px;height: auto;line-height: 16px;}
+	.SmartMarker .SmartMarker_section2 .guide .ib{display: block;}
+	.SmartMarker .SmartMarker_section2 .icoguide{width: 27px;height: 30px;-webkit-background-size: 27px 30px;background-size: 27px 30px;margin-right: 15px;}
+	.SmartMarker .SmartMarker_section2 .guide p{font-size: 13px;white-space: normal;}
+	.SmartMarker .SmartMarker_section2 .btns{padding-top: 19px;}
+	.SmartMarker .SmartMarker_section2 .btns .btn{width: 121px;height: 41px;line-height: 38px;font-size: 13px;font-weight: bold;}
+	.SmartMarker .SmartMarker_section3 {overflow: hidden;}
+	.SmartMarker .SmartMarker_section3 .SmartMarker_section{padding-top: 50px;padding-bottom: 40px;height: auto;}
+	.SmartMarker .SmartMarker_section3 .title{font-size: 20px;margin-bottom: 27px;}
+	.SmartMarker .SmartMarker_section3 .container_inner{padding: 0;}
+	.SmartMarker .SmartMarker_section3 .visual1{position: static;width: 296px;margin: 0 auto 3px;height: 346px;-webkit-background-size: 233px 346px;background-size: 233px 346px;}
+	.SmartMarker .SmartMarker_section3 .info_list{padding: 0 35px;margin-bottom: -12px;}
+	.SmartMarker .SmartMarker_section3 .info_list .ib{display: inline;}
+	.SmartMarker .SmartMarker_section3 .info_list li{width: auto !important;height: auto !important;padding-bottom: 42px;}
+	.SmartMarker .SmartMarker_section3 .info_list .item3 .ib{display: block;}
+	.SmartMarker .SmartMarker_section3 .list_title{padding-top: 19px;padding-bottom: 10px;font-size: 18px;}
+	.SmartMarker .SmartMarker_section3 .list_txt{font-size: 15px;}
+	.SmartMarker .SmartMarker_section3 .img_line{width: 42px;height: 2px;}
+	.SmartMarker .SmartMarker_section3 .visual2{margin-top: 0;width: 280px;height: 139px;-webkit-background-size: 280px 139px;background-size: 280px 139px;}
+	.SmartMarker .SmartMarker_section4 .SmartMarker_section{padding: 0;padding-top: 45px;height: auto;}
+	.SmartMarker .SmartMarker_section4 .container_inner{padding: 0 5%;}
+	.SmartMarker .SmartMarker_section4 .title{font-size: 20px;margin-bottom: 29px;}
+	.SmartMarker .SmartMarker_section4 .list_group{padding: 0 20px;font-size: 14px;margin-top: 16px;margin-bottom: 47px;text-align: left;}
+	.SmartMarker .SmartMarker_section4 .applink_group{margin-bottom: 49px;}
+	.SmartMarker .SmartMarker_section4 .info1,
+	.SmartMarker .SmartMarker_section4 .info2{float:none;width: auto;text-align: left;}
+	.SmartMarker .SmartMarker_section4 .btns{margin-bottom: 10px;}
+	.SmartMarker .SmartMarker_section4 .visual{width: 247px;height: 140px;-webkit-background-size: auto 140px;background-size: auto 140px;}
+	.SmartMarker .SmartMarker_section4 .applink_group .txt {font-size: 11px;}
+	.SmartMarker .SmartMarker_visual .applink_group{border-bottom: 1px solid #ebebeb;}
+	.SmartMarker .SmartMarker_visual .applink_group .shopBtn{position: static;display: block;margin: 23px auto 25px;width: 120px;height: 40px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_buynow_m.png) no-repeat 0 0;-webkit-background-size: 120px 80px;background-size: 120px 80px;}
+	.SmartMarker .SmartMarker_visual .applink_group .shopBtn:active{background-position: 0 100%;}
+	.SmartMarker .SmartMarker_visual .applink_group .txt {font-size: 11px;position: absolute;top: 70px;left: 0;right: 0;}
+	.SmartMarker .SmartMarker_section4 .visual{max-width: 100%;background-position: 50% 50%;}
+	/*170314 하단 다운로드버튼영역 추가*/
+	.SmartMarker .SmartMarker_section5 .container_inner{padding: 0;}
+	.SmartMarker .SmartMarker_section5 .SmartMarker_section{padding: 0;padding-top: 25px;padding-bottom: 30px;text-align: center;}
+	.SmartMarker .SmartMarker_section5 .tittle{margin-bottom: 19px;position: static;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_tittle_m.png);-webkit-background-size: 91px 27px;background-size: 91px 27px;width: 91px;height: 27px;display: inline-block;}
+	.SmartMarker .SmartMarker_section5 .txtGroup{text-align: center;}
+	.SmartMarker .SmartMarker_section5 .txt1{font-size: 14px;line-height: 17px;margin-bottom: 0;}
+	.SmartMarker .SmartMarker_section5 .txt2{font-size: 13px;line-height: 17px;margin-bottom: 22px;}
+	.SmartMarker .SmartMarker_section5 .btn.download{position: static;font-size: 14px;width: 117px;height: 40px;border: 1px solid #68cd60;line-height: 38px;}
+	/*170907*/
+	.SmartMarker .EasyToUse{padding-top: 40px;padding-bottom: 35px;}
+	.SmartMarker .EasyToUse .title_group{padding-bottom: 25px;}
+	.SmartMarker .EasyToUse .title_group .tit{margin-bottom: 20px;font-size: 20px;}
+	.SmartMarker .EasyToUse .title_group .sub_tit {font-size: 14px;}
+	.SmartMarker .EasyToUse .visual_cont .item{height: 390px;}
+	.SmartMarker .EasyToUse .visual_cont .item .img{margin: 0 auto;width: 100%;height: 202px;background-repeat: no-repeat;background-position: 50% 50%;-webkit-background-size: 210px 202px;background-size: 210px 202px;}
+	.SmartMarker .EasyToUse .visual_cont .title{margin-bottom: 8px;font-size: 16px;}
+	.SmartMarker .EasyToUse .visual_cont .txt{width: 260px;font-size: 14px;margin: 0 auto;line-height: 1.29;}
+	.SmartMarker .EasyToUse .slider .slick-next{right: 19px;}
+	.SmartMarker .EasyToUse .visual_cont .txt .ib{display: inline;}
+	.SmartMarker .EasyToUse .visual_cont .item.item1_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_01_resister_m.png);}
+	.SmartMarker .EasyToUse .visual_cont .item.item2_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_02_use_m.png);}
+	.SmartMarker .EasyToUse .visual_cont .item.item3_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_03_battery_m.png);}
+
+	/*170313 scorecardV1*/
+	.scorecardV1 .num{margin: 0 auto;}
+	.scorecardV1 .scorecardV1_section,
+	.scorecardV1 .scorecardV1_visual .container_inner,
+	.scorecardV1 .scorecardV1_section4 .container_inner{padding: 0;}
+	.scorecardV1 .scorecardV1_visual,
+	.scorecardV1 .scorecardV1_section4{overflow: visible;}
+	.scorecardV1 .scorecardV1_section .txt1,
+	.scorecardV1 .scorecardV1_section .txt2{text-align: center;}
+	.scorecardV1 .scorecardV1_section .txt1{font-size: 20px;}
+	.scorecardV1 .scorecardV1_section .txt2{font-size: 14px;}
+	.scorecardV1 .scorecardV1_section1 .txt1,
+	.scorecardV1 .scorecardV1_section2 .txt1,
+	.scorecardV1 .scorecardV1_section3 .txt1,
+	.scorecardV1 .scorecardV1_section4 .txt1{margin-bottom: 6px;}
+	.scorecardV1 .scorecardV1_visual .scorecardV1_section{overflow: visible;height: auto;padding: 0;-webkit-background-size: auto 100%;background-size:  auto 100%;background-position: 100% 0%;}
+	.scorecardV1 .scorecardV1_section1 .scorecardV1_section,
+	.scorecardV1 .scorecardV1_section2 .scorecardV1_section,
+	.scorecardV1 .scorecardV1_section3 .scorecardV1_section,
+	.scorecardV1 .scorecardV1_section4 .scorecardV1_section{overflow: hidden;height: auto;padding: 0;}
+	.scorecardV1 .scorecardV1_section1 .scorecardV1_section{padding-top: 188px;}
+	.scorecardV1 .scorecardV1_section2 .scorecardV1_section,
+	.scorecardV1 .scorecardV1_section3 .scorecardV1_section,
+	.scorecardV1 .scorecardV1_section4 .scorecardV1_section{padding-top: 35px;}
+	.scorecardV1 .scorecardV1_visual h2{margin: 16px auto 20px;width: 211px;height: 31px;-webkit-background-size: 211px 31px;background-size: 211px 31px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-tit-txt-m.png);}
+	.scorecardV1 .scorecardV1_visual .btns{position: absolute;top:100%;left: 0;z-index: 1;width: 100%;text-align: center;padding-top: 26px;border-bottom: 1px solid #ebebeb;}
+	.scorecardV1 .scorecardV1_visual .scorecardBtn{position: static;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_scorecard_m.png);width: 162px;height: 40px;-webkit-background-size: 162px 80px;background-size: 162px 80px;margin: 23px auto 25px;}
+	.scorecardV1 .scorecardV1_visual .scorecardBtn:active{background-position: 0 100%;}
+	.scorecardV1 .scorecardV1_visual .AppleBtn,
+	.scorecardV1 .scorecardV1_visual .GoogleBtn,
+	.scorecardV1 .scorecardV1_section4 .AppleBtn,
+	.scorecardV1 .scorecardV1_section4 .GoogleBtn{width: 130px;height: 40px;-webkit-background-size: 130px 40px;background-size: 130px 40px;}
+	.scorecardV1 .scorecardV1_visual .AppleBtn,
+	.scorecardV1 .scorecardV1_section4 .AppleBtn{margin-right: 7px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_apple2_m.png);}
+	.scorecardV1 .scorecardV1_visual .GoogleBtn,
+	.scorecardV1 .scorecardV1_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_google2_m.png);}
+	.scorecardV1 .scorecardV1_section1 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+	.scorecardV1 .scorecardV1_section2 .num{width: 50px;height: 49px;-webkit-background-size: 50px 49px;background-size: 50px 49px;margin-bottom: 18px;}
+	.scorecardV1 .scorecardV1_section3 .num{width: 50px;height: 49px;-webkit-background-size: 50px 49px;background-size: 50px 49px;margin-bottom: 18px;}
+	.scorecardV1 .scorecardV1_section4 .num{width: 52px;height: 49px;-webkit-background-size: 52px 49px;background-size: 52px 49px;margin-bottom: 18px;}
+	.scorecardV1 .scorecardV1_visual .visual{position: static;width: 310px;height: 227px;background-position: 100% 0;margin: 0 auto;-webkit-background-size: auto 227px;background-size: auto 227px;}
+	.scorecardV1 .scorecardV1_section1 .visual{position: static;margin: 0 auto;width: 193px;height: 263px;-webkit-background-size: 193px 263px;background-size: 193px 263px;}
+	.scorecardV1 .scorecardV1_section2 .visual{position: static;margin: 0 auto;width: 268px;height: 323px;-webkit-background-size: 268px 323px;background-size: 268px 323px;}
+	.scorecardV1 .scorecardV1_section3 .visual{position: static;margin: 0 auto;width: 193px;height: 263px;-webkit-background-size: 193px auto;background-size: 193px auto;}
+	.scorecardV1 .scorecardV1_section4 .visual{position: static;margin: 0 auto;width: 100%;height: 540px;-webkit-background-size: auto 540px;background-size: auto 540px;background-position: 50% 0;margin-bottom: -167px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-0-4-screen-m.png);}
+	.scorecardV1 .scorecardV1_section1 .txt2{margin-bottom: 20px;}
+	.scorecardV1 .scorecardV1_section2 .txt2{margin-bottom: 27px;}
+	.scorecardV1 .scorecardV1_section3 .txt2{margin-bottom: 20px;}
+	.scorecardV1 .scorecardV1_section4 .txt2{margin-bottom: 25px;}
+	.scorecardV1 .scorecardV1_section4 .btns{position: relative;bottom: 0;padding-bottom: 48px;z-index: 1;}
+
+	/*170313 GolfGps*/
+	/*
+    .GolfGps .golfgps_section1 .golfgps_section,
+    .GolfGps .golfgps_section2 .golfgps_section,
+    .GolfGps .golfgps_section3 .golfgps_section,
+    .GolfGps .golfgps_section4 .golfgps_section{padding: 0 30px;}
+    .GolfGps .num{margin: 0 auto;}
+    .GolfGps .golfgps_section{padding: 0;}
+    .GolfGps .golfgps_section .txt1,
+    .GolfGps .golfgps_section .txt2{text-align: center;}
+    .GolfGps .golfgps_section .txt1{font-size: 20px;}
+    .GolfGps .golfgps_section .txt2{font-size: 14px;}
+    .GolfGps .golfgps_section1 .txt2{margin-bottom: 20px;}
+    .GolfGps .golfgps_section2 .txt1{margin-bottom: 10px;}
+    .GolfGps .golfgps_section2 .txt2{margin-bottom: 40px;}
+    .GolfGps .golfgps_section2 .txt1,
+    .GolfGps .golfgps_section2 .txt2{color: #ededed;}
+    .GolfGps .golfgps_section3 .txt2{margin-bottom: 20px;}
+    .GolfGps .golfgps_section4{height: auto;padding-bottom: 74px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1 .txt1,
+    .GolfGps .golfgps_section4 .golfgps_section4_2 .txt1{margin-bottom: 10px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1 .txt2,
+    .GolfGps .golfgps_section4 .golfgps_section4_2 .txt2{margin-bottom: 20px;}
+    .GolfGps .golfgps_section1 .golfgps_section{overflow: hidden;height: auto;padding-top: 163px;}
+    .GolfGps .golfgps_section2 .golfgps_section,
+    .GolfGps .golfgps_section3 .golfgps_section,
+    .GolfGps .golfgps_section4 .golfgps_section4_1{overflow: hidden;height: auto;padding: 0 30px;padding-top: 35px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1{min-height: 0;}
+    .GolfGps .golfgps_section4 .golfgps_section4_2{height: auto;padding: 0;padding-top: 34px;margin-top: 0;margin-bottom: 36px;}
+    .GolfGps .golfgps_visual .golfgps_section{overflow: visible;height: auto;padding: 0;-webkit-background-size: auto 100%;background-size:  auto 100%;}
+    .GolfGps .golfgps_visual .cont{position: static;}
+    .GolfGps .golfgps_visual h2{margin: 7px auto 6px;width: 144px;height: 61px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/title-txt.png);-webkit-background-size: 144px 61px;background-size: 144px 61px;}
+    .GolfGps .golfgps_visual .visual{position: static;width: 346px;max-width: 100%;height: 220px;-webkit-background-size: 303px 220px;background-size: 303px 220px;background-position: 0 0;margin: 0 auto;}
+    .GolfGps .golfgps_visual .btns{position: absolute;top:100%;left: 0;z-index: 1;width: 100%;text-align: center;padding-top: 21px;padding-bottom: 28px;border-bottom: 1px solid #ebebeb;}
+    .GolfGps .golfgps_visual .download{position: static;display: block;margin-bottom: 22px;font-size: 0;}
+    .GolfGps .golfgps_visual .download .ico{margin-right: 5px;width: 11px;height: 11px;-webkit-background-size: 11px 22px;background-size: 11px 22px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-gps-download-m.png);}
+    .GolfGps .golfgps_visual .download .text{color: #38383c;font-size: 14px;height: 15px;border-bottom: 1px solid #38383c;}
+    .GolfGps .golfgps_visual .download:hover .text{border-bottom: 1px solid #38383c;}
+    .GolfGps .golfgps_visual .download:active .text{color: #88888a;border-bottom: 1px solid #88888a;}
+    .GolfGps .golfgps_section1 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+    .GolfGps .golfgps_section2 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+    .GolfGps .golfgps_section3 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1 .num{float: none;width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_2 .num{float:none;width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+    .GolfGps .golfgps_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/b-t-n-googlecopy.png);width: 114px;height: 35px;-webkit-background-size: 114px 35px;background-size: 114px 35px;}
+    .GolfGps .golfgps_visual .AppleBtn,
+    .GolfGps .golfgps_visual .GoogleBtn,
+    .GolfGps .golfgps_section4 .AppleBtn,
+    .GolfGps .golfgps_section4 .GoogleBtn{width: 130px;height: 40px;-webkit-background-size: 130px 40px;background-size: 130px 40px;}
+    .GolfGps .golfgps_visual .AppleBtn,
+    .GolfGps .golfgps_section4 .AppleBtn{margin-right: 7px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_apple2_m.png);}
+    .GolfGps .golfgps_visual .GoogleBtn,
+    .GolfGps .golfgps_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_google2_m.png);}
+    .GolfGps .golfgps_section1 .visual{position: static;margin: 0 auto;width: 193px;height: 263px;-webkit-background-size: 193px 263px;background-size: 193px 263px;margin-bottom: -12px;}
+    .GolfGps .golfgps_section2 .visual{position: relative;margin: 0 auto;max-width: 306px;height: 289px;}
+    .GolfGps .golfgps_section2 .visual1{top:79px;left: 0;width: 246px;height: 272px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-2-screen-2-m.png);-webkit-background-size: 246px 272px;background-size: 246px 272px;}
+    .GolfGps .golfgps_section2 .visual2{top: 0;left: 40px;width: 263px;height: 289px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-2-screen-1-m.png);-webkit-background-size: 266px 292px;background-size: 266px 292px;}
+    .GolfGps .golfgps_section3 .visual{position: static;margin: 0 auto;width: 193px;height: 275px;-webkit-background-size: 193px 275px;background-size: 193px 275px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_1 .visual{position: static;margin: 0 auto;width: 179px;height: 298px;-webkit-background-size: 179px 298px;background-size: 179px 298px;}
+    .GolfGps .golfgps_section4 .golfgps_section4_2 .visual{position: static;margin: 0 auto;width: 179px;height: 298px;-webkit-background-size: 179px 298px;background-size: 179px 298px;}
+    */
+	.GolfGps .golfgps_visual .download .ico{margin-right: 5px;width: 16px;height: 14px;-webkit-background-size: 11px 22px;background-size: 16px 28px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-gps-download-m.png);background-position: 0px 14px;}
+	.GolfGps .golfgps_visual .download .text{color: #aaa;font-size: 16px;height: 19px;border-bottom: 1px solid #38383c;}
+	.GolfGps .golfgps_visual .GoogleBtn,
+	.GolfGps .golfgps_visual .AppleBtn{height: 50px;width: 30%;max-width: 130px;}
+	/* PLAY ROUND */
+
+	/*160808*/
+	#wrap.type3 #header .btn_close{right: 5%;}
+	#wrap.type3 #header .btn_close a{width: 14px;height: 14px;background-size: 13px 13px;-webkit-background-size: 13px 13px;}
+
+	/*160902 수정*/
+	/*
+    table.type1 td.data_none{font-size: 13px;height: 180px;}
+    #wrap.type2 .header_inner > .logo.type2 a {margin-top:15px; width: 100%; height:21px; background-image: url('http://golfwith.golfzon.com/web/images/logo-smartcaddie.png');}
+    #wrap.type2 #menu.on .logo{width:120px;}
+    #wrap.type2 #menu.on .logo.type2{height:50px;}
+    #wrap.type2 #menu.on .logo.type2 a {margin-top:15px; width:120px; height:29px; background-image: url('http://golfwith.golfzon.com/web/images/new/logo-smartcaddie.png');}
+     */
+
+	/* PlayRound-Style */
+	#wrap.SmartCaddieV1 .PlayRound{padding:40px 0 50px 0;text-align:center;color:#ffffff;}
+	#wrap.SmartCaddieV1 .PlayRound .title_group .tit{margin-bottom: 35px;font-size: 20px;}
+	#wrap.SmartCaddieV1 .PlayRound .tab{padding-bottom:20px;margin:0 auto;max-width:756px;}
+	#wrap.SmartCaddieV1 .PlayRound .tab ul{width:100%;}
+	#wrap.SmartCaddieV1 .PlayRound .tab ul li{display:inline-block;width:32%;}
+	#wrap.SmartCaddieV1 .PlayRound .tab ul li a{width:88px;height: auto;color:#ffffff;opacity:0.5;font-size:14px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/btn_playround.png) no-repeat center top;-webkit-background-size:auto 55px;background-size: auto 55px;text-indent:-9999px;display:inline-block;-webkit-transition: all 0.4s;transition: all 0.4s;}
+	#wrap.SmartCaddieV1 .PlayRound .tab ul li+li a{width:73px;background-position:center -18px;}
+	#wrap.SmartCaddieV1 .PlayRound .tab ul li+li+li a{width:90px;background-position:center bottom;}
+
+	#wrap.SmartCaddieV1 .PlayRound .tab ul li.on a{opacity:1;}
+	#wrap.SmartCaddieV1 .PlayRound .barBox{margin:0 auto;max-width:756px;}
+	#wrap.SmartCaddieV1 .PlayRound .bar{position:relative;margin:0 0 40px 55px;height:10px;}
+	#wrap.SmartCaddieV1 .PlayRound .bar .bg{display:none;}
+	#wrap.SmartCaddieV1 .PlayRound .bar::after{content:'';position:absolute;top:0;left:-58px;padding-right:58px;width:100%;height:10px;border:1px solid #3c3c40;border-radius: 6px;background-color:#252528;}
+	.ui-slider-handle{position:absolute;top:2px;z-index:1;margin-left:-55px;width:54px;height:8px;display:inline-block;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_bar.gif) no-repeat left top;-webkit-background-size:100% 100%;background-size: 100% 100%;}
+	#wrap.SmartCaddieV1 .PlayRound .bar p{position:absolute;top:1px;left:1px;height:6px;text-align:left;}
+	#wrap.SmartCaddieV1 .PlayRound .bar p img{height:100%;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox{position:relative;margin:0 auto;height:270px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .wacthBg{display:none;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox::after{content:'';position:absolute;top:0;left:0;width:100%;height:270px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/bg_wacth.png) no-repeat center center;-webkit-background-size:auto 100%;background-size: auto 100%;}
+
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen{position:absolute;top:46px;left:50%;margin-left:-78.5px;width:157px;height:157px;border-radius:50%;background:#000;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p{position:absolute;top:0;left:0;width:157px;height:157px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p span{display:none;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p::after{content:'';position:absolute;top:0;left:0;width:157px;height:157px;border-radius:50%;overflow:hidden;-webkit-background-size:auto 100%;background-size: auto 100%;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box .screen p::after{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_select.jpg);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box .screen p::after{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_play.jpg);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box .screen p::after{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/bg_round.jpg);}
+
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList{position:relative;margin:0 auto;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box ul{position:relative;z-index:5;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box ul li{position:absolute;top:0;left:0;width:100%;height:270px;background:no-repeat center 0;background-size:auto 270px;opacity:0;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box.on{display:inline-block;opacity:1;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box.on ul li{opacity:1;}
+
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox,
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play,
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy{position:relative;z-index:1;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_00.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step0 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_01.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_10.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step1 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_11.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_20.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step3 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_30.png);}
+
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_00.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_10.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_20.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step3 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_30.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step4 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_40.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step5 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_50.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step6 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_60.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step7 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_70.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step7 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_71.png);}
+
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_00.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_10.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_20.png);}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step2 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_21.png);}
+@charset "utf-8";
+	/* 반응형 */
+
+	@media all and (max-width:1330px){
+
+		/* 161115*/
+		#wrap.Smart_Caddie {min-width: 0;}
+		#wrap.Smart_Caddie .contBox .container_inner{width: auto;}
+		#wrap.Smart_Caddie .contBox .visual_cont{display: block;font-size: 0;}
+		#wrap.Smart_Caddie .contBox .visual_cont li{width: 33.33%;margin: 0;font-size: 0;float:none;display: inline-block;}
+		#wrap.Smart_Caddie .contBox .visual_cont li img{width: 100%;}
+		#wrap.Smart_Caddie .contBox .tit{height: auto;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{text-align: center;height: auto;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_wrap{position: relative;margin: 0 auto;top: auto;right: auto;width: 300px;height: 256px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch img{height: 256px;width: 173px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_inner{left: 89px;top: 59px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .watch_inner img{width: 120px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .tit,
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_tit,
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_txt{padding-left: 0;}
+		#wrap.Smart_Caddie .contBox.Golf_Courses_cont{margin-top: -100px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{background: none;}
+
+	}
+	@media all and (max-width:1202px){
+		#wrap{min-width:0}
+		.top_nav{right:36px;left:auto;margin-left:0}
+		#header .menu{clear:both}
+
+		/*170110 GolfGps*/
+		/*
+        .GolfGps .golfgps_section{overflow: hidden;}
+        .GolfGps .container_inner{padding: 0;}
+        .youtube_video .container_inner{padding: 80px 60px 100px;}
+        */
+	}
+
+	@media all and (max-width:1201px){
+
+		/* Smart_Caddie 161115 */
+		#wrap.Smart_Caddie .contBox .container_inner{padding-top: 50px;}
+		#wrap.Smart_Caddie .contBox.Golf_Courses_cont{padding-top: 0;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .container_inner{padding-top: 7px;}
+		#wrap.Smart_Caddie .contBox.Golf_Courses_cont .tit img:first-child{display: block;margin: 0 auto 9px;}
+
+		/*scorecard 160809*/
+		#wrap.scorecard #container{background-color: #343434;}
+		#wrap.scorecard #header .btn_menu.type2 a{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico_menu1.png)}
+		#wrap.scorecard .header_inner > .logo.type2 a {background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/logo_golfwith1.png);}
+		#wrap.scorecard #container .inner_bg{background: none;}
+		.scorecard_section .myscorecard_btns .mybtn{font-weight: normal;border: none;border-bottom: 2px solid #0fb257;border-radius: 0;font-size: 13px;font-weight: normal;color: #0dc860;width: auto;height: auto;padding: 0 5px;line-height: 1.8;font-weight: bold;}
+		.scorecard_section .app_btns{position: fixed;padding-bottom: 0;bottom: 0;left: 0;width: 100%;background-color: rgba(0, 0, 0, 0.9);z-index: 2;}
+		.scorecard_section .app_btns a{margin: 14px 10px;vertical-align: middle;}
+		.btn_appstore{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_appstore.png);-webkit-background-size: 105px 34px;background-size: 105px 34px;width: 105px;height: 34px;}
+		.btn_googleplay{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_googleplay.png);-webkit-background-size: 105px 34px;background-size: 105px 34px;width: 105px;height: 34px;}
+
+		/* 161116 */
+		#wrap .top_nav.scrollActive{bottom: 70px !important;}
+
+		/* header */
+		/*
+        #header .logo{float:none; margin:0px auto;}
+        #header .btn_menu,#menu .logo,#menu .btn_close{display:block}
+        #menu{overflow:hidden;overflow-y:auto;position:fixed;top:-100%;left:0;z-index:4;width:100%;height:100%;padding:0;text-align:center;transition:.5s all}
+        #menu .inner{background-color:#fff}
+        #menu.on{top: 0;}
+        #header .menu,#header .menu li{float:none}
+        #header .menu li{height:40px;margin:0;line-height:40px}
+        #header .menu li,
+        #header .menu li a{font-size:14px;color:#343434 !important;opacity:1 !important;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)' !important;filter:alpha(opacity=100) !important}
+        #header .menu li[aria-sub]:hover,
+        #header .menu li[aria-sub]:focus{height: auto;}
+        #header .menu li:hover:after,
+        #header .menu li[aria-now-menu]:after{display: none;}
+        #header .menu li.on a{color:#16ad59 !important}
+        #header .menu li.on:after{display:none}
+        #header .menu .sub_menu{display: none;position: relative;width: 100%;transform: unset;left: 0;}
+        #header .menu .sub_menu>li{background-color: #f6f6f6 !important;margin-left: 0;}
+        #header .menu>li:focus>.sub_menu, #header .menu>li:hover>.sub_menu, #header .menu>li>.sub_menu:hover{display: block;transform: unset;}
+        #header .login{position:static;height:auto;padding-top:14px;padding-bottom:30px;line-height:1}
+        #header .login .btn.type1{width:90px;border:none;border-radius:999px;background-color:#000;line-height:27px;font-size:12px;color:#fff}
+        */
+		/* container */
+		#container{margin-bottom:-140px;padding-bottom:140px}
+
+		/* footer */
+		#footer .footer_inner{height:auto;min-height: 140px;padding-bottom: 20px;padding-top:25px}
+		#footer .left_section,#footer .right_section{width:100%;text-align:center}
+		#footer .left_section{margin-bottom:10px;padding-top:0;padding-bottom:15px;}
+		/*#footer .left_section li{display:inline-block;float:none;margin:5px 0;padding:0 13px;}*/
+		/*#footer .communication li{height:8px;line-height:3px}*/
+		#footer .communication a{display:inline-block;font-size:12px}
+		#footer .terms{line-height:1}
+		#footer .terms a{font-size:10px;letter-spacing: -0.5px;}
+		#footer .ico_facebook{width:10px;height:10px; background-size: contain;}
+		/*#footer .gzlogo{width:120px; height:25px;}*/
+		#footer address{margin-top:10px;font-size:10px;}
+
+		/* GearS2 */
+		.GearS2_section h2{padding-top: 5px;font-size:31px;line-height:1.4;}
+		.GearS2_section .txt1{line-height:1.4;}
+		.GearS2_section .txt1 span{font-size:13px;}
+		.GearS2_section .txt1 .ico_cross{width:10px;height:10px;margin:0 5px;margin-top:2px;background-size:10px 10px;-webkit-background-size:10px 10px}
+		.GearS2_section .txt2{font-size:12px;line-height:1.4}
+
+		/* course */
+		.golf_course_list_item.alphabet{font-size:16px}
+		.golf_course_list_item a{font-size:14px}
+		.golf_course_section .scorecard_mark,.golf_course_section .yardage_mark,.golf_course_section .gear_mark,.golf_course_section .course_mark,.golf_course_section .elevation_mark,.golf_course_section .green_mark{width:15px;height:9px;padding: 3px 0;line-height:9px;font-size:9px}
+		.golf_course_sub_header .left_section a,.golf_course_sub_header .left_section span{font-size:16px}
+		.golf_course_sub_header .right_section span{font-size:14px}
+		/*170912*/
+		.golf_course_header .golf_course_info{font-size: 14px;}
+
+		/* terms_section */
+		.terms_section_header{padding-bottom:10px;line-height: 34px;z-index: 10;margin-top: 40px;}
+		.terms_section_header.hide_header{margin-top: 0;}
+		.terms_section_header .title h2{font-size:27px;line-height:27px;}
+		.terms_section_header .info{float:none;clear:both;text-align:left}
+		.terms_section_header .title p{font-size: 14px;}
+
+		.faq_section{margin: 0 35px;}
+
+		/*My_Scorecard*/
+		.My_Scorecard_section table.type1 .score{width: 15%;}
+		.my_scorecard_view .pc_table{display: none;}
+		.my_scorecard_view .m_table{display: block;}
+		#wrap.scorecard #footer{display: none;}
+		#wrap.scorecard #container{padding-bottom: 72px !important;}
+
+		/*160811 모바일해상도 이미지*/
+		.scorecard_section_cards span.img_scorecard1{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard1_m.png)}
+		.scorecard_section_cards span.img_scorecard2{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard2_m.png)}
+		.scorecard_section_cards span.img_scorecard3{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_scorecard3_m.png)}
+		.scorecard_section_cards span.img_yardage1{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage1_m.png)}
+		.scorecard_section_cards span.img_yardage2{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage2_m.png)}
+		.scorecard_section_cards span.img_yardage3{background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_yardage3_m.png)}
+
+		/* main 170228 */
+		#wrap.main .marker_section .visual{width: 25%;-webkit-background-size: 100% auto;background-size: 100% auto;background-position: 100% 100%;}
+
+		/* SmartCaddieV1 */
+		#wrap.SmartCaddieV1{min-width: 0;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .title_group .txt .ib{display: inline-block;}
+		#wrap.SmartCaddieV1 .EasyToUse .title_group{padding-bottom: 25px; text-align: center;}
+		#wrap.SmartCaddieV1 .EasyToUse .container_inner{padding: 0;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont{display: none;position: relative;width: 80%; min-width:320px;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .txt .ib{display: inline;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont.slider{display: block;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider{position: relative;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider .slick-track .item{position: static; margin:10px; margin-bottom:20px;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider .item{position: absolute;top: 0;left: 0;margin: 0;width: 100%;height: 500px;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider .item.active{z-index: 1;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider .item .img{width: 100%;background-position: 50% 0;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider .item .txt{max-width: 500px;margin: 0 auto;}
+		/* PLAY ROUND */
+
+		/* // PLAY ROUND // */
+
+		/*170313 GolfGps*/
+		/*
+        .GolfGps .golfgps_visual .golfgps_section{height: 520px;-webkit-background-size: contain;background-size: contain;}
+        .GolfGps .golfgps_visual .cont{right: 60px;}
+        .GolfGps .golfgps_visual .visual{twidth: 635px;height: 459px;-webkit-background-size: 635px auto;background-size: 635px 459px;background-position: 0 100%;}
+        .GolfGps .golfgps_visual h2{width: 340px;height: 143px;-webkit-background-size: 340px 143px;background-size: 340px 143px;}
+        .GolfGps .golfgps_visual .AppleBtn,
+        .GolfGps .golfgps_visual .GoogleBtn,
+        .GolfGps .golfgps_section4 .AppleBtn,
+        .GolfGps .golfgps_section4 .GoogleBtn{width: 182px;height: 55px;-webkit-background-size: 182px 55px;background-size: 182px 55px;}
+        .GolfGps .golfgps_visual .download{top: 290px;}
+        .GolfGps .golfgps_section1 .golfgps_section,
+        .GolfGps .golfgps_section3 .golfgps_section{padding-left: 60px;padding-top: 150px;height: 570px;}
+        .GolfGps .golfgps_section1 .visual{left: auto;right: 36px;width: 372px;height: 509px;-webkit-background-size: 372px 509px;background-size: 372px 509px;}
+        .GolfGps .golfgps_section2 .golfgps_section{padding-left: 60px;height: 780px;}
+        .GolfGps .golfgps_section2 .visual1{left: auto;top: 450px;right: 198px;width: 408px;height: 549px;-webkit-background-size: 408px 549px;background-size: 408px 549px;}
+        .GolfGps .golfgps_section2 .visual2{left: auto;top: 300px;right: 50px;width: 392px;height: 521px;-webkit-background-size: 392px 521px;background-size: 392px 521px;}
+        .GolfGps .golfgps_section3 .visual{left: auto;right: 36px;width: 372px;height: 496px;-webkit-background-size: 372px 496px;background-size: 372px 496px;}
+        .GolfGps .golfgps_section4{height: auto;padding-bottom: 80px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1 {min-height: 650px;height: auto;padding-bottom: 140px;padding-top: 90px;padding-left: 450px;padding-right: 130px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_2 {padding-right: 450px;padding-bottom: 40px;height: auto;padding-top: 150px;margin-top: -90px;padding-left: 130px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1 .visual{left: 110px;top: 80px;width: 333px;height: 558px;-webkit-background-size: 333px 558px;background-size: 333px 558px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_2 .visual{left: auto;right: 110px;width: 333px;height: 558px;-webkit-background-size: 333px 558px;background-size: 333px 558px;}
+        */
+		/*170313 scorecardV1*/
+		.scorecardV1 .scorecardV1_visual .scorecardV1_section{padding-left: 24px;height: 520px;-webkit-background-size: contain;background-size: contain;background-position: 50% 0;}
+		.scorecardV1 .scorecardV1_visual h2{margin-bottom: 75px;width: 373px;height: 182px;-webkit-background-size: 373px 182px;background-size: 373px 182px;}
+		.scorecardV1 .scorecardV1_visual .visual{right: -56px;width: 574px;height: 430px;-webkit-background-size: 574px 430px;background-size: 574px 430px;}
+		.scorecardV1 .scorecardV1_visual .AppleBtn,
+		.scorecardV1 .scorecardV1_visual .GoogleBtn,
+		.scorecardV1 .scorecardV1_section4 .AppleBtn,
+		.scorecardV1 .scorecardV1_section4 .GoogleBtn{width: 182px;height: 54px;-webkit-background-size: 182px 54px;background-size: 182px 54px;}
+		.scorecardV1 .scorecardV1_visual .scorecardBtn{top: 0;right: 24px;}
+		.scorecardV1 .scorecardV1_section1 .scorecardV1_section{padding-left: 420px;padding-top: 150px;height: 568px;}
+		.scorecardV1 .scorecardV1_section1 .visual{left: 4px;width: 339px;height: 465px;-webkit-background-size: 339px 465px;background-size: 339px 465px;}
+		.scorecardV1 .scorecardV1_section2 .scorecardV1_section{padding-left: 24px;padding-right: 450px;height: 590px;}
+		.scorecardV1 .scorecardV1_section2 .visual{right: 24px;width: 400px;height: 482px;-webkit-background-size: 400px 482px;background-size: 400px 482px;}
+		.scorecardV1 .scorecardV1_section3 .scorecardV1_section{padding-top: 150px;padding-left: 420px;height: 568px;}
+		.scorecardV1 .scorecardV1_section3 .visual{top: 65px;left: 4px;width: 339px;height: 572px;-webkit-background-size: 339px 572px;background-size: 339px 572px;}
+		.scorecardV1 .scorecardV1_section4 .scorecardV1_section{padding-right: 550px;padding-top: 200px;padding-left: 24px;height: 946px;}
+		.scorecardV1 .scorecardV1_section4 .visual{right: -185px;width: 816px;height: 933px;-webkit-background-size: 816px 933px;background-size: 816px 933px;}
+		.scorecardV1 .scorecardV1_section4 .btns{position: absolute;bottom: 100px;left: 0;right: 0;}
+
+		/*170313 SmartMarker*/
+		.SmartMarker{-webkit-background-size: auto 600px;background-size: auto 600px;}
+		.SmartMarker .SmartMarker_section{padding: 0 24px 70px;}
+		.SmartMarker .SmartMarker_visual .AppleBtn,
+		.SmartMarker .SmartMarker_visual .GoogleBtn,
+		.SmartMarker .SmartMarker_section4 .AppleBtn,
+		.SmartMarker .SmartMarker_section4 .GoogleBtn{width: 182px;height: 54px;-webkit-background-size: 182px 54px;background-size: 182px 54px;}
+		.SmartMarker .SmartMarker_visual .SmartMarker_section{padding-top: 110px;height: 520px;}/* 170907 */
+		.SmartMarker .SmartMarker_visual .visual{width: 720px;height: 417px;-webkit-background-size: 720px 417px;background-size: 720px 417px;}
+		.SmartMarker .SmartMarker_visual .title_group .title{width: 464px;height: 114px;-webkit-background-size: 464px 114px;background-size: 464px 114px;}/* 170907 */
+		.SmartMarker .SmartMarker_visual .title_group .txt{margin-bottom: 35px;width: 418px;height: 60px;-webkit-background-size: 418px 60px;background-size: 418px 60px;}
+		.SmartMarker .SmartMarker_visual .btns{margin-bottom: 10px;}
+		.SmartMarker .SmartMarker_visual .btns .shopBtn{top: 0;}
+		.SmartMarker .SmartMarker_visual .download{left: 24px;top: 430px;}
+		.SmartMarker .SmartMarker_section1 .SmartMarker_section{height: auto;padding-top: 60px;}
+		.SmartMarker .SmartMarker_section1 .info_list li{height: 189px;}
+		.SmartMarker .SmartMarker_section1 .info_list .itme1,
+		.SmartMarker .SmartMarker_section1 .info_list .itme2,
+		.SmartMarker .SmartMarker_section1 .info_list .itme3,
+		.SmartMarker .SmartMarker_section1 .info_list .itme4{width: 100%;}
+		.SmartMarker .SmartMarker_section1 .info_list .ib{display: inline;}
+		.SmartMarker .SmartMarker_section1 .info_list .title{margin-bottom: 8px;}
+		.SmartMarker .SmartMarker_section2 .SmartMarker_section{padding: 0 24px;}
+		.SmartMarker .SmartMarker_section3 .SmartMarker_section{height: auto;padding-top: 70px;}
+		.SmartMarker .SmartMarker_section3 .title{margin-bottom: 60px;}
+		.SmartMarker .SmartMarker_section3 .visual1{margin: 0 auto;position: static;width: 620px;height: 736px;-webkit-background-size: 496px 736px;background-size: 496px 736px;background-position: 0 0;}
+		.SmartMarker .SmartMarker_section4 .list_group{margin-bottom: 100px;}
+		.SmartMarker .SmartMarker_section3 .info_list{margin-bottom: -50px;}
+		.SmartMarker .SmartMarker_section3 .info_list li{height: auto !important;width: 100% !important;padding-bottom: 100px;}
+		.SmartMarker .SmartMarker_section3 .visual2{width: 779px;height: 388px;-webkit-background-size: 779px 388px;background-size: 779px 388px;}
+		.SmartMarker .SmartMarker_section4 .SmartMarker_section{height: auto;padding-top: 70px;}
+		.SmartMarker .SmartMarker_section4 .title{margin-bottom: 60px;}
+		.SmartMarker .SmartMarker_section3 .list_txt .ib{display: inline;}
+		.SmartMarker .SmartMarker_section4 .info1,
+		.SmartMarker .SmartMarker_section4 .info2{float:none;width: auto;text-align: center;}
+		#wrap.SmartCaddieV1 .PlayRoundBox .slick-prev{left:38px;}
+		#wrap.SmartCaddieV1 .PlayRoundBox .slick-next{right:38px;}
+
+		/*170907*/
+		.SmartMarker .EasyToUse .container_inner{padding: 0;}
+		.SmartMarker .EasyToUse .visual_cont{display: none;position: relative;width: 100%;}
+		.SmartMarker .EasyToUse .visual_cont .txt .ib{display: inline;}
+		.SmartMarker .EasyToUse .visual_cont.slider{display: block;}
+		.SmartMarker .EasyToUse .slider{position: relative;}
+		.SmartMarker .EasyToUse .slider .slick-track .item{position: static;}
+		.SmartMarker .EasyToUse .slider .item{position: absolute;top: 0;left: 0;margin: 0;width: 100%;height: 500px;background-color: #fff;}
+		.SmartMarker .EasyToUse .slider .item.active{z-index: 1;}
+		.SmartMarker .EasyToUse .slider .item .img{width: 100%;background-position: 50% 0;}
+		.SmartMarker .EasyToUse .slider .item .txt{max-width: 500px;margin: 0 auto;}
+
+
+
+
+		#wrap.approval #header .logo.type2 {display: none;}
+
+	}
+	@media all and (max-width:959px){
+
+		.popup_window>.content{font-size: 12px;}
+		.popup_window>.content>.text{padding: 15px 0;}
+
+		#wrap{min-width: 320px;}
+		/*170313 SmartMarker*/
+		.SmartMarker{-webkit-background-size: auto 354px;background-size: auto 354px;}
+		.SmartMarker .SmartMarker_section{padding: 0;}
+		.SmartMarker .SmartMarker_visual{overflow: visible;}
+		.SmartMarker .SmartMarker_visual .container_inner{padding: 0;}
+		.SmartMarker .SmartMarker_visual .SmartMarker_section{height: 294px;padding-top: 72px;}
+		.SmartMarker .SmartMarker_visual .title_group .title{margin: 0 auto;width: 100%;height: 32px;-webkit-background-size: auto 32px;background-size: auto 32px;margin-bottom: 16px;background-position: 50% 0;}
+		.SmartMarker .SmartMarker_visual .title_group .txt{margin: 0 auto 5px;width: 300px;height: 35px;-webkit-background-size: auto 35px;background-size: auto 35px;background-position: 50% 0;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-sub-txt-m.png);}
+		.SmartMarker .SmartMarker_visual .visual{position: static;margin: 0 auto;width: 317px;height: 174px;-webkit-background-size: 301px 174px;background-size: 301px 174px;background-position: 100% 0;}
+		.SmartMarker .SmartMarker_visual .applink_group{position: absolute;top: 100%;left: 0;z-index: 1;width: 100%;text-align: center;padding-top: 21px;}
+		.SmartMarker .SmartMarker_visual .btns{margin-bottom: 0;}
+		.SmartMarker .SmartMarker_visual .download{position: static;display: block;margin-bottom: 22px;height: 15px;}
+		.SmartMarker .SmartMarker_visual .download .ico{margin-right: 5px;width: 11px;height: 11px;-webkit-background-size: 11px 22px;background-size: 11px 22px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-marker-download-m.png);}
+		.SmartMarker .SmartMarker_visual .download .text{color: #463a36;font-size: 14px;height: 15px;border-bottom: 1px solid #463a36;}
+		.SmartMarker .SmartMarker_visual .download:hover .text{border-bottom: 1px solid #463a36;}
+		.SmartMarker .SmartMarker_visual .download:active .text{color: #908986;border-bottom: 1px solid #908986;}
+		.SmartMarker .SmartMarker_visual .AppleBtn,
+		.SmartMarker .SmartMarker_visual .GoogleBtn,
+		.SmartMarker .SmartMarker_section4 .AppleBtn,
+		.SmartMarker .SmartMarker_section4 .GoogleBtn{width: 130px;height: 40px;-webkit-background-size: 130px 40px;background-size: 130px 40px;}
+		.SmartMarker .SmartMarker_visual .AppleBtn,
+		.SmartMarker .SmartMarker_section4 .AppleBtn{margin-right: 7px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_apple2_m.png);}
+		.SmartMarker .SmartMarker_visual .GoogleBtn,
+		.SmartMarker .SmartMarker_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_google2_m.png);}
+		.SmartMarker .SmartMarker_section1 .SmartMarker_section{height: auto;padding-top: 243px;padding-bottom: 30px;}
+		.SmartMarker .SmartMarker_section1 .title_group{margin-bottom: 30px;}
+		.SmartMarker .SmartMarker_section1 .title_group .title{font-size: 20px;margin-bottom: 18px;}
+		.SmartMarker .SmartMarker_section1 .title_group .txt{font-size: 14px;letter-spacing: -0.5px;}
+		.SmartMarker .SmartMarker_section1 .info_list .ico_marker{width: 74px;height: 74px;-webkit-background-size: 74px 74px;background-size: 74px 74px;}
+		.SmartMarker .SmartMarker_section1 .info_list li{width: auto !important;height: auto;min-height: 74px;float:none;margin-bottom: 30px;padding-left: 90px;}
+		.SmartMarker .SmartMarker_section1 .info_list .ib{display: inline;}
+		.SmartMarker .SmartMarker_section1 .info_list .title{margin-top: 6px;margin-bottom: 3px;font-size: 16px;}
+		.SmartMarker .SmartMarker_section1 .info_list .txt{font-size: 13px;letter-spacing: -0.5px;}
+		.SmartMarker .SmartMarker_section2 .SmartMarker_section{padding: 0;height: 80px;}
+		.SmartMarker .SmartMarker_section2 .guide{width: 50%;padding-top: 26px;height: auto;line-height: 16px;}
+		.SmartMarker .SmartMarker_section2 .guide .ib{display: block;}
+		.SmartMarker .SmartMarker_section2 .icoguide{width: 27px;height: 30px;-webkit-background-size: 27px 30px;background-size: 27px 30px;margin-right: 15px;}
+		.SmartMarker .SmartMarker_section2 .guide p{font-size: 13px;white-space: normal;}
+		.SmartMarker .SmartMarker_section2 .btns{padding-top: 19px;}
+		.SmartMarker .SmartMarker_section2 .btns .btn{width: 121px;height: 41px;line-height: 38px;font-size: 13px;font-weight: bold;}
+		.SmartMarker .SmartMarker_section3 {overflow: hidden;}
+		.SmartMarker .SmartMarker_section3 .SmartMarker_section{padding-top: 50px;padding-bottom: 40px;height: auto;}
+		.SmartMarker .SmartMarker_section3 .title{font-size: 20px;margin-bottom: 27px;}
+		.SmartMarker .SmartMarker_section3 .container_inner{padding: 0;}
+		.SmartMarker .SmartMarker_section3 .visual1{position: static;width: 296px;margin: 0 auto 3px;height: 346px;-webkit-background-size: 233px 346px;background-size: 233px 346px;}
+		.SmartMarker .SmartMarker_section3 .info_list{padding: 0 35px;margin-bottom: -12px;}
+		.SmartMarker .SmartMarker_section3 .info_list .ib{display: inline;}
+		.SmartMarker .SmartMarker_section3 .info_list li{width: auto !important;height: auto !important;padding-bottom: 42px;}
+		.SmartMarker .SmartMarker_section3 .info_list .item3 .ib{display: block;}
+		.SmartMarker .SmartMarker_section3 .list_title{padding-top: 19px;padding-bottom: 10px;font-size: 18px;}
+		.SmartMarker .SmartMarker_section3 .list_txt{font-size: 15px;}
+		.SmartMarker .SmartMarker_section3 .img_line{width: 42px;height: 2px;}
+		.SmartMarker .SmartMarker_section3 .visual2{margin-top: 0;width: 280px;height: 139px;-webkit-background-size: 280px 139px;background-size: 280px 139px;}
+		.SmartMarker .SmartMarker_section4 .SmartMarker_section{padding: 0;padding-top: 45px;height: auto;}
+		.SmartMarker .SmartMarker_section4 .container_inner{padding: 0 5%;}
+		.SmartMarker .SmartMarker_section4 .title{font-size: 20px;margin-bottom: 29px;}
+		.SmartMarker .SmartMarker_section4 .list_group{padding: 0 20px;font-size: 14px;margin-top: 16px;margin-bottom: 47px;text-align: left;}
+		.SmartMarker .SmartMarker_section4 .applink_group{margin-bottom: 49px;}
+		.SmartMarker .SmartMarker_section4 .info1,
+		.SmartMarker .SmartMarker_section4 .info2{float:none;width: auto;text-align: left;}
+		.SmartMarker .SmartMarker_section4 .btns{margin-bottom: 10px;}
+		.SmartMarker .SmartMarker_section4 .visual{width: 247px;height: 140px;-webkit-background-size: auto 140px;background-size: auto 140px;}
+		.SmartMarker .SmartMarker_section4 .applink_group .txt {font-size: 11px;}
+		.SmartMarker .SmartMarker_visual .applink_group{border-bottom: 1px solid #ebebeb;}
+		.SmartMarker .SmartMarker_visual .applink_group .shopBtn{position: static;display: block;margin: 23px auto 25px;width: 120px;height: 40px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_buynow_m.png) no-repeat 0 0;-webkit-background-size: 120px 80px;background-size: 120px 80px;}
+		.SmartMarker .SmartMarker_visual .applink_group .shopBtn:active{background-position: 0 100%;}
+		.SmartMarker .SmartMarker_visual .applink_group .txt {font-size: 11px;position: absolute;top: 70px;left: 0;right: 0;}
+		.SmartMarker .SmartMarker_section4 .visual{max-width: 100%;background-position: 50% 50%;}
+		/*170314 하단 다운로드버튼영역 추가*/
+		.SmartMarker .SmartMarker_section5 .container_inner{padding: 0;}
+		.SmartMarker .SmartMarker_section5 .SmartMarker_section{padding: 0;padding-top: 25px;padding-bottom: 30px;text-align: center;}
+		.SmartMarker .SmartMarker_section5 .tittle{margin-bottom: 19px;position: static;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/img_tittle_m.png);-webkit-background-size: 91px 27px;background-size: 91px 27px;width: 91px;height: 27px;display: inline-block;}
+		.SmartMarker .SmartMarker_section5 .txtGroup{text-align: center;}
+		.SmartMarker .SmartMarker_section5 .txt1{font-size: 14px;line-height: 17px;margin-bottom: 0;}
+		.SmartMarker .SmartMarker_section5 .txt2{font-size: 13px;line-height: 17px;margin-bottom: 22px;}
+		.SmartMarker .SmartMarker_section5 .btn.download{position: static;font-size: 14px;width: 117px;height: 40px;border: 1px solid #68cd60;line-height: 38px;}
+		/*170907*/
+		.SmartMarker .EasyToUse{padding-top: 40px;padding-bottom: 35px;}
+		.SmartMarker .EasyToUse .title_group{padding-bottom: 25px;}
+		.SmartMarker .EasyToUse .title_group .tit{margin-bottom: 20px;font-size: 20px;}
+		.SmartMarker .EasyToUse .title_group .sub_tit {font-size: 14px;}
+		.SmartMarker .EasyToUse .visual_cont .item{height: 390px;}
+		.SmartMarker .EasyToUse .visual_cont .item .img{margin: 0 auto;width: 100%;height: 202px;background-repeat: no-repeat;background-position: 50% 50%;-webkit-background-size: 210px 202px;background-size: 210px 202px;}
+		.SmartMarker .EasyToUse .visual_cont .title{margin-bottom: 8px;font-size: 16px;}
+		.SmartMarker .EasyToUse .visual_cont .txt{width: 260px;font-size: 14px;margin: 0 auto;line-height: 1.29;}
+		.SmartMarker .EasyToUse .slider .slick-next{right: 19px;}
+		.SmartMarker .EasyToUse .visual_cont .txt .ib{display: inline;}
+		.SmartMarker .EasyToUse .visual_cont .item.item1_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_01_resister_m.png);}
+		.SmartMarker .EasyToUse .visual_cont .item.item2_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_02_use_m.png);}
+		.SmartMarker .EasyToUse .visual_cont .item.item3_n .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/easytouse_03_battery_m.png);}
+
+		/*170313 scorecardV1*/
+		.scorecardV1 .num{margin: 0 auto;}
+		.scorecardV1 .scorecardV1_section,
+		.scorecardV1 .scorecardV1_visual .container_inner,
+		.scorecardV1 .scorecardV1_section4 .container_inner{padding: 0;}
+		.scorecardV1 .scorecardV1_visual,
+		.scorecardV1 .scorecardV1_section4{overflow: visible;}
+		.scorecardV1 .scorecardV1_section .txt1,
+		.scorecardV1 .scorecardV1_section .txt2{text-align: center;}
+		.scorecardV1 .scorecardV1_section .txt1{font-size: 20px;}
+		.scorecardV1 .scorecardV1_section .txt2{font-size: 14px;}
+		.scorecardV1 .scorecardV1_section1 .txt1,
+		.scorecardV1 .scorecardV1_section2 .txt1,
+		.scorecardV1 .scorecardV1_section3 .txt1,
+		.scorecardV1 .scorecardV1_section4 .txt1{margin-bottom: 6px;}
+		.scorecardV1 .scorecardV1_visual .scorecardV1_section{overflow: visible;height: auto;padding: 0;-webkit-background-size: auto 100%;background-size:  auto 100%;background-position: 100% 0%;}
+		.scorecardV1 .scorecardV1_section1 .scorecardV1_section,
+		.scorecardV1 .scorecardV1_section2 .scorecardV1_section,
+		.scorecardV1 .scorecardV1_section3 .scorecardV1_section,
+		.scorecardV1 .scorecardV1_section4 .scorecardV1_section{overflow: hidden;height: auto;padding: 0;}
+		.scorecardV1 .scorecardV1_section1 .scorecardV1_section{padding-top: 188px;}
+		.scorecardV1 .scorecardV1_section2 .scorecardV1_section,
+		.scorecardV1 .scorecardV1_section3 .scorecardV1_section,
+		.scorecardV1 .scorecardV1_section4 .scorecardV1_section{padding-top: 35px;}
+		.scorecardV1 .scorecardV1_visual h2{margin: 16px auto 20px;width: 211px;height: 31px;-webkit-background-size: 211px 31px;background-size: 211px 31px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-tit-txt-m.png);}
+		.scorecardV1 .scorecardV1_visual .btns{position: absolute;top:100%;left: 0;z-index: 1;width: 100%;text-align: center;padding-top: 26px;border-bottom: 1px solid #ebebeb;}
+		.scorecardV1 .scorecardV1_visual .scorecardBtn{position: static;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_scorecard_m.png);width: 162px;height: 40px;-webkit-background-size: 162px 80px;background-size: 162px 80px;margin: 23px auto 25px;}
+		.scorecardV1 .scorecardV1_visual .scorecardBtn:active{background-position: 0 100%;}
+		.scorecardV1 .scorecardV1_visual .AppleBtn,
+		.scorecardV1 .scorecardV1_visual .GoogleBtn,
+		.scorecardV1 .scorecardV1_section4 .AppleBtn,
+		.scorecardV1 .scorecardV1_section4 .GoogleBtn{width: 130px;height: 40px;-webkit-background-size: 130px 40px;background-size: 130px 40px;}
+		.scorecardV1 .scorecardV1_visual .AppleBtn,
+		.scorecardV1 .scorecardV1_section4 .AppleBtn{margin-right: 7px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_apple2_m.png);}
+		.scorecardV1 .scorecardV1_visual .GoogleBtn,
+		.scorecardV1 .scorecardV1_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_google2_m.png);}
+		.scorecardV1 .scorecardV1_section1 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+		.scorecardV1 .scorecardV1_section2 .num{width: 50px;height: 49px;-webkit-background-size: 50px 49px;background-size: 50px 49px;margin-bottom: 18px;}
+		.scorecardV1 .scorecardV1_section3 .num{width: 50px;height: 49px;-webkit-background-size: 50px 49px;background-size: 50px 49px;margin-bottom: 18px;}
+		.scorecardV1 .scorecardV1_section4 .num{width: 52px;height: 49px;-webkit-background-size: 52px 49px;background-size: 52px 49px;margin-bottom: 18px;}
+		.scorecardV1 .scorecardV1_visual .visual{position: static;width: 310px;height: 227px;background-position: 100% 0;margin: 0 auto;-webkit-background-size: auto 227px;background-size: auto 227px;}
+		.scorecardV1 .scorecardV1_section1 .visual{position: static;margin: 0 auto;width: 193px;height: 263px;-webkit-background-size: 193px 263px;background-size: 193px 263px;}
+		.scorecardV1 .scorecardV1_section2 .visual{position: static;margin: 0 auto;width: 268px;height: 323px;-webkit-background-size: 268px 323px;background-size: 268px 323px;}
+		.scorecardV1 .scorecardV1_section3 .visual{position: static;margin: 0 auto;width: 193px;height: 263px;-webkit-background-size: 193px auto;background-size: 193px auto;}
+		.scorecardV1 .scorecardV1_section4 .visual{position: static;margin: 0 auto;width: 100%;height: 540px;-webkit-background-size: auto 540px;background-size: auto 540px;background-position: 50% 0;margin-bottom: -167px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/scorecard-0-4-screen-m.png);}
+		.scorecardV1 .scorecardV1_section1 .txt2{margin-bottom: 20px;}
+		.scorecardV1 .scorecardV1_section2 .txt2{margin-bottom: 27px;}
+		.scorecardV1 .scorecardV1_section3 .txt2{margin-bottom: 20px;}
+		.scorecardV1 .scorecardV1_section4 .txt2{margin-bottom: 25px;}
+		.scorecardV1 .scorecardV1_section4 .btns{position: relative;bottom: 0;padding-bottom: 48px;z-index: 1;}
+
+		/*170313 GolfGps*/
+		/*
+        .GolfGps .golfgps_section1 .golfgps_section,
+        .GolfGps .golfgps_section2 .golfgps_section,
+        .GolfGps .golfgps_section3 .golfgps_section,
+        .GolfGps .golfgps_section4 .golfgps_section{padding: 0 30px;}
+        .GolfGps .num{margin: 0 auto;}
+        .GolfGps .golfgps_section{padding: 0;}
+        .GolfGps .golfgps_section .txt1,
+        .GolfGps .golfgps_section .txt2{text-align: center;}
+        .GolfGps .golfgps_section .txt1{font-size: 20px;}
+        .GolfGps .golfgps_section .txt2{font-size: 14px;}
+        .GolfGps .golfgps_section1 .txt2{margin-bottom: 20px;}
+        .GolfGps .golfgps_section2 .txt1{margin-bottom: 10px;}
+        .GolfGps .golfgps_section2 .txt2{margin-bottom: 40px;}
+        .GolfGps .golfgps_section2 .txt1,
+        .GolfGps .golfgps_section2 .txt2{color: #ededed;}
+        .GolfGps .golfgps_section3 .txt2{margin-bottom: 20px;}
+        .GolfGps .golfgps_section4{height: auto;padding-bottom: 74px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1 .txt1,
+        .GolfGps .golfgps_section4 .golfgps_section4_2 .txt1{margin-bottom: 10px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1 .txt2,
+        .GolfGps .golfgps_section4 .golfgps_section4_2 .txt2{margin-bottom: 20px;}
+        .GolfGps .golfgps_section1 .golfgps_section{overflow: hidden;height: auto;padding-top: 163px;}
+        .GolfGps .golfgps_section2 .golfgps_section,
+        .GolfGps .golfgps_section3 .golfgps_section,
+        .GolfGps .golfgps_section4 .golfgps_section4_1{overflow: hidden;height: auto;padding: 0 30px;padding-top: 35px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1{min-height: 0;}
+        .GolfGps .golfgps_section4 .golfgps_section4_2{height: auto;padding: 0;padding-top: 34px;margin-top: 0;margin-bottom: 36px;}
+        .GolfGps .golfgps_visual .golfgps_section{overflow: visible;height: auto;padding: 0;-webkit-background-size: auto 100%;background-size:  auto 100%;}
+        .GolfGps .golfgps_visual .cont{position: static;}
+        .GolfGps .golfgps_visual h2{margin: 7px auto 6px;width: 144px;height: 61px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/title-txt.png);-webkit-background-size: 144px 61px;background-size: 144px 61px;}
+        .GolfGps .golfgps_visual .visual{position: static;width: 346px;max-width: 100%;height: 220px;-webkit-background-size: 303px 220px;background-size: 303px 220px;background-position: 0 0;margin: 0 auto;}
+        .GolfGps .golfgps_visual .btns{position: absolute;top:100%;left: 0;z-index: 1;width: 100%;text-align: center;padding-top: 21px;padding-bottom: 28px;border-bottom: 1px solid #ebebeb;}
+        .GolfGps .golfgps_visual .download{position: static;display: block;margin-bottom: 22px;font-size: 0;}
+        .GolfGps .golfgps_visual .download .ico{margin-right: 5px;width: 11px;height: 11px;-webkit-background-size: 11px 22px;background-size: 11px 22px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-gps-download-m.png);}
+        .GolfGps .golfgps_visual .download .text{color: #38383c;font-size: 14px;height: 15px;border-bottom: 1px solid #38383c;}
+        .GolfGps .golfgps_visual .download:hover .text{border-bottom: 1px solid #38383c;}
+        .GolfGps .golfgps_visual .download:active .text{color: #88888a;border-bottom: 1px solid #88888a;}
+        .GolfGps .golfgps_section1 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+        .GolfGps .golfgps_section2 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+        .GolfGps .golfgps_section3 .num{width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1 .num{float: none;width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_2 .num{float:none;width: 43px;height: 49px;-webkit-background-size: 43px 49px;background-size: 43px 49px;margin-bottom: 18px;}
+        .GolfGps .golfgps_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/b-t-n-googlecopy.png);width: 114px;height: 35px;-webkit-background-size: 114px 35px;background-size: 114px 35px;}
+        .GolfGps .golfgps_visual .AppleBtn,
+        .GolfGps .golfgps_visual .GoogleBtn,
+        .GolfGps .golfgps_section4 .AppleBtn,
+        .GolfGps .golfgps_section4 .GoogleBtn{width: 130px;height: 40px;-webkit-background-size: 130px 40px;background-size: 130px 40px;}
+        .GolfGps .golfgps_visual .AppleBtn,
+        .GolfGps .golfgps_section4 .AppleBtn{margin-right: 7px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_apple2_m.png);}
+        .GolfGps .golfgps_visual .GoogleBtn,
+        .GolfGps .golfgps_section4 .GoogleBtn{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/btn_google2_m.png);}
+        .GolfGps .golfgps_section1 .visual{position: static;margin: 0 auto;width: 193px;height: 263px;-webkit-background-size: 193px 263px;background-size: 193px 263px;margin-bottom: -12px;}
+        .GolfGps .golfgps_section2 .visual{position: relative;margin: 0 auto;max-width: 306px;height: 289px;}
+        .GolfGps .golfgps_section2 .visual1{top:79px;left: 0;width: 246px;height: 272px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-2-screen-2-m.png);-webkit-background-size: 246px 272px;background-size: 246px 272px;}
+        .GolfGps .golfgps_section2 .visual2{top: 0;left: 40px;width: 263px;height: 289px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/visual-0-2-screen-1-m.png);-webkit-background-size: 266px 292px;background-size: 266px 292px;}
+        .GolfGps .golfgps_section3 .visual{position: static;margin: 0 auto;width: 193px;height: 275px;-webkit-background-size: 193px 275px;background-size: 193px 275px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_1 .visual{position: static;margin: 0 auto;width: 179px;height: 298px;-webkit-background-size: 179px 298px;background-size: 179px 298px;}
+        .GolfGps .golfgps_section4 .golfgps_section4_2 .visual{position: static;margin: 0 auto;width: 179px;height: 298px;-webkit-background-size: 179px 298px;background-size: 179px 298px;}
+        */
+		.GolfGps .golfgps_visual .download .ico{margin-right: 5px;width: 16px;height: 14px;-webkit-background-size: 11px 22px;background-size: 16px 28px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-gps-download-m.png);background-position: 0px 14px;}
+		.GolfGps .golfgps_visual .download .text{color: #aaa;font-size: 16px;height: 19px;border-bottom: 1px solid #38383c;}
+		.GolfGps .golfgps_visual .GoogleBtn,
+		.GolfGps .golfgps_visual .AppleBtn{height: 50px;width: 30%;max-width: 130px;}
+		/* PLAY ROUND */
+
+		/* // PLAY ROUND // */
+
+		/* SmartCaddieV1 */
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual{padding: 130px 0 20px 0;  height: 100%;background-size: cover; background-position: 60% 50%; background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/img-main-bg.jpg')}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner{padding-top: 45px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .txt1{margin-left: 0; font-size:13px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .txt{color:#ffffff; font-size:14px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .txt .ib{display: block;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .title>span{font-size: 18px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .desc{font-size:12px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download>button{font-size: 12px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .google_store{width: 150px;height: 60px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .container_inner .download_guide{font-size:12px;width: 100%;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .logo_title img{height:21px;max-width: 100%;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .title img{height:60px;max-width: calc(100% - 4em);}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group{padding:0px; margin:15px 0px; padding-left:15px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a span{width:150px; height:36px;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a.premium span{width:210px; height:46px; background-size: contain; background-repeat: no-repeat;}
+		#wrap.SmartCaddieV1 .Smart_Caddie_visual .applink_group .btns a:nth-child(2) span.kor{position: unset;}
+
+		#wrap.SmartCaddieV1 .ServiceFeatures .container_inner{padding-left: 0;padding-right: 0;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .title_group{background-size: cover;padding:30px 5px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .title_group .title{margin-bottom: 18px;font-size: 20px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .title_group .txt{line-height: 1.54;font-size: 12px;width: 100%;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide>.wrap>.txt{font-size: 28px;text-align: center;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .row{flex-direction: column;align-items: center;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.next_step{margin-left: 0;margin-top: 130px;padding: 0 20px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .row:nth-child(3) .step.next_step>.guide_image::before{left: calc(50% - 24px);}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.next_step>.guide_image::before{left: calc(50% - 24px);top: -80px;transform: rotateZ(90deg);}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.watch_face>.guide_image{height: 220px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .setting_guide .step.watch_face>.guide_image>img{margin-top: 0;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(n){max-height:830px;background-position-y:bottom;text-align:center;padding: 25px 25px 0 25px;justify-content:normal;background-size: contain;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(1){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-01_m.png');;}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(1){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-01-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-02_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(2){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-02-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(3){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-03_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(3){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-03-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(4){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-04_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(4){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-04-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(5){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-05_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(5){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-05-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(6){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-06_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(6){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-06-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(7){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-07_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(7){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-07-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(8){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-08_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(8){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-08-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(9){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-09_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(9){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-09-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(10){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-10_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(10){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-10-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(14){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-14_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(14){background-image: url('http://golfwith.golfzon.com/web/images/new/smartcaddie/mobile/bg-14-ko_m.png');}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n-1) .wrap{width: 100%;left:0;margin-bottom: 200px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n) .wrap{width: 100%;left:0;margin-bottom: 200px;max-width: none;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(14) .wrap{margin-bottom: 380px;}
+
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n-1) .item_wrap{flex-direction: column;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(2n) .item_wrap{flex-direction: column-reverse;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .item_wrap>.desc{width: 100%;padding: 0;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item .item_wrap>.watch_img{width: 100%;margin: 30px 0;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(11) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/mobile/img_11_circle_m.png);}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(11) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/mobile/img_11_circle_m-ko.png); }
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(12) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/mobile/img_12_circle_m.png);}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(12) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/mobile/img_12_circle_m-ko.png); }
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li.item:nth-child(13) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/mobile/img_13_circle_m.png);}
+		#wrap.SmartCaddieV1 .ServiceFeatures[lang=ko] .info_list li.item:nth-child(13) .watch_img{background-image: url(http://golfwith.golfzon.com/web/images/smartcaddie/mobile/img_13_circle_m-ko.png); }
+
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .num{margin-bottom:0px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .num span{width:30px; margin-left:10px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .title_group>i{width: 100%;height: 50px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .title_group .attention,
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list li .wrap .attention{font-size:11px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .ico_marker{width: 74px;height: 74px;-webkit-background-size: 74px 74px;background-size: 74px 74px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .title{margin-bottom: 10px;padding-top: 8px;font-size: 25px;font-weight: 1000;line-height: 1.14;display: inline-block;margin: 0 34px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .item.new .title::before{top: -15px;left: -34px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt{font-size: 14px;line-height: 1.6;font-weight: 500;margin-top: 15px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt .attention{font-size: 13px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt .jp,#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link a .jp{font-size: 12px; word-break: break-all;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .txt .ib{display: inline;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .ico-mail{width: 15px;height: 10px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-mail-m.png);-webkit-background-size: 15px 10px;background-size: 15px 10px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link {padding-top: 4px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .info_list .link a{font-size: 13px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .title,
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .txt{display: block;text-align: center;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list{flex-direction: column;grid-template-columns: repeat(1, 1fr);}
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div{width: 100%;justify-content: center;flex-direction: column;padding-left: unset;padding-top: 180px;height: auto;background-position: center top;background-size: 180px;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div:nth-child(3){grid-column: auto !important;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div>img{margin-right:0;}
+		#wrap.SmartCaddieV1 .ServiceFeatures .new_service .service_list>div .number{display:inline-block;margin-right: 5px;font-size: 26px;}
+		#wrap.SmartCaddieV1 .EasyToUse{padding-top: 40px;padding-bottom: 35px;}
+		#wrap.SmartCaddieV1 .EasyToUse .title_group{padding-bottom: 25px; text-align: center;}
+		#wrap.SmartCaddieV1 .EasyToUse .title_group .tit{margin-bottom: 20px;font-size: 20px;}
+		#wrap.SmartCaddieV1 .EasyToUse .title_group .sub_tit {font-size: 14px;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item{height: 390px;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item .img{margin: 0 auto;width: 100%;height: 202px;background-repeat: no-repeat;background-position: 50% 50%;-webkit-background-size: 210px 202px;background-size: 210px 202px;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item1 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/01_index_m_180308.gif);}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item2 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/02_hole_change_m_180404.gif);}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .item.item3 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/03_setting_m_180404.gif);}
+
+		#wrap.SmartCaddieV1.jp .EasyToUse .visual_cont .item.item1 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/01_index_m_jp_180404.gif);}
+		#wrap.SmartCaddieV1.jp .EasyToUse .visual_cont .item.item2 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/02_hole_change_m_jp_180404.gif);}
+		#wrap.SmartCaddieV1.jp .EasyToUse .visual_cont .item.item3 .img{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/03_setting_m_jp_180404.gif);}
+
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .title{margin-bottom: 8px;font-size: 16px;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .txt{width: 260px;font-size: 14px;margin: 0 auto;line-height: 1.29;}
+		.slick-dots li button{width: 9px;height: 9px;-webkit-background-size: 6px 6px;background-size: 6px 6px;margin: 0 3px;}
+		.slick-dots li.slick-active button{-webkit-background-size: 9px 9px;background-size: 9px 9px;}
+		.slick-arrow{top: 100px;width: 12px;height: 27px;-webkit-background-size: 12px 27px;background-size: 12px 27px; display: none !important;}
+		.slick-prev{left: 19px;}
+		#wrap.SmartCaddieV1 .EasyToUse .slider .slick-next{right: 19px;}
+		#wrap.SmartCaddieV1 .EasyToUse .visual_cont .txt .ib{display: inline;}
+		#wrap.SmartCaddieV1 .HelpWatch .tit{margin-bottom: 23px;font-size: 16px;line-height: 1.4em;margin: 0 auto;width:300px;}
+		#wrap.SmartCaddieV1 .HelpWatch.cssWithLang[lang=ko] .tit {width: 200px;}
+		#wrap.SmartCaddieV1 .HelpWatch .btn.img{    background-size: 17px 13px;padding: 0 0 0 22px;}
+		#wrap.SmartCaddieV1 .HelpWatch .btn {font-size: 13px; padding-left:25px;}
+		#wrap.SmartCaddieV1 .HelpWatch .btn .ico-email2{width: 16px;height: 10px;background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/ico-mail-m-2.png);-webkit-background-size: 16px 10px;background-size: 16px 10px;}
+		#wrap.SmartCaddieV1 .ico_golfwith{display: block;position: absolute;top: -23px;left: 50%;margin-left: -23px;}
+		#wrap.SmartCaddieV1 .slick-dots li button{width:25px; margin:0px 2px;}
+
+		/* main 170228 */
+
+		#wrap.main #container{position: relative;min-height: 701px;height: 100%;}
+		#wrap.main #mainSlider{position: absolute;height: auto;top: 0;left: 0;right: 0;bottom: 140px;margin-top: 0;}
+		#wrap.main #header .menu li a{color: #002b40;opacity:0.5;-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(Opacity=55)';filter:alpha(opacity=55)}
+		#wrap.main .main_section,
+		#wrap.main .marker_section{position: absolute;top: 0;left: 0;width: 100%;height: 100%;overflow: hidden;background-color: #fff;z-index: 0;padding-left: 30px;}
+
+
+		#wrap.main .slider_section .sub_title{font-size:22px; margin-bottom:0px;}
+		#wrap.main .slider_section .title{width:270px}
+		#wrap.main .slider_section.main_section .title{width: 310px;}
+		#wrap.main .slider_section .txt1{font-size:15px; margin:10px 0px;}
+		#wrap.main .main_section .txt1{font-size:14px; margin:10px 0px;}
+		#wrap.main .slider_section .txt2{font-size:15px; margin:10px 0px;}
+		#wrap.main .main_section .txt2{font-size:14px; margin:10px 0px;}
+		#wrap.main .main_section{background-image:url('http://golfwith.golfzon.com/web/images/new/main_slide1_m.png');background-size: cover;}
+		#wrap.main .marker_section{background-image:url('http://golfwith.golfzon.com/web/images/new/main_slide2_m-ko.jpg');background-size: cover;}
+		#wrap.main .marker_section[lang="en"]{background-image:url('http://golfwith.golfzon.com/web/images/new/main_slide2_m-en.jpg');}
+		#wrap.main .more .btn{font-size:12px;}
+		#wrap.main .more .btns{margin-top:20px;}
+		#wrap.main #mainSlider .pc{display:none;}
+		#wrap.main #mainSlider .mobile{display:block;}
+
+
+		#wrap.main .navigator .naviPages{top: 95%;left: 25px;text-align: left;}
+		#wrap.main.ja .navigator .naviPages{top: 430px;left: 15px; text-align: left;}
+		#wrap.main .navigator .naviPage{width: 25px;height: 3px;margin: 0 1px;}
+		#wrap.main .navigator .navibtns{display: block;}
+		#wrap.main #mainSlider .navigator .container_inner{position: static;}
+
+		/* 161115 */
+		#wrap.Smart_Caddie .contBox{padding-bottom: 0;}
+		#wrap.Smart_Caddie .contBox .visual_cont{display: none;}
+		#wrap.Smart_Caddie .contBox .visual_ani,
+		#wrap.Smart_Caddie .jslider{display: block;}
+		#wrap.Smart_Caddie .contBox .visual_ani {padding-bottom: 18px;}
+		#wrap.Smart_Caddie .contBox .tit{margin-bottom: 16px;}
+		#wrap.Smart_Caddie .contBox .tit img{height: 30px;}
+		#wrap.Smart_Caddie .contBox .sub_txt2{max-width: 300px;min-height: 37px;margin: 0 auto 10px;font-size: 16px;line-height: 18px;}
+		#wrap.Smart_Caddie .contBox .sub_txt3{padding-top: 25px;margin: 0 10px;font-size: 16px;}
+		#wrap.Smart_Caddie .contBox .btns{padding-top: 25px;padding-bottom: 70px;margin-top: 0;}
+		#wrap.Smart_Caddie .contBox .btns img{width: 150px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .tit{margin-bottom: 12px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .tit img{height: 36px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_tit{margin-bottom: 10px;font-size: 0;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_tit img{height: 13px;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_txt{display: none;}
+		#wrap.Smart_Caddie .contBox.Smart_Caddie_cont .sub_txt img{height: 18px;}
+		#wrap.Smart_Caddie .contBox.Golf_Courses_cont{margin-top: -40px;}
+		#wrap.Smart_Caddie .contBox.Golf_Courses_cont .tit img:first-child{height: 38px;}
+
+		/* common */
+		.header_inner,.container_inner,.footer_inner{
+			padding: 0 14px;
+		}
+		.top_nav{right:5%;width:40px;height:40px;background-size:40px 40px;-webkit-background-size:40px 40px}
+
+		/* container */
+		#container{margin-top:-60px !important;margin-bottom:-140px !important;}
+
+		/* header */
+
+		/*#header{height:60px;line-height:20px}!*160808 수정*!*/
+		/*
+        #header .logo{margin:0px auto; float:none; }
+        #header .logo a{width: 150px; height: 27px; background-image:url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/logo_golfwith_m1.png);}
+        #header .logo.type2 a{margin-top:15px;}
+
+        #wrap.type1 #header #menu.on .logo{width:120px;}
+        #wrap.type1 #header #menu.on .logo.type2{height:50px;}
+        #wrap.type1 #header #menu.on .logo.type2 a {width:120px; height:29px; background-image: url('http://golfwith.golfzon.com/web/images/new/logo-smartcaddie-black.png');}
+        */
+
+		/*
+        #header .btn_menu a{width:40px;height:40px; background-size: contain;}
+        #menu .btn_close a{width:14px;height:14px;background-size:13px 13px;-webkit-background-size:13px 13px;margin-right: 20px;}
+        */
+
+		/* footer 170202 */
+		#footer .footer_inner{padding-left:5%;padding-right:5%;padding-top:25px}
+		/*#footer .communication{width: 100%;margin: 0 auto; padding:0px; border-bottom:none; padding-bottom:10px;}*/
+		#footer .communication{width: 100%;margin: 0 auto; padding:0px; padding-bottom:10px;}
+		#footer .communication li:nth-child(3){border-left: none;}
+		#footer .communication li{padding: 0 9px !important;}
+		#footer .right_section{margin-top:15px;}
+
+		/* scorecard */
+		#wrap.scorecard .header_inner > .logo.type2 a{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/logo_golfwith_m1.png);}
+		.scorecard_section .myscorecard_btns{position:static;text-align:center;margin-top: -25px;padding-bottom: 30px;}
+		.scorecard_section .scorecard_section_cards{padding-top:10px;}
+
+		/* GearS2 */
+		#wrap.GearS2 #container{background-color:#000;background-size:800px auto;-webkit-background-size:800px auto;background-position-y: 15px;}
+		.GearS2_section{padding-top:150px;padding-bottom:50px}
+		.GearS2_section .txt2{padding-top: 14px;max-width: 400px;margin: 0 auto;}/*160808 수정*/
+
+		/* golf_course */
+		.golf_course_header{height:auto;padding-top: 140px;padding-bottom:10px;line-height: 34px;}
+		.golf_course_header .title h2{font-size:27px;line-height:27px;padding-bottom: 4px;}
+		.golf_course_header .info{float:none;clear:both;text-align:left}
+		.golf_course_header .info > p{display:inline-block;float:none;margin-left:0;margin-right:15px;font-size:13px}
+		.golf_course_header .info > p strong{margin-right: 5px;}
+		.golf_course_list{padding-top:20px}
+		.golf_course_list_section{width:100%;margin-bottom:15px}
+		.golf_course_list_item{margin-top:15px}
+		.golf_course_list_item.alphabet{margin-top:15px}
+		.golf_course_sub_header{padding-top:7px}
+		.golf_course_sub_header .right_section{float:left}
+		.golf_course_sub_header .mark{margin-left:0;margin-right:10px}
+		.golf_course_sub_header .mark strong{margin-right:5px}
+		.golf_course_sub_header .left_section a,.golf_course_sub_header .left_section span{font-size: 15px;}
+
+		/* faq */
+		.faq_section{padding-bottom: 30px;}
+		.faq_header .title h2{font-size:27px;line-height:27px;}
+		.faq_header .tab{margin-left: -6px;padding-top: 10px;padding-bottom: 16px;}
+		.faq_header .tab .btn{padding: 0 10px;margin: 2px 3px;line-height: 24px;font-size: 11px;border:1px solid #cccccc;}
+		.faq_header .tab .btn.on{border:1px solid #16ad59;}
+		.acodian dt{padding:11px 0;font-size:16px;line-height: 1.4;}
+		.acodian dd{padding:3px 0px 18px;font-size:14px;line-height: 22px;}
+		.faq_section .sub_section{padding-bottom: 16px;}
+		.faq_section .sub_section .acodian{margin: -1px 6px 0;}
+		.faq_section .sub_title{position: relative;padding-top: 10px;padding-bottom: 10px;z-index: 1;}
+		.faq_section .sub_title h3{font-size: 16px;font-weight: bold;line-height: 1.4;}
+		.faq_section .exception{padding: 35px 5%;}
+		.faq_section .exception h3{font-size: 16px;line-height: 24px;}
+		.faq_section .exception p,.faq_section .exception a{font-size: 14px;color: #30c750;line-height: 22px;}
+
+		/* account */
+		.account_section{padding-bottom: 30px;}
+		.account_header{padding-top: 30px;padding-bottom: 20px;}
+		.account_header .title h2{font-size:27px;line-height:27px;}
+		.account_contents h3{font-size: 18px;padding-bottom: 5px;}/*160808 수정*/
+		.account_contents .txt1,.account_contents .txt2{font-size: 14px;line-height: 1.4;}
+		.account_contents .txt1{padding-bottom: 14px;}
+		.account_contents .txt2{padding-bottom: 10px;}
+		.account_email{padding-top: 11px;}
+		.account_email h4{padding-bottom: 15px;font-size: 15px;}
+		.account_email input{line-height: 30px;font-size: 16px;border: none;border-bottom: 2px solid #d2d2d2;}
+		.account_email .inputbox1{padding-bottom: 20px;}
+		.account_btns{padding-top: 15px;text-align: center;margin-left: 0;margin-left: -6px;}
+		.account_btns .btn{font-size: 14px;line-height: 2.5;width: 100% !important;margin: 3px 0;margin-left:6px;min-width: 140px;padding: 0;}/*160808 수정*/
+		.account_btns .btn.back{width: 100%;margin-left: 0;}
+
+		/*layer_popup*/
+		.layer_wrap{padding: 3%;}
+		.layer_wrap .popup{width: 100%;height: auto;min-height: 380px;padding: 20px 15px;}
+		.layer_wrap .popup .inputbox input {line-height: 27px;border-bottom: 1px solid #d2d2d2;font-size: 16px;}
+		.layer_wrap .popup .btn{font-size: 11px;line-height: 35px;height: 35px;}
+		.layer_wrap .popup_header h2{line-height: 27px;font-size: 16px;}
+		.layer_wrap .login_form .other_options>div>a{font-size: 12px !important;}
+		.layer_wrap .popup_footer{position: relative;bottom: unset !important;left: unset !important;font-size: 12px !important;padding: 0;margin-top: 40px;}
+		.layer_wrap .popup_footer .btns{margin-left: -6px;}
+		.layer_wrap .popup_footer .btns .btn{width: 45%;line-height: 2.5;margin-left: 6px;font-size: 14px;}
+		.layer_wrap .popup_contents {padding-top: 14px;}
+		.layer_wrap .popup_contents .txt1{font-size: 14px;line-height: 24px;}
+		/* .layer_wrap .inputbox .error{position:relative;display:table;border-top: 1px solid #d93030;margin-top: -1px;font-size: 14px;}
+        .layer_wrap .signup_popup .inputbox .error{color:#ff8000;border-color: #ff8000;} */
+		.layer_wrap .popup .inputbox input + label{top: 25%;transform: translateY(5px);}
+
+		.layer_wrap .popup.login_form .btn{font-size: 17px;line-height: 38px;height: 38px;}
+		.layer_wrap .popup.login_form.login_select_popup .btn{font-size: 12px;overflow: hidden;text-overflow:ellipsis;white-space: nowrap;}
+		.layer_wrap .popup.login_form .google_login .btn{font-size: 17px;}
+		.layer_wrap .popup .inputbox input.not_emtpy + label,
+		.layer_wrap .popup .inputbox input:focus + label{top: 2px;}
+		.layer_wrap .popup .inputbox input:not([value=""]) + label{top: 2px;}
+		.layer_wrap .popup .inputbox input:not(:placeholder-shown) + label{top: 2px;}
+		.layer_wrap .popup .inputbox input:focus{border-color: #24d74a;}
+		.layer_wrap .popup .inputbox input.not_emtpy + label,
+		.layer_wrap .popup .inputbox input:focus + label{top: -20px;font-size: 0.8em;}
+
+		.ico_facebook2,
+		.ico_google,
+		.ico_naver{width: 18px;height: 18px;}
+		.layer_wrap .login_form .desc{font-size: 13px;}
+		.layer_wrap .login_form .desc2{font-size: 12px;}
+		.layer_wrap .login_btns{overflow: hidden;}
+		.login_select_popup.en .other_options .find_password_desc{font-size: 14px;}
+		/*deleted_popup*/
+		.layer_wrap .deleted_popup{padding-bottom: 70px;}
+
+		/*login_popup*/
+		.layer_wrap .login_popup,.layer_wrap .signup_popup {padding-bottom: 90px;}
+		.login_popup .inputarea{padding-top: 3px;padding-bottom: 35px;}
+		.login_popup .inputbox{margin-top: 24px;}
+		.login_popup .login_btns{padding-bottom: 15px;}
+		.login_popup .login_btns .btn{margin: 3px 0;}
+		.login_popup .login_btns .btn.type7{line-height: 32px;}
+		.login_popup .login_btns .btn span{margin: 0 2px;}
+		.login_popup .etcarea .btn{margin-bottom: 7px;}
+		.login_popup .etcarea .forgotpass{line-height: 19px;}
+		.login_popup .etcarea .forgotpass span{display: inline-block;font-size: 14px;margin-right: 10px;}
+		.login_popup .etcarea .forgotpass a{display: inline-block;font-size: 14px;}
+		.login_popup .login_btns .ico_facebook2,.login_popup .login_btns .ico_google{width: 16px;height: 16px;-webkit-background-size: 16px;background-size: 16px;vertical-align: middle;}
+
+		.login_popup .inputbox span.error {position: relative;top: 2px;left:0;width: 100%;margin-top: 0px;padding-top: 0px;color: #f45d13;font-size: 15px;}
+		.login_popup .inputbox input.error {border-bottom: 2px solid #f45d13;}
+
+		/*forgotpass_popup*/
+		.layer_wrap .deleted_popup{padding-bottom: 70px;}
+		.forgotpass_popup .inputarea {padding-top: 15px;}
+
+		/*signup_popup*/
+		.layer_wrap .signup_popup{padding-bottom: 70px;}
+		.signup_popup .inputarea{padding-top: 3px;padding-bottom: 17px;}
+		.signup_popup .inputbox{margin-top: 24px !important;}
+		.signup_popup .inputbox span.error {position: relative;top: 100%;left:0;width: 100%;margin-top: -2px;padding-top: 2px;color: #f45d13;font-size: 15px;}
+		.signup_popup .inputbox input.error {border-bottom: 2px solid #f45d13;}
+
+		/*terms_datet*/
+		.terms_section_header{padding-bottom: 16px;margin-top: 0;}
+		.terms_section_header .title{float: none;}
+		.terms_section_header .terms_date_select{float: none;margin-top: 10px;}
+		.terms_date_select .bootstrap-select{line-height:30px;margin-top: -6px;}
+		.terms_date_select .dropdown-toggle{height:30px;border:1px solid #16ad59;font-weight:bold;font-size:14px;font-weight:bold;color:#16ad59;text-align:center;outline:none}
+		.terms_date_select .bootstrap-select.btn-group .dropdown-menu.inner{margin-top:4px;background-color:#50df6e;background-color:rgba(36,215,74,0.8)}
+		.terms_date_select .bootstrap-select.btn-group .dropdown-menu li{border-top:1px solid #96eca8}
+		.terms_date_select .bootstrap-select.btn-group .dropdown-menu li:first-child{border-top:none}
+		.terms_date_select .bootstrap-select.btn-group .dropdown-menu li a{display:block;height:30px;line-height:30px;font-size:14px;font-weight:bold;color:#fff;text-align:center;outline:none}
+		.terms_section .terms_info{font-size:16px;line-height:1.5;color: #fff;white-space:pre-line;}
+		.terms_section_header .title p{font-size: 12px;color: #808080;}
+		.terms_section .terms_info strong{margin-top: 10px;}
+
+		/* My_Scorecard_section */
+		#wrap.type3 #header .profile{padding-left: 39px;padding-right: 60px;}
+		#wrap.type3 #header .profile .profileimg{margin-top: -15px;width: 30px;height: 30px;}
+		#wrap.type3 #header .profile .profilename{font-size: 14px;vertical-align: middle;line-height: 1.4;}
+		#wrap.type3 #header .login_area{right: 5%;}
+		#wrap.type3 #header .login_area .btn{width: 53PX;height: 23px;line-height: 21px;font-size: 10px;}
+		.My_Scorecard_header {height: auto;background: #f4f4f4;padding: 0;}
+		.My_Scorecard_header .title{display: none;}
+		.My_Scorecard_header .info{float:left;line-height: 40px;height:40px;padding-top:0;line-height:40px;}
+		.My_Scorecard_header .info > p{font-size:13px;font-weight:normal;color:#0cbc5a}
+		.My_Scorecard_header .info > p strong{color: #0cbc5a;margin-left: 8px;font-weight: bold;}
+		.My_Scorecard_section {padding-bottom: 30px;}
+		.My_Scorecard_section .container_inner{padding: 0;}
+		.My_Scorecard_section table.type1 th,.My_Scorecard_section table.type1 td{padding: 10px 5%;}
+		.My_Scorecard_section table.type1 .score{font-size: 27px;width: 65px;padding: 10px 5% 10px 0;}
+		.My_Scorecard_section table.type1 .name1{font-size: 15px;}
+		.My_Scorecard_section table.type1 .name2{font-size: 15px;color: #191919;}
+		.My_Scorecard_section table.type1 .My_Scorecard_info {position: relative;padding-left: 0;line-height: 22px;}
+		.My_Scorecard_section table.type1 .date{font-size: 12px;position: static;}
+		table.type1{width: 100%;}
+		table.type1 th,table.type1 td{padding: 32px 0;line-height: 31px;border-bottom: 1px solid #eeeeee;}
+		/* my_scorecard_view */
+		.my_scorecard_view{padding-bottom: 30px;}
+		.my_scorecard_view .container_inner{padding: 0;}
+		.m_table h4{font-size: 13px;padding-left: 15px;}
+		table.type2 th,table.type2 td{border: 1px solid #ececec;font-size: 11px;height: 27px;}
+		table.type2 th:first-child{width: 44px;font-size: 10px;}
+		table.type2 .out,table.type2 .in,table.type2 .total{width: 44px;}
+		table.type2 .course th{font-size: 10px;}
+		.my_scorecard_sub_header{text-align: center;padding-top: 21px;padding-bottom: 22px;padding-right: 0;margin-top: 0;background-color: #0dc860;}
+		.my_scorecard_sub_header h3{font-size: 17px;color: #ffffff;}
+		.my_scorecard_sub_header .name{font-size: 13px;color: #ffffff;line-height: 16px;padding-bottom: 3px;}
+		.my_scorecard_sub_header .date{font-size: 12px;color: #ccefd8;}
+		.my_scorecard_sub_header .score{position: static;color: #fff;font-size: 43px;line-height: 38px;padding-bottom: 6px;}
+
+		/*160808*/
+		#wrap.type3 #header .btn_close{right: 5%;}
+		#wrap.type3 #header .btn_close a{width: 14px;height: 14px;background-size: 13px 13px;-webkit-background-size: 13px 13px;}
+
+		/*160902 수정*/
+		/*
+        table.type1 td.data_none{font-size: 13px;height: 180px;}
+        #wrap.type2 .header_inner > .logo.type2 a {margin-top:15px; width: 100%; height:21px; background-image: url('http://golfwith.golfzon.com/web/images/logo-smartcaddie.png');}
+        #wrap.type2 #menu.on .logo{width:120px;}
+        #wrap.type2 #menu.on .logo.type2{height:50px;}
+        #wrap.type2 #menu.on .logo.type2 a {margin-top:15px; width:120px; height:29px; background-image: url('http://golfwith.golfzon.com/web/images/new/logo-smartcaddie.png');}
+        */
+
+		/* PlayRound-Style */
+		#wrap.SmartCaddieV1 .PlayRound{padding:40px 0 50px 0;text-align:center;color:#ffffff;}
+		#wrap.SmartCaddieV1 .PlayRound .title_group .tit{margin-bottom: 35px;font-size: 20px;}
+		#wrap.SmartCaddieV1 .PlayRound .tab{padding-bottom:20px;margin:0 auto;max-width:756px;}
+		#wrap.SmartCaddieV1 .PlayRound .tab ul{width:100%;}
+		#wrap.SmartCaddieV1 .PlayRound .tab ul li{display:inline-block;width:32%;}
+		#wrap.SmartCaddieV1 .PlayRound .tab ul li a{width:88px;height: auto;color:#ffffff;opacity:0.5;font-size:14px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/btn_playround.png) no-repeat center top;-webkit-background-size:auto 55px;background-size: auto 55px;text-indent:-9999px;display:inline-block;-webkit-transition: all 0.4s;transition: all 0.4s;}
+		#wrap.SmartCaddieV1 .PlayRound .tab ul li+li a{width:73px;background-position:center -18px;}
+		#wrap.SmartCaddieV1 .PlayRound .tab ul li+li+li a{width:90px;background-position:center bottom;}
+
+		#wrap.SmartCaddieV1 .PlayRound .tab ul li.on a{opacity:1;}
+		#wrap.SmartCaddieV1 .PlayRound .barBox{margin:0 auto;max-width:756px;}
+		#wrap.SmartCaddieV1 .PlayRound .bar{position:relative;margin:0 0 40px 55px;height:10px;}
+		#wrap.SmartCaddieV1 .PlayRound .bar .bg{display:none;}
+		#wrap.SmartCaddieV1 .PlayRound .bar::after{content:'';position:absolute;top:0;left:-58px;padding-right:58px;width:100%;height:10px;border:1px solid #3c3c40;border-radius: 6px;background-color:#252528;}
+		.ui-slider-handle{position:absolute;top:2px;z-index:1;margin-left:-55px;width:54px;height:8px;display:inline-block;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_bar.gif) no-repeat left top;-webkit-background-size:100% 100%;background-size: 100% 100%;}
+		#wrap.SmartCaddieV1 .PlayRound .bar p{position:absolute;top:1px;left:1px;height:6px;text-align:left;}
+		#wrap.SmartCaddieV1 .PlayRound .bar p img{height:100%;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox{position:relative;margin:0 auto;height:270px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .wacthBg{display:none;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox::after{content:'';position:absolute;top:0;left:0;width:100%;height:270px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/bg_wacth.png) no-repeat center center;-webkit-background-size:auto 100%;background-size: auto 100%;}
+
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen{position:absolute;top:46px;left:50%;margin-left:-78.5px;width:157px;height:157px;border-radius:50%;background:#000;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p{position:absolute;top:0;left:0;width:157px;height:157px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p span{display:none;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box .screen p::after{content:'';position:absolute;top:0;left:0;width:157px;height:157px;border-radius:50%;overflow:hidden;-webkit-background-size:auto 100%;background-size: auto 100%;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box .screen p::after{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_select.jpg);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box .screen p::after{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/img_play.jpg);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box .screen p::after{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/bg_round.jpg);}
+
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList{position:relative;margin:0 auto;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box ul{position:relative;z-index:5;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box ul li{position:absolute;top:0;left:0;width:100%;height:270px;background:no-repeat center 0;background-size:auto 270px;opacity:0;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box.on{display:inline-block;opacity:1;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .box.on ul li{opacity:1;}
+
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox,
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play,
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy{position:relative;z-index:1;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_00.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step0 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_01.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_10.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step1 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_11.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_20.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .selectBox .box.step3 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_select_30.png);}
+
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_00.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_10.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_20.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step3 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_30.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step4 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_40.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step5 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_50.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step6 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_60.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step7 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_70.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .play .box.step7 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_play_71.png);}
+
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step0 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_00.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step1 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_10.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step2 ul li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_20.png);}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .roundHistroy .box.step2 ul li+li{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/playround/txt_round_21.png);}
+
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step0 .screen p::after{background-position-x:0;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step1 .screen p::after{background-position-x:-157px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step2 .screen p::after{background-position-x:-314px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step3 .screen p::after{background-position-x:-471px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step4 .screen p::after{background-position-x:-628px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step5 .screen p::after{background-position-x:-785px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step6 .screen p::after{background-position-x:-942px;}
+		#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step7 .screen p::after{background-position-x:-1099px;}
+
+		#wrap.SmartCaddieV1 .PlayRoundBox .slick-prev{left:19px; display: none !important;}
+		#wrap.SmartCaddieV1 .PlayRoundBox .slick-next{right:19px; display: none !important;}
+
+		#wrap.SmartCaddieV1 .PlayRoundBox{padding:40px 0 35px 0;}
+		#wrap.SmartCaddieV1 .PlayRoundBox .title_group .tit{margin-bottom:20px;font-size:20px;}
+		#wrap.SmartCaddieV1 .PlayRoundBox .m{display:inline-block;}
+		#wrap.SmartCaddieV1 .PlayRoundBox .w{display:none;}
+		.slider_tutorial .imageBox{padding-bottom:20px;}
+
+		#wrap.SmartCaddieV1 .PlayRoundBox .item .text{padding-bottom:5px;font-size:13px;}
+
+		/* PlayRound-Style */
+
+		.GolfGps .golfgps_section1{background-color: #fff;}
+		.GolfGps .golfgps_section1 .num{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num01_m.png);}
+		.inner_bg.golfgps_visual{position: relative;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg-img-m.png) no-repeat 50% 100%;background-size: 100% 100%;}
+
+		.inner_bg.SmartMarker_visual{margin-top: -60px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-field-bg.png) repeat-x 50% 0;background-size: 100% 100%;}/* 170907 */
+		.SmartMarker.type2 .SmartMarker_section1{background-color: #fff;}
+		.SmartMarker.type2 .SmartMarker_visual .visual{display: block;}/* 170907 */
+		.SmartMarker.type2 .SmartMarker_visual .SmartMarker_section,
+		.SmartMarker.type2 .SmartMarker_visual .container_inner{position: static;}
+		.SmartMarker .SmartMarker_visual .SmartMarker_section{height: auto;}
+		.inner_bg.SmartMarker_visual{position: relative;}
+		.SmartMarker{background: none;}
+
+		.youtube_video{background: none;}
+		.youtube_video .container_inner{padding: 18px 27px 22px !important;}
+		.youtube_video .youtube_header{text-align: center;font-size: 0;padding-bottom: 12px;}
+		.youtube_video .title{display: none;}
+		.youtube_video .youtube_select{float:none;text-align: center;}
+		.youtube_select .dropdown-toggle{display: none;}
+		.youtube_select .bootstrap-select > select{border-radius: 0;outline: none;font-size: 12px;padding-left: 10px !important;position: static !important;color: rgba(255, 255, 255, 0.5);width: 190px !important;height: 30px !important;border: 1px solid rgba(255, 255, 255, 0.28);opacity: 1 !important;background: none;  -webkit-appearance: none; /* 화살표 없애기 for chrome*/-moz-appearance: none;    /* 화살표 없애기 for firefox*/appearance: none;         /* 화살표 없애기 공통*/background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/dropbox_close_m.png) no-repeat 95% 50%; /* 화살표 아이콘 추가 */-webkit-background-size: 8px 7px;background-size: 8px 7px;}
+		.youtube_select .bootstrap-select > select::-ms-expand {display: none;            /* 화살표 없애기 for IE10, 11*/}
+		.youtube_select .bootstrap-select > select option{color: #000;}
+
+
+
+
+		/*스마트캐디 결제*/
+		#wrap.approval #header .logo.type2 {display: none;}
+	}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step0 .screen p::after{background-position-x:0;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step1 .screen p::after{background-position-x:-157px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step2 .screen p::after{background-position-x:-314px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step3 .screen p::after{background-position-x:-471px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step4 .screen p::after{background-position-x:-628px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step5 .screen p::after{background-position-x:-785px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step6 .screen p::after{background-position-x:-942px;}
+	#wrap.SmartCaddieV1 .PlayRound .playBox .playList .step7 .screen p::after{background-position-x:-1099px;}
+
+	#wrap.SmartCaddieV1 .PlayRoundBox .slick-prev{left:19px; display: none !important;}
+	#wrap.SmartCaddieV1 .PlayRoundBox .slick-next{right:19px; display: none !important;}
+
+	#wrap.SmartCaddieV1 .PlayRoundBox{padding:40px 0 35px 0;}
+	#wrap.SmartCaddieV1 .PlayRoundBox .title_group .tit{margin-bottom:20px;font-size:20px;}
+	#wrap.SmartCaddieV1 .PlayRoundBox .m{display:inline-block;}
+	#wrap.SmartCaddieV1 .PlayRoundBox .w{display:none;}
+	.slider_tutorial .imageBox{padding-bottom:20px;}
+
+	#wrap.SmartCaddieV1 .PlayRoundBox .item .text{padding-bottom:5px;font-size:13px;}
+
+	/* PlayRound-Style */
+
+	.GolfGps .golfgps_section1{background-color: #fff;}
+	.GolfGps .golfgps_section1 .num{background-image: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/num01_m.png);}
+	.inner_bg.golfgps_visual{position: relative;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/bg-img-m.png) no-repeat 50% 100%;background-size: 100% 100%;}
+
+	.inner_bg.SmartMarker_visual{margin-top: -60px;background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/SmartMarker-field-bg.png) repeat-x 50% 0;background-size: 100% 100%;}/* 170907 */
+	.SmartMarker.type2 .SmartMarker_section1{background-color: #fff;}
+	.SmartMarker.type2 .SmartMarker_visual .visual{display: block;}/* 170907 */
+	.SmartMarker.type2 .SmartMarker_visual .SmartMarker_section,
+	.SmartMarker.type2 .SmartMarker_visual .container_inner{position: static;}
+	.SmartMarker .SmartMarker_visual .SmartMarker_section{height: auto;}
+	.inner_bg.SmartMarker_visual{position: relative;}
+	.SmartMarker{background: none;}
+
+	.youtube_video{background: none;}
+	.youtube_video .container_inner{padding: 18px 27px 22px !important;}
+	.youtube_video .youtube_header{text-align: center;font-size: 0;padding-bottom: 12px;}
+	.youtube_video .title{display: none;}
+	.youtube_video .youtube_select{float:none;text-align: center;}
+	.youtube_select .dropdown-toggle{display: none;}
+	.youtube_select .bootstrap-select > select{border-radius: 0;outline: none;font-size: 12px;padding-left: 10px !important;position: static !important;color: rgba(255, 255, 255, 0.5);width: 190px !important;height: 30px !important;border: 1px solid rgba(255, 255, 255, 0.28);opacity: 1 !important;background: none;  -webkit-appearance: none; /* 화살표 없애기 for chrome*/-moz-appearance: none;    /* 화살표 없애기 for firefox*/appearance: none;         /* 화살표 없애기 공통*/background: url(https://d1he5mvplbw133.cloudfront.net/golfwith/images/dropbox_close_m.png) no-repeat 95% 50%; /* 화살표 아이콘 추가 */-webkit-background-size: 8px 7px;background-size: 8px 7px;}
+	.youtube_select .bootstrap-select > select::-ms-expand {display: none;            /* 화살표 없애기 for IE10, 11*/}
+	.youtube_select .bootstrap-select > select option{color: #000;}
+	/*스마트캐디 결제*/
+	#wrap.approval #header .logo.type2 {display: none;}
+}
+
+/* 230327 header, footer 변경 */
+
+@media (max-width: 1280px) {
+	.header_inner{width: 100%; padding: 0 40px;}
+	#header .login{right: 40px;}
+
+	#header .btn_menu{top: 50%; left: 35px; transform: translateY(-50%);}
+	#wrap.type2 #header .btn_menu.type2 a{background-image: url('../images/renewal/button-gnb-y.png')}
+}
+
+@media (max-width: 1201px) {
+	#header .menu{position: static; display: block; width: 100%; transform: translate(0, 0);}
+	#header .btn_menu{z-index: 5;}
+	#header .btn_menu a{width: 40px; height: 40px;}
+	#header .login{justify-content: center; padding-top: 50px; padding-bottom: 47px; transform: translateX(0); font-size: 0;}
+
+	#menu{margin-left: 0;}
+	#menu .inner{margin: 24px 35px; border-radius: 20px; background-color: #545454;}
+	#menu .btn_close a{margin: 20px 24px 0 0; background-image: url('../images/renewal/ico-close-w.png')}
+
+	#header .menu li>a, #header .menu li>span{margin: auto;}
+
+	#header .logo{margin: 0 auto;}
+
+	#header .menu .sub_menu>li{background-color: #444 !important;margin-left: 0;}
+	#header .menu, #header .menu li{flex-wrap: wrap;}
+}
+
+@media (max-width:960px){
+	#footer .footer_inner{padding: 45px 35px 35px;}
+	#footer .communication{padding-bottom: 0;}
+	#footer .communication::after{margin-top: 12px;}
+	#footer .communication a{font-size: 18px;}
+	#footer .terms li{margin: 25px 0 0;}
+	#footer .terms a{font-size: 18px;}
+	#footer .right_section{margin-top: 25px;}
+	#footer .gzlogo{width:222px; height: 46px;}
+	#footer address{font-size: 13px;}
+}
+
+@media (max-width:640px){
+	#header .logo{width: 31.56vw; height: 6.72vw; min-width: 31.56vw;}
+	#header .login{padding-top: 7.81vw; padding-bottom: 7.34vw;}
+	#header .login a{width: 14.69vw; height: 5.16vw; line-height: 5.16vw;}
+	#header .login .btn.app_down{margin-right: 2.81vw; font-size: 1.88vw; line-height: 4.84vw;}
+	#header .login .btn.type1{font-size: 1.88vw;}
+	#header .btn_menu a{width: 6.25vw; height: 6.25vw;}
+	#header .menu li, #header .menu li a{font-size: 3.59vw;}
+
+	.header_inner{padding: 0 6.25vw; height: 13.59vw;}
+	#menu .inner{margin: 3.75vw 5.47vw; border-radius: 3.13vw;}
+	#menu .btn_close a{margin: 3.13vw 3.75vw 0 0;}
+
+	#wrap.type2 #container{padding-top: 22.97vw;}
+
+	#footer .footer_inner{padding: 7.03vw 7.81vw 5.47vw;}
+	#footer .communication::after{margin-top: 1.88vw;}
+	#footer .communication a{font-size: 2.81vw;}
+	#footer .terms li{margin: 3.91vw 0 0; padding: 0 2.34vw;}
+	#footer .terms a{font-size: 2.81vw;}
+	#footer .right_section{margin-top: 3.91vw;}
+	#footer .gzlogo{width: 34.69vw; height: 7.19vw;}
+	#footer address{font-size: 2.03vw;}
+}

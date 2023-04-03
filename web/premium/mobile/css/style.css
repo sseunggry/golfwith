@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body{font-size: 12px; font-weight: 300; color:#343434;background-color:#ffffff; text-align: center; word-break: break-all; line-height: normal;}
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button, input { margin: 0;padding: 0}
+ul, ol, dl {list-style: none}
+ul {list-style: none; padding: 0; margin: 0}
+img, fieldset, iframe {border: 0}
+img {vertical-align:top}
+input, select, button {vertical-align: middle}
+input {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; border-radius: 0;}
+textarea:focus, input:focus{outline: none;}
+button * {position: relative}
+em, address {font-style: normal}
+a {text-decoration: none;color: #000000;}
+.clear {clear: both;}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {-webkit-appearance: none; margin: 0; }
+*{-webkit-tap-highlight-color:transparent}
+img.map, map area{outline: none;}
+
+img, canvas {
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+img::-moz-selection { background-color: transparent; color: #000;}
+img::selection {background-color: transparent; color: #000;}
+
+/*mobile*/
+img {width:100%; height:auto;}
+.wid10{width:10%; height:auto;}.wid20{width:20%; height:auto;}.wid30{width:30%; height:auto;}.wid40{width:40%; height:auto;}.wid50{width:50%; height:auto;}
+.wid60{width:60%; height:auto;}.wid70{width:70%; height:auto;}.wid80{width:80%; height:auto;}.wid90{width:90%; height:auto;}.wid100{width:100%; height:auto;}
+
+
+/*NotoSansCJKkr-Light font-weight: 300;
+NotoSansCJKkr-DemiLight font-weight: 350;
+NotoSansCJKkr-Regular font-weight: 400;
+NotoSansCJKkr-Medium font-weight: 500;
+NotoSansCJKkr-Bold font-weight: 700;*/
+
+@media all and (min-width:1201px){
+  #header .menu li,
+  #header .menu li a{color: #fff !important;}
+  #header .menu>li:not(:last-child)::after{background: #fff;}
+}
+#header .login .btn.type1{border: 2px solid #fff; color: #fff; border-radius: 20px;}
+
+
+
+#premium .close{position: absolute; width:20px; height:20px; top:15px; right:15px;}
+
+#premium .section1{padding:15px; padding-bottom:90px; background-color:#222328; background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/img-main-copy.jpg'); background-position-x:center; background-repeat: no-repeat; background-size: cover; }
+#premium .section1 p.txt1{font-size:14px; letter-spacing: -0.6px; font-weight: 500; text-align: center;}
+#premium .section1 p.txt2{font-size:18px; margin-top:160px; margin-bottom:0px; }
+#premium .section1 p.txt3{font-size:21px; line-height: 36px;}
+#premium .section1 p.txt3 span{font-weight: 700;}
+#premium .section1 p.txt4{font-size:11px;}
+#premium .section1 p.footer{position:absolute; width:100%; font-size:10px; bottom:0px; left:0px; padding:16px 0px; background-color:#616160; text-align:center; color:#ffffff;  font-weight: 100;}
+
+#premium .section2{padding:40px 13px; text-align:center; background-color: #222328; }
+#premium .section2 p.txt1{font-size:21px; }
+#premium .section2 p.txt1 span{font-weight:700; color:#47bc7b;}
+#premium .section2 p.txt2{font-size:14px; font-weight: 400; margin:10px 15px;}
+#premium .section2 p.txt2 span{font-weight: 700;}
+#premium .section2 p.txt3{font-size:11px; margin:0px 20px; margin-bottom:20px;}
+#premium .section2 .product{margin:0px 15px; margin-top:37px; overflow: hidden; text-align: left;}
+#premium .section2 .product dt{font-size:21px; font-weight: 500; text-align: center;}
+#premium .section2 .product dd{width:100%; margin:20px 0px;position: relative;}
+#premium .section2 .product dd span{display: block; border:1px solid #d0d1d2; position: relative; top:0px; left:0px; padding:16px; border-radius:4px;}
+#premium .section2 .product dd em{font-family: 'SpoqaHanSansNeo-Bold'; position: absolute; font-size:12px; top:16px; right:16px; color: rgba(255, 255, 255, 0.5); }
+#premium .section2 .product dd p.title{font-size:14px; font-weight: 700}
+#premium .section2 .product dd p.price{font-size:25px; font-weight: 700; padding-left:25px; margin-top:5px; margin-bottom:10px; color:#47bc7b; background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/ic-w.png'); background-size:19px; background-repeat: no-repeat; background-position-y: center;}
+#premium.en .section2 .product dd p.price{background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/ic-w.png');}
+#premium.ja .section2 .product dd p.price{background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/ic-w.png');}
+#premium .section2 .product dd p.t1{font-size:12px; }
+#premium .section2 .banner{width:100%; background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/banner-free-3.jpg'); background-color:#000000; background-repeat: no-repeat; background-size: cover;}
+#premium .section2 .banner dl{overflow: hidden; padding:13px 10px; padding-bottom:0px;}
+#premium .section2 .banner dl dt{font-size:17px; font-weight:700; text-align: center;}
+#premium .section2 .banner dl dd p{margin:15px 0px;}
+#premium .section2 .bottom{overflow: hidden; padding:25px; padding-bottom:50%; text-align: center; background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/img-golfedition-watch.png'); background-position-x:center; background-repeat: no-repeat; background-size: cover;}
+#premium.en .section2 .bottom{padding:25px 15px; padding-bottom:50%;}
+#premium.ja .section2 .bottom{padding:25px 5px; padding-bottom:50%;}
+#premium .section2 .bottom p.t1{font-size:21px; font-weight: 700; margin-bottom:12px;}
+#premium.en .section2 .bottom p.t1{font-size:18px;}
+#premium .section2 .bottom p.t1 span{color:#47bc7b;}
+#premium .section2 .bottom p.t2{}
+#premium .section2 .bottom .btn{width:202px; height:39px; margin:0px auto; margin-top:53%; background-image: url('http://golfwith.golfzon.com/web/premium/mobile/images/btn-bg-galaxy-watch.png'); background-repeat: no-repeat; background-size: contain; background-position-x:center; position: relative;}
+#premium.ja .section2 .bottom .btn{margin-top:35%;}
+#premium .section2 .bottom .btn a{font-size:0px; position:absolute; width:100%; height:100%; top:0px; left:0px; color:#333333; display: block;font-weight: 600;}
+
+
+@media (max-width: 1450px){
+	
+}
+
+
+/* .popup {display: none; position: absolute; z-index: 9999; top:0px; text-align: center; width:720px; overflow: hidden;} */
