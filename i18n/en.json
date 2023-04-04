@@ -358,7 +358,7 @@
   "smartcaddie-feature-ico5": "<img src='web/images/renewal/watch_01_ico_05.svg' alt=''>",
 
   "smartcaddie-feature-txt6-title": "Indoor golf course search",
-  "smartcaddie-feature-txt6-subTxt": "SCT(Smart Converging Technology)<br class='mo_only'/> With SCT technology, you can search for golf<br class='mo_only'/> courses not only outdoors but also indoors,<br class='mo_only'/> such as in the clubhouse, when you arrive<br class='mo_only'/> at the golf course.",
+  "smartcaddie-feature-txt6-subTxt": "'Smartcaddie's SCT (Smart Converging Technology) enables you to search for golf courses indoors, such as in clubhouses.",
   "smartcaddie-feature-ico6": "<img src='web/images/renewal/watch_01_ico_06.svg' alt=''>",
 
   "smartcaddie-feature-txt7-title": "Club recommendation and distance guidance",
@@ -422,22 +422,22 @@
   "premium-free-btn": "Learn more",
 
   "premium-coupon1-title": "PASS",
-  "premium-coupon1-tag": "The best benefits",
-  "premium-coupon1-txt": "[3year flat-rate pass]",
+  "premium-coupon1-tag": "The best benefit",
+  "premium-coupon1-txt": "[3-year pass]",
   "premium-coupon1-price": "&#36;99.99",
   "premium-coupon1-cash": "&#36;2.78 <span> / month</span>",
   "premium-coupon1-subTxt": "※ The 3-year pass does not automatically renew after the usage period.",
 
   "premium-coupon2-title": "SUBSCRIPTION PLAN",
   "premium-coupon2-tag": "Recommended",
-  "premium-coupon2-txt1": "[Annual subscription product]",
+  "premium-coupon2-txt1": "[1-year subscriptipon]",
   "premium-coupon2-price1": "<span>After the 7-day free trial </span> &#36;49.99<small>/year</small>",
   "premium-coupon2-cash1": "&#36;4.17<span> / month</span>",
-  "premium-coupon2-txt2": "[Monthly subscription product]",
+  "premium-coupon2-txt2": "[1-month subscriptipon]",
   "premium-coupon2-cash2": "&#36;6.99<span> / month</span>",
   "premium-coupon2-subTxt": "※ Free trial applies only once when subscribing to the 1-year subscription product for the first time. <br/> ※ If you do not wish to subscribe after the free trial, you must cancel the subscription separately. <br/> ※ Subscription products will continue to be automatically charged based on the product period even after the usage period.",
 
-  "premium-guide-title": "Membership usage guide",
+  "premium-guide-title": "Membership guide",
   "premium-guide-subTxt": "※ You cannot log in to multiple watches with the same account. <br/> ※ The service is only available on the most recently logged-in watch device. <br/> ※ You can use the service for an unlimited number of rounds based on the purchased/subscription period. <br/> ※ For subscription plans, you can renew the service by repurchasing after the usage period expires. <br/> (If you do not cancel the subscription separately, it will be automatically renewed.)",
 
   "premium-refund-title": "Refund / Transfer",

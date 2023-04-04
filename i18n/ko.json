@@ -310,7 +310,7 @@
   "smartcaddie-slide-img2": "<img src='web/images/renewal/img_main_02.jpg' class='pc_only'>",
   "smartcaddie-slide-img2-mo": "<img src='web/images/renewal/img_main_02_mo.jpg' alt='' class='mo_only'>",
   "smartcaddie-slide-title3": "워치로 라운드하고 <br/> 모바일앱으로 스코어관리를",
-  "smartcaddie-slide-img3": "<img src='web/images/renewal/img_main_03_en.jpg' class='pc_only'>",
+  "smartcaddie-slide-img3": "<img src='web/images/renewal/img_main_03_ko.jpg' class='pc_only'>",
   "smartcaddie-slide-img3-mo": "<img src='web/images/renewal/img_main_03_en_mo.jpg' alt='' class='mo_only'>",
   "smartcaddie-slide-btn": "App 다운로드",
 
@@ -321,7 +321,7 @@
   "smartcaddie-renewal-list-subTxt1": "<img src='web/images/renewal/watch_01_symbol.svg' alt=''>",
   "smartcaddie-renewal-list-title2": "워치앱&모바일앱 통합 설치",
   "smartcaddie-renewal-list-subTxt2": "구글 플레이스토어에서 스마트캐디앱 설치 시 워치앱과 스마트폰앱이 동시에 설치 됩니다.",
-  "smartcaddie-manage-title": "워치로 라운드 후, <br/> 모바일 앱으로 <span class='point_yellow'>라운드 관리</span>",
+  "smartcaddie-manage-title": "워치로 라운드하고, <br/> 모바일 앱으로 <span class='point_yellow'>스코어관리</span>",
   "smartcaddie-manage-btn": "모바일앱 자세히 알아보기",
   "smartcaddie-manage-img": "<img src='web/images/renewal/watch_01_03_ko.png' alt=''>",
   "smartcaddie-smart-img": "<img src='web/images/renewal/watch_01_04_ko.png' alt=''>",
@@ -354,7 +354,7 @@
   "smartcaddie-feature-ico3": "<img src='web/images/renewal/watch_01_ico_03.svg' alt=''>",
 
   "smartcaddie-feature-txt4-title": "간편한 스코어 기록",
-  "smartcaddie-feature-txt4-subTxt": "홀아웃 시 스코어 입력화면이 자동으로 팝업되어, 매 홀마다 잊지 않고 스코어를 기록하고 관리할 수 있습니다.",
+  "smartcaddie-feature-txt4-subTxt": "홀아웃 시 스코어 입력화면이 자동으로 팝업되어, <br/> 매 홀마다 잊지 않고 스코어를 기록하고 관리할 수 있습니다.",
   "smartcaddie-feature-ico4": "<img src='web/images/renewal/watch_01_ico_04.svg' alt=''>",
 
   "smartcaddie-feature-txt5-title": "A.I. 음성 안내",
@@ -377,15 +377,15 @@
   "smartcaddie-feature-txt9-subTxt": "다양한 테마를 취향에 맞게 선택하여 사용하세요.",
   "smartcaddie-feature-ico9": "<img src='web/images/renewal/watch_01_ico_09.svg' alt=''>",
 
-  "mobile-main-title": "워치로 라운드 후,<br/> 모바일앱으로<br/> <span>라운드 기록을 관리</span>",
+  "mobile-main-title": "워치로 라운드하고,<br/> 모바일앱으로<br/> <span>스코어관리</span>",
   "mobile-main-btn1": "App 다운로드",
   "mobile-main-btn2": "유저 가이드 다운로드",
   "mobile-main-img1": "<img src='web/images/renewal/mobile_main_01_ko.png' alt=''>",
   "mobile-main-img2": "<img src='web/images/renewal/mobile_main_02_ko.png' alt=''>",
   "mobile-main-img3": "<img src='web/images/renewal/mobile_main_03_ko.png' alt=''>",
 
-  "mobile-banner-title": "‘스마트캐디＇ 스마트폰 앱이 설치되더라도 ‘GOLFBUDDY : GOLF GPS’앱 서비스는 유지됩니다.<br/>스마트캐디 – 갤럭시워치 유저를 위한 워치앱과 모바일앱 통합 앱<br/>GOLFBUDDY : GOLF GPS – 갤럭시워치 유저 뿐만 아니라 일반 유저도 사용할 수 있는 골프버디 앱<br/>스마트캐디 스마트폰앱으로만 프리미엄 멤버십 결제 및 구독이 가능합니다.",
-  "mobile-banner-subTxt": "기존에 사용하던 GOLF BUDDY: GOLF GPS 앱으로도 <br/> 라운드 기록 확인 및 관리가 가능합니다.",
+  "mobile-banner-title": "‘스마트캐디＇ 스마트폰 앱이 설치되더라도 ‘GOLFBUDDY : GOLF GPS’앱 서비스는 유지됩니다. <br/>스마트캐디 – 갤럭시워치 유저를 위한 워치앱과 모바일앱 통합 앱<br/>GOLFBUDDY : GOLF GPS – 갤럭시워치 유저 뿐만 아니라 일반 유저도 사용할 수 있는 골프버디 앱<br/>스마트캐디 스마트폰앱으로만 프리미엄 멤버십 결제 및 구독이 가능합니다.",
+  "mobile-banner-subTxt": "기존에 사용하던 GOLFBUDDY : GOLF GPS 앱으로도 라운드 기록 확인 및 관리가 가능합니다.",
 
   "mobile-guide-title": "스마트캐디,<br/> 왜 최고의 <br/> 라운드관리 앱 일까요?",
   "mobile-guide-img": "<img src='web/images/renewal/mobile_guide_ko.png' alt=''>",
@@ -408,8 +408,8 @@
 
   "premium-main-title": "스마트캐디<br/> <span>프리미엄 멤버십</span>",
   "premium-main-subTxt1": "for Galaxy Watch 5, Watch 4(Wear OS)",
-  "premium-main-subTxt2": "Tizen OS(갤럭시워치3 및 이전 기종)의 경우에는 아래 맴버십 안내 페이지 참고",
-  "premium-main-btn": "Tizen OS 맴버십 안내 페이지로 이동",
+  "premium-main-subTxt2": "Tizen OS(갤럭시워치3 및 이전 기종)의 경우에는 아래 멤버십 안내 페이지 참고",
+  "premium-main-btn": "Tizen OS 멤버십 안내 페이지로 이동",
   "premium-main-img": "<img src='web/images/renewal/membership_main_ko.png' alt=''>",
 
   "premium-change-title": "프리미엄 멤버십<br/> 변경 안내",

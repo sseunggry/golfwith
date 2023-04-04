@@ -76,8 +76,8 @@
 .renewal .smart_banner .inner{display: flex; align-items: center;}
 .renewal .smart_banner .logo_con{margin-left: 45px; width: 22%;}
 .renewal .smart_banner .txt_con{padding-left: 102px; width: calc(78% - 45px);}
-.renewal .smart_banner .txt_con h3{margin-bottom: 15px; font-size: 20px; font-weight: 700;}
-.renewal .smart_banner .txt_con p{font-size: 20px; color: #ECECEC;}
+.renewal .smart_banner .txt_con h3{margin-bottom: 20px; font-size: 18px; font-weight: 700; line-height: 1.5;}
+.renewal .smart_banner .txt_con p{font-size: 18px; color: #ECECEC;}
 
 .renewal .smart_guide{padding: 45px 0 27px; background-color: #fff;}
 .renewal .smart_guide .inner{display: flex; align-items: center;}
@@ -313,6 +313,8 @@
 }
 
 @media (max-width:960px){
+    #wrap.type2 #container{padding-top: 145px;}
+
     .pc_only{display: none;}
     .mo_only{display: block;}
 
@@ -442,6 +444,7 @@
 }
 
 @media (max-width:640px){
+    #wrap.type2 #container{padding-top: 22.66vw;}
     .renewal .inner{padding: 0 5.47vw;}
 
 
