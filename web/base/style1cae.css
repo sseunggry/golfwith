@@ -1369,3 +1369,7 @@ table.type1 td.data_none{border: none;text-align: center;font-size: 26px;color: 
 #footer .communication a{display: inline-block; height: 100%; font-family: 'Roboto';}
 #footer .terms a{font-size: 12px; font-family: 'Roboto';}
 #footer address{font-family: 'Roboto';}
+
+/* header download btn */
+.app_download{display: none;}
+

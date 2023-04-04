@@ -191,8 +191,6 @@
 .renewal .membership_etc .etc_list .item dl dd.sm{font-size: 14px;}
 
 /* smartCaddie */
-.app_download{display: none;}
-
 #wrap .smartCaddie{background: #383838;}
 .smartCaddie .btn_con .yellow{color: #000 !important; background: #FFC03E !important;}
 .smartCaddie .point_yellow{color: #FFC03E;}
@@ -318,10 +316,6 @@
     .pc_only{display: none;}
     .mo_only{display: block;}
 
-    .app_download{z-index: 999; display: flex; justify-content: center; align-items: center; position: fixed; left: 0; top: 0; width: 100%; height: 87px; background-color: #333333; transform: translateY(-100%); transition: all .5s;}
-    .app_download a{display: block; padding: 8px 24px; font-size: 14px; font-weight: 700; color: #fff; border: 4px solid #FFC03E; background-color: #0B77D6; border-radius: 25px;}
-    .app_download.active{transform: translateY(0);}
-
     .renewal .btn_s{margin: 0 auto;}
     .renewal .membership_main{padding: 114px 0 45px;}
     .renewal .membership_main .inner{display: block;}
@@ -446,10 +440,6 @@
 @media (max-width:640px){
     #wrap.type2 #container{padding-top: 22.66vw;}
     .renewal .inner{padding: 0 5.47vw;}
-
-
-    .app_download{height: 13.59vw;}
-    .app_download a{padding: 1.25vw 3.75vw; font-size: 2.19vw; border: 0.63vw solid #FFC03E; border-radius: 3.91vw;}
 
     .renewal .btn_s{margin: 0 auto; padding: 1.88vw 1.88vw 1.88vw 0; font-size: 2.81vw; border-radius: 4.06vw; box-shadow: 0 0.78vw 1.25vw rgba(0,0,0,0.15);}
     .renewal .btn_s::after{right: 2.50vw; width: 1.88vw; height: 3.44vw;}
