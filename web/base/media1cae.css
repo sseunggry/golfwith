@@ -1587,6 +1587,7 @@
 	#menu{margin-left: 0;}
 	#menu .inner{margin: 24px 35px; border-radius: 20px; background-color: #545454;}
 	#menu .btn_close a{margin: 20px 24px 0 0; background-image: url('../images/renewal/ico-close-w.png')}
+	#menu.on .header .logo{display: none;}
 
 	#header .menu li>a, #header .menu li>span{margin: auto;}
 
@@ -1616,8 +1617,9 @@
 	#header .logo{width: 31.56vw; height: 6.72vw; min-width: 31.56vw;}
 	#header .login{padding-top: 7.81vw; padding-bottom: 7.34vw;}
 	#header .login a{width: 14.69vw; height: 5.16vw; line-height: 5.16vw;}
-	#header .login .btn.app_down{margin-right: 2.81vw; font-size: 1.88vw; line-height: 4.84vw;}
-	#header .login .btn.type1{font-size: 1.88vw;}
+	#header .login .btn.app_down{margin-right: 2.81vw; font-size: 1.88vw; line-height: 4.54vw;}
+	#header .login .btn.type1{width: 14.69vw; height: 5.16vw; font-size: 1.88vw; line-height: 4.54vw;}
+	#header .btn_menu{left: 5.47vw;}
 	#header .btn_menu a{width: 6.25vw; height: 6.25vw;}
 	#header .menu li, #header .menu li a{font-size: 3.59vw;}
 

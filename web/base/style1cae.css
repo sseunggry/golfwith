@@ -242,7 +242,7 @@ select.bs-select-hidden,select.selectpicker{display:none !important}
 #wrap.type2 #header .login .btn.type1{border:2px solid #fff;color:#fff; border-radius: 20px;font-family: 'SpoqaHanSansNeo-Regular';}
 #wrap.type2 #header #menu.on .login .btn.type1{border:2px solid #fff;color:#fff; border-radius: 20px;}
 #wrap.golfcourse.type2 #header .login .btn.type1{border:1px solid rgba(0,0,0,0.2); color:#343434; border-radius: 0px;}
-#wrap.type2 #header .btn_menu.type2 a{background-image: url('http://golfwith.golfzon.com/web/images/new/button-gnb.png');}
+#wrap.type2 #header .btn_menu.type2 a{background: url('http://golfwith.golfzon.com/web/images/new/button-gnb.png') no-repeat center/contain;}
 
 #wrap.golfcourse.type2 #header .menu li[aria-now-menu] a{color: #343434;}
 /* menu */
